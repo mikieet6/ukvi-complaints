@@ -1,0 +1,9 @@
+{
+  "theme": "govuk",
+  "routes": [
+    "./apps/ukvi-complaints-prototype"
+  ],
+  "session": {
+    "name": "ukvi-complaints-prototype.hof.sid"
+  }
+}

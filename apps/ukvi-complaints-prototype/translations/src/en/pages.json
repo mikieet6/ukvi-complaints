@@ -1,0 +1,172 @@
+{
+  "start": {
+    "header": "Complain about the UK Visas and Immigration service"
+  },
+  "reason": {
+    "header": "What is the main reason for your complaint?"
+  },
+  "immigration-application": {
+    "header": "What is the issue with your immigration application?"
+  },
+  "application-technical": {
+    "header": "If there were technical issues with the website",
+    "p1": ""
+  },
+  "contact-ukvi": {
+    "header": "Contact UK Visas and Immigration"
+  },
+  "where-applied-from": {
+    "header": "Where did you apply?"
+  },
+  "immigration-appointment": {
+    "header": "What is the issue with your immigration appointment?"
+  },
+  "application-delay": {
+    "header": "If there is a delay with your visa application please select one of the options below"
+  },
+  "application-ref-numbers": {
+    "header": "Do you have the GWF, HO or IHS reference number(s)?"
+  },
+  "reference-numbers": {
+    "header": "Which reference numbers do you have? Select all that apply"
+  },
+  "reference-number-help": {
+    "header": "Help with reference numbers",
+    "items": [
+      "A GWF number is given after you apply for a visa outside the UK.",
+      "An HO number is given after you apply within the UK.",
+      "An IHS number is given when you pay your immigration health surcharge."
+    ]
+  },
+  "return-of-documents": {
+    "header": "What is the issue with the return of your documents?"
+  },
+  "requested-documents": {
+    "header": "Have you requested the return of your documents?"
+  },
+  "have-requested": {
+    "header": "How did you request the return of your documents?"
+  },
+  "report-lost-docs-service": {
+    "header": "Use the report lost documents service"
+  },
+  "request-docs-service": {
+    "header": "Use the request your documents service"
+  },
+  "havent-requested": {
+    "header": "Use this service to request the return of your documents"
+  },
+  "immigration-decision": {
+    "header": "Have you received your immigration decision?"
+  },
+  "decision-outcome": {
+    "header": "What was the outcome of the decision?"
+  },
+  "positive-outcome": {
+    "header": "So you got a positive outcome!"
+  },
+  "negative-outcome": {
+    "header": "So you got a negative outcome!"
+  },
+  "immigration-status-change": {
+    "header": "What is the issue with your immigration status change?"
+  },
+  "biometric-residence-permit": {
+    "header": "What is the issue with your Biometric Residence Permit?"
+  },
+  "card-not-arrived": {
+    "header": "If your card hasn't arrived"
+  },
+  "letter-not-arrived": {
+    "header": "If your letter hasn't arrived"
+  },
+  "card-incorrect": {
+    "header": "If the details on your card are incorrect"
+  },
+  "refund-type": {
+    "header": "What service is your refund for?"
+  },
+  "refund": {
+    "header": "Have you already requested a refund?"
+  },
+  "ihs-refund": {
+    "header": "If you were requesting a IHS refund"
+  },
+  "refund-request": {
+    "header": "Request your refund"
+  },
+  "refund-when": {
+    "header": "When did you request your refund?"
+  },
+  "refund-less-than": {
+    "header": "If your request was less than three months ago"
+  },
+  "refund-more-than": {
+    "header": "If your request was less than three months ago"
+  },
+  "staff-behaviour": {
+    "header": "Where did the incident take place?"
+  },
+  "face-to-face": {
+    "header": "Where did the incident take place?"
+  },
+  "vac": {
+    "header": "Where is the visa application centre (VAC)?"
+  },
+  "ssc": {
+    "header": "In which UK city is the premium service centre?"
+  },
+  "on-phone": {
+    "header": "What telephone number was called?"
+  },
+  "called-date": {
+    "header": "What was the approximate date of the call?"
+  },
+  "called-time": {
+    "header": "What was the time of the call?"
+  },
+  "called-from": {
+    "header": "What number was the call made from?"
+  },
+  "existing-complaint": {
+    "header": "Do you have the reference number of your existing complaint?"
+  },
+  "other-complaint": {
+    "header": "What is the issue with your immigration application?"
+  },
+  "complaint-details": {
+    "header": "Complaint details"
+  },
+  "acting-as-agent": {
+    "header": "Are you completing this form on behalf of the applicant?"
+  },
+  "agent-contact-details": {
+    "header": "How should we contact you about the complaint?"
+  },
+  "agent-representative-details": {
+    "header": "What are the applicants details?"
+  },
+  "applicant-details": {
+    "header": "What are your details?"
+  },
+  "applicant-contact-details": {
+    "header": "How should we contact you about your complaint?"
+  },
+  "confirm": {
+    "header": "Check the details you have provided"
+  },
+  "complete": {
+    "header": "Your complaint has been submitted"
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

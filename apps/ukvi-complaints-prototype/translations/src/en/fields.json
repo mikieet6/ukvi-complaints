@@ -1,0 +1,424 @@
+{
+  "reason": {
+  	"legend": " ",
+    "options": {
+			"immigration-application": {
+				"label": "Immigration application"
+			},
+			"immigration-appointment": {
+				"label": "Immigration appointment"
+			},
+			"application-delay": {
+				"label": "Application delay"
+			},
+			"return-of-documents": {
+				"label": "Return of documents"
+			},
+			"immigration-decision": {
+				"label": "Immigration decision"
+			},
+			"immigration-status-change": {
+				"label": "Immigration status change"
+			},
+			"biometric-residence-permit": {
+				"label": "Biometric residence permit"
+			},
+			"refund": {
+				"label": "Refund"
+			},
+			"staff-behaviour": {
+				"label": "Staff behaviour"
+			},
+			"existing-complaint": {
+				"label": "An existing complaint"
+			},
+			"other-complaint": {
+				"label": "Something else"
+		  }
+		}
+	},
+
+	"immigration-application": {
+  	"legend": " ",
+    "options": {
+			"technical-issues": {
+				"label": "There were technical issues with the website"
+			},
+			"guidance": {
+				"label": "The immigration rules or guidance were unclear"
+			},
+			"complain": {
+				"label": "I want to compalin about the immigration application service"
+			}
+		}
+	},
+
+	"where-applied-from": {
+  	"legend": " ",
+    "options": {
+			"inside-uk": {
+				"label": "From inside the UK"
+			},
+			"outside-uk": {
+				"label": "From outside the UK"
+			}
+		}
+	},
+
+	"immigration-appointment": {
+  	"legend": " ",
+    "options": {
+			"lack-availability": {
+				"label": "Lack of availability of appointment"
+			},
+			"change-appointment": {
+				"label": "You want to change your appointment"
+			},
+			"questions-appointments": {
+				"label": "You have a question about appointments."
+			},
+			"technical-appointments": {
+				"label": "You want to report a techincal issue with booking an appointment."
+			},
+			"complain-appointments": {
+				"label": "Complain about making an appointment"
+			}
+		}
+	},
+
+	"application-delay": {
+		"legend": " ",
+    "options": {
+			"request-upgrade": {
+				"label": "Request upgrade to Premium service to fast track your Visa application"
+			},
+			"application-ref-numbers": {
+				"label": "Complain that your visa application took longer than it should to be processed"
+			}
+		}
+	},
+
+	"have-reference-numbers": {
+		"legend": " ",
+    "options": {
+			"yes": {
+				"label": "Yes"
+			},
+			"no": {
+				"label": "No"
+			}
+		}
+	},
+	
+	"reference-numbers": {
+		"legend": " ",
+    "options": {
+			"gwf": {
+				"label": "GWF number"
+			},
+			"ho": {
+				"label": "HO number"
+			},
+			"ihs": {
+				"label": "IHS number"
+			}
+		}
+	},
+
+	"gwf-reference":{
+		"label": "Enter your GWF number"
+	},
+	"ho-reference":{
+		"label": "Enter your HO number"
+	},
+	"ihs-reference":{
+		"label": "Enter your IHS number"
+	},
+
+	"return-of-documents": {
+		"legend": " ",
+    "options": {
+			"yes": {
+				"label": "I've not received my documents"
+			},
+			"no": {
+				"label": "Something else"
+			}
+		}
+	},
+
+	"requested-documents": {
+		"legend": " ",
+    "options": {
+			"yes": {
+				"label": "Yes"
+			},
+			"no": {
+				"label": "No"
+			}
+		}
+	},
+
+	"have-requested": {
+		"legend": " ",
+    "options": {
+			"used-service": {
+				"label": "Used the return of documents online service"
+			},
+			"something-else": {
+				"label": "Used something else"
+			}
+		}
+	},
+
+	"immigration-decision": {
+		"legend": " ",
+    "options": {
+			"yes": {
+				"label": "Yes"
+			},
+			"no": {
+				"label": "No"
+			}
+		}
+	},
+
+	"decision-outcome": {
+		"legend": " ",
+    "options": {
+			"positive": {
+				"label": "Positive decision"
+			},
+			"negative": {
+				"label": "Negative decision"
+			}
+		}
+	},
+
+	"immigration-status-change": {
+		"legend": " ",
+    "options": {
+			"questions-status-change": {
+				"label": "You have questions about your immigration status change"
+			},
+			"complain-status-change": {
+				"label": "You want to complain about your immigration status change"
+			}
+		}
+	},
+
+	"biometric-residence-permit": {
+		"legend": " ",
+    "options": {
+			"card-not-arrived": {
+				"label": "Your BRP card has not arrived"
+			},
+			"letter-not-arrived": {
+				"label": "your BRP letter has not arrived"
+			},
+			"card-incorrect": {
+				"label": "Your BRP card is incorrect"
+			},
+			"complain-brp": {
+				"label": "You want to complain about the BRP service"
+			}
+		}
+	},
+
+	"refund-type": {
+		"legend": " ",
+    "options": {
+			"ish": {
+				"label": "ISH"
+			},
+			"standard": {
+				"label": "Standard service"
+			},
+			"premium": {
+				"label": "Premium"
+			},
+			"super-premium": {
+				"label": "Super premium"
+			}
+		}
+	},
+
+	"refund": {
+		"legend": " ",
+    "options": {
+			"yes": {
+				"label": "Yes"
+			},
+			"no": {
+				"label": "No"
+			}
+		}
+	},
+
+	"refund-when": {
+		"legend": " ",
+    "options": {
+			"less-than": {
+				"label": "Less than 3 months ago"
+			},
+			"more-than": {
+				"label": "More than 3 months ago"
+			}
+		}
+	},
+
+	"staff-behaviour": {
+		"legend": " ",
+    "options": {
+			"face-to-face": {
+				"label": "In person"
+			},
+			"on-phone": {
+				"label": "On the phone"
+			},
+			"in-letter": {
+				"label": "In a letter or email"
+			}
+		}
+	},
+
+	"which-centre": {
+		"legend": " ",
+    "options": {
+			"vac": {
+				"label": "At a Visa Application Centre (VAC)"
+			},
+			"ssc": {
+				"label": "At a Service Support Centre"
+			}
+		}
+	},
+
+	"vac-country": {
+		"label": "Country"
+	},
+
+	"vac-city": {
+		"label": "City"
+	},
+
+	"ssc-city": {
+		"label": "City"
+	},
+
+	"called-number": {
+		"label": "What telephone number was called?"
+	},
+
+	"called-date": {
+		"label": "What was the approximate date of the call?"
+	},
+
+	"called-time": {
+		"label": "What was the time of the call?"
+	},
+
+	"called-from": {
+		"label": "What number was the call made from?"
+	},
+
+	"existing-complaint": {
+		"legend": " ",
+    "options": {
+			"yes": {
+				"label": "Yes"
+			},
+			"no": {
+				"label": "No"
+			}
+		}
+	},
+
+	"complaint-details":{
+    "hint": "Be brief but include all important details",
+    "label": "Provide details of the complaint",
+    "summary": "Details of the complaint"
+  },
+
+	"other-complaint": {
+		"legend": " ",
+    "options": {
+			"xxx": {
+				"label": "xxx"
+			},
+			"xxx": {
+				"label": "xxx"
+			}
+		}
+	},
+
+	"acting-as-agent": {
+		"legend": " ",
+    "options": {
+			"yes": {
+				"label": "Yes"
+			},
+			"no": {
+				"label": "No"
+			}
+		}
+	},
+
+	"agent-name": {
+		"legend": "",
+    "label": "Full name" 
+	},
+
+	"agent-email": {
+		"legend": "",
+    "label": "Email address" 
+	},
+
+	"agent-phone": {
+		"legend": "",
+    "label": "Phone number" 
+	},
+
+	"representative-name": {
+		"legend": "",
+    "label": "Full name" 
+	},
+
+	"representative-dob": {
+		"legend": "",
+    "label": "Date of birth" 
+	},
+
+	"representative-nationality": {
+		"legend": "",
+    "label": "Nationality" 
+	},
+
+	"applicant-name": {
+		"legend": "",
+    "label": "Full name" 
+	},
+
+	"applicant-dob": {
+		"legend": "",
+    "label": "Date of birth" 
+	},
+
+	"applicant-nationality": {
+		"legend": "",
+    "label": "Nationality" 
+	},
+
+	"applicant-email": {
+		"legend": "",
+    "label": "Email address" 
+	},
+
+	"applicant-phone": {
+		"legend": "",
+    "label": "Phone number" 
+	}
+}
+
+
+
