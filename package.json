@@ -24,5 +24,8 @@
   "main": "index.js",
   "keywords": [],
   "author": "",
-  "description": ""
+  "description": "",
+  "engines": {
+    "node": "10.11.0"
+  }
 }
