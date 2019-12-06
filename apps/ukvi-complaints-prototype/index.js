@@ -2,7 +2,7 @@
 
 module.exports = {
   name: 'ukvi-complaints-prototype',
-  baseUrl: '/ukvi-complaints-prototype',
+  baseUrl: '/',
   steps: {
     '/start': {
       next: '/reason'
