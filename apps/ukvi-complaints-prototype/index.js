@@ -71,7 +71,7 @@ module.exports = {
           value: 'existing-complaint'
         }
        }, {
-        target: '/complaint',
+        target: '/application-ref-numbers',
         condition: {
           field: 'reason',
           value: 'other-complaint'
@@ -87,13 +87,13 @@ module.exports = {
           value: 'technical-issues'
         }
       }, {
-        target: '/contact-ukvi',
+        target: '/applications-guidance',
         condition: {
           field: 'immigration-application',
           value: 'guidance'
         }
       }, {
-        target: '/complaint-details',
+        target: '/application-ref-numbers',
         condition: {
           field: 'immigration-application',
           value: 'complain'
@@ -104,19 +104,54 @@ module.exports = {
     '/application-technical': {
       next: '/applicant-contact-details'
     },
-    '/contact-ukvi': {
+    '/applications-guidance': {
       next: '/applicant-contact-details'
     },
-    '/where-applied-from': {
-      fields: ['where-applied-from'],
+    '/immigration-appointment': {
+      fields: ['immigration-appointment'],
       forks: [{
         target: '/lack-availability',
+        condition: {
+          field: 'immigration-appointment',
+          value: 'lack-availability'
+        }
+      }, {
+        target: '/change-appointment',
+        condition: {
+          field: 'immigration-appointment',
+          value: 'change-appointment'
+        }
+      }, {
+        target: '/questions-appointments',
+        condition: {
+          field: 'immigration-appointment',
+          value: 'questions-appointments'
+        }
+      }, {
+        target: '/appointment-technical',
+        condition: {
+          field: 'immigration-appointment',
+          value: 'technical-appointments'
+        }
+      }, {
+        target: '/application-ref-numbers',
+        condition: {
+          field: 'immigration-appointment',
+          value: 'complain-appointments'
+        }
+      }],
+      next: '/complaint-details'
+    },
+    '/lack-availability': {
+      fields: ['where-applied-from'],
+      forks: [{
+        target: '/lack-availability-inside',
         condition: {
           field: 'where-applied-from',
           value: 'inside-uk'
         }
       }, {
-        target: '/application-ref-numbers',
+        target: '/lack-availability-outside',
         condition: {
           field: 'where-applied-from',
           value: 'outside-uk'
@@ -124,40 +159,41 @@ module.exports = {
       }],
       next:'/complaint-details'
     },
-    '/immigration-appointment': {
-      fields: ['immigration-appointment'],
+    '/lack-availability-inside': {
+     
+    },
+    '/lack-availability-outside': {
+     
+    },
+    '/change-appointment': {
+      fields: ['where-applied-from'],
       forks: [{
-        target: '/where-applied-from',
+        target: '/change-appointment-inside',
         condition: {
-          field: 'immigration-appointment',
-          value: 'lack-availability'
+          field: 'where-applied-from',
+          value: 'inside-uk'
         }
       }, {
-        target: '/where-applied-from',
+        target: '/change-appointment-outside',
         condition: {
-          field: 'immigration-appointment',
-          value: 'change-appointment'
-        }
-      }, {
-        target: '/contact-ukvi',
-        condition: {
-          field: 'immigration-appointment',
-          value: 'questions-appointments'
-        }
-      }, {
-        target: '/contact-ukvi',
-        condition: {
-          field: 'immigration-appointment',
-          value: 'technical-appointments'
-        }
-      }, {
-        target: '/complaint-details',
-        condition: {
-          field: 'immigration-appointment',
-          value: 'complain-appointments'
+          field: 'where-applied-from',
+          value: 'outside-uk'
         }
       }],
-      next: '/complaint-details'
+      next:'/complaint-details'
+    },
+
+    '/change-appointment-inside': {
+     
+    },
+    '/change-appointment-outside': {
+     
+    },
+    '/appointment-technical': {
+      
+    },
+    '/questions-appointments': {
+      
     },
     '/application-delay': {
       fields: ['application-delay'],
@@ -174,6 +210,31 @@ module.exports = {
           value: 'application-ref-numbers'
         }
       }]
+    },
+
+    '/request-upgrade': {
+      fields: ['where-applied-from'],
+      forks: [{
+        target: '/upgrade-inside-uk',
+        condition: {
+          field: 'where-applied-from',
+          value: 'inside-uk'
+        }
+      }, {
+        target: '/upgrade-outside-uk',
+        condition: {
+          field: 'where-applied-from',
+          value: 'outside-uk'
+        }
+      }],
+      next:'/complaint-details'
+    },
+
+    '/upgrade-inside-uk': {
+      
+    },
+    '/upgrade-outside-uk': {
+      
     },
     '/application-ref-numbers': {
       fields: ['have-reference-numbers'],
@@ -303,7 +364,7 @@ module.exports = {
     '/immigration-status-change': {
       fields: ['immigration-status-change'],
       forks: [{
-        target: '/complaint-details',
+        target: '/questions-status-change',
         condition: {
           field: 'immigration-status-change',
           value: 'questions-status-change'
@@ -315,6 +376,11 @@ module.exports = {
           value: 'complain-status-change'
         }
       }],
+      next: '/complaint-details'
+    },
+
+    '/questions-status-change': {
+      
       next: '/complaint-details'
     },
     '/biometric-residence-permit': {

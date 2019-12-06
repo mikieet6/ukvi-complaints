@@ -12,17 +12,47 @@
     "header": "If there were technical issues with the website",
     "p1": ""
   },
-  "contact-ukvi": {
-    "header": "Contact UK Visas and Immigration"
+  "applications-guidance": {
+    "header": "The immigration rules or guidance were unclear"
   },
-  "where-applied-from": {
+  "lack-availability": {
     "header": "Where did you apply?"
+  },
+  "lack-availability-inside": {
+    "header": "If there was a lack of availability of appointments inside UK"
+  },
+  "lack-availability-outside": {
+    "header": "If there was a lack of availability of appointments outside UK"
+  },
+  "change-appointment": {
+    "header": "Where did you apply?"
+  },
+  "change-appointment-inside": {
+    "header": "If you want to change your appointment"
+  },
+  "change-appointment-outside": {
+    "header": "If you want to change your appointment"
   },
   "immigration-appointment": {
     "header": "What is the issue with your immigration appointment?"
   },
+  "appointment-technical": {
+    "header": "If you want to report a techincal issue with booking an appointment."
+  },
+  "questions-appointments": {
+    "header": "If you have questions about your appointment."
+  },
   "application-delay": {
     "header": "If there is a delay with your visa application please select one of the options below"
+  },
+  "request-upgrade": {
+    "header": "Where did you make your application?"
+  },
+  "upgrade-inside-uk": {
+    "header": "If you want to upgrade an application from inside the UK"
+  },
+  "upgrade-outside-uk": {
+    "header": "If you want to upgrade an application from outside the UK"
   },
   "application-ref-numbers": {
     "header": "Do you have the GWF, HO or IHS reference number(s)?"
@@ -48,10 +78,10 @@
     "header": "How did you request the return of your documents?"
   },
   "report-lost-docs-service": {
-    "header": "Use the report lost documents service"
+    "header": "I've you've requested the return of your documents"
   },
   "request-docs-service": {
-    "header": "Use the request your documents service"
+    "header": "If you've not yet requested the return of your documents"
   },
   "havent-requested": {
     "header": "Use this service to request the return of your documents"
@@ -63,19 +93,22 @@
     "header": "What was the outcome of the decision?"
   },
   "positive-outcome": {
-    "header": "So you got a positive outcome!"
+    "header": "If you received a positive outcome"
   },
   "negative-outcome": {
-    "header": "So you got a negative outcome!"
+    "header": "If you received a negative outcome"
   },
   "immigration-status-change": {
     "header": "What is the issue with your immigration status change?"
   },
+  "questions-status-change": {
+    "header": "If you have questions about your status change"
+  },
   "biometric-residence-permit": {
-    "header": "What is the issue with your Biometric Residence Permit?"
+    "header": "What is the issue with your Biometric Residence Permit (BRP)?"
   },
   "card-not-arrived": {
-    "header": "If your card hasn't arrived"
+    "header": "If your BRP card hasn't arrived"
   },
   "letter-not-arrived": {
     "header": "If your letter hasn't arrived"
