@@ -3,4 +3,4 @@ If you want to submit a complaint about the issues you've experienced you can su
 
 It can take up to 20 days to get a response.
 
-[Submit a compliant about UK Visas and immigration](/application-ref-numbers)
+[Submit a compliant about UK Visas and immigration](/when-applied)

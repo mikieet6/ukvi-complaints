@@ -23,7 +23,7 @@ module.exports = {
           value: 'immigration-appointment'
         }
       }, {
-        target: '/application-delay',
+        target: '/request-upgrade',
         condition: {
           field: 'reason',
           value: 'application-delay'
@@ -41,19 +41,19 @@ module.exports = {
           value: 'immigration-decision'
         }
       }, {
-        target: '/immigration-status-change',
-        condition: {
-          field: 'reason',
-          value: 'immigration-status-change'
-        }
-      }, {
+      //   target: '/immigration-status-change',
+      //   condition: {
+      //     field: 'reason',
+      //     value: 'immigration-status-change'
+      //   }
+      // }, {
         target: '/biometric-residence-permit',
         condition: {
           field: 'reason',
           value: 'biometric-residence-permit'
         }
       }, {
-        target: '/refund-type',
+        target: '/refund',
         condition: {
           field: 'reason',
           value: 'refund'
@@ -87,7 +87,7 @@ module.exports = {
           value: 'technical-issues'
         }
       }, {
-        target: '/applications-guidance',
+        target: '/application-guidance-where',
         condition: {
           field: 'immigration-application',
           value: 'guidance'
@@ -102,11 +102,54 @@ module.exports = {
       next: '/complaint-details'
     },
     '/application-technical': {
-      next: '/applicant-contact-details'
+      fields: ['where-applied-from'],
+      forks: [{
+        target: '/application-technical-inside-uk',
+        condition: {
+          field: 'where-applied-from',
+          value: 'inside-uk'
+        }
+      }, {
+        target: '/application-technical-outside-uk',
+        condition: {
+          field: 'where-applied-from',
+          value: 'outside-uk'
+        }
+      }],
+      next:'/complaint-details'
     },
-    '/applications-guidance': {
-      next: '/applicant-contact-details'
+
+    '/application-technical-inside-uk': {
+
     },
+
+    '/application-technical-outside-uk': {
+
+    },
+      
+    '/application-guidance-where': {
+      fields: ['where-applied-from'],
+      forks: [{
+        target: '/application-guidance-inside-uk',
+        condition: {
+          field: 'where-applied-from',
+          value: 'inside-uk'
+        }
+      }, {
+        target: '/application-guidance-outside-uk',
+        condition: {
+          field: 'where-applied-from',
+          value: 'outside-uk'
+        }
+      }]
+    },
+
+    '/application-guidance-inside-uk': {
+    },
+
+    '/application-guidance-outside-uk': {
+    },
+
     '/immigration-appointment': {
       fields: ['immigration-appointment'],
       forks: [{
@@ -190,6 +233,25 @@ module.exports = {
      
     },
     '/appointment-technical': {
+      fields: ['where-applied-from'],
+      forks: [{
+        target: '/appointment-technical-inside',
+        condition: {
+          field: 'where-applied-from',
+          value: 'inside-uk'
+        }
+      }, {
+        target: '/appointment-technical-outside',
+        condition: {
+          field: 'where-applied-from',
+          value: 'outside-uk'
+        }
+      }],
+    },
+    '/appointment-technical-inside': {
+      
+    },
+    '/appointment-technical-outside': {
       
     },
     '/questions-appointments': {
@@ -380,7 +442,7 @@ module.exports = {
     },
 
     '/questions-status-change': {
-      
+
       next: '/complaint-details'
     },
     '/biometric-residence-permit': {
@@ -431,10 +493,37 @@ module.exports = {
           field: 'refund-type',
           value: 'ish'
         }
+      }, {
+        target: '/refund-standard',
+        condition: {
+          field: 'refund-type',
+          value: 'standard'
+        }
+      }, {
+        target: '/refund-premium',
+        condition: {
+          field: 'refund-type',
+          value: 'premium'
+        }
+      }, {
+        target: '/refund-super-premium',
+        condition: {
+          field: 'refund-type',
+          value: 'super-premium'
+        }
       }],
       next: '/refund'
     },
     '/ihs-refund': {
+
+    },
+    '/refund-standard': {
+
+    },
+    '/refund-premium': {
+
+    },
+    '/refund-super-premium': {
 
     },
     '/refund': {
@@ -446,7 +535,7 @@ module.exports = {
           value: 'yes'
         }
       }, {
-        target: '/refund-request',
+        target: '/refund-type',
         condition: {
           field: 'refund',
           value: 'no'
@@ -516,6 +605,12 @@ module.exports = {
           field: 'which-centre',
           value: 'ssc'
         }
+      }, {
+        target: '/ukvcas',
+        condition: {
+          field: 'which-centre',
+          value: 'ukvcas'
+        }
       }]
     },
     '/vac': {
@@ -524,6 +619,10 @@ module.exports = {
     },
     '/ssc': {
       fields: ['ssc-city'],
+      next: '/application-ref-numbers'
+    },
+    '/ukvcas': {
+      fields: ['ukvcas-city'],
       next: '/application-ref-numbers'
     },
     '/on-phone': {
@@ -562,6 +661,10 @@ module.exports = {
     '/other-complaint': {
       fields: ['other-complaint'],
       next: '/complaint-details'
+    },
+    '/when-applied': {
+      fields: ['when-applied'],
+      next: '/application-ref-numbers'
     },
     '/complaint-details': {
       fields: ['complaint-details'],

@@ -9,7 +9,7 @@ module.exports = {
   		'application-delay',
   		'return-of-documents',
   		'immigration-decision',
-  		'immigration-status-change',
+  		// 'immigration-status-change',
   		'biometric-residence-permit',
   		'refund',
   		'staff-behaviour',
@@ -258,7 +258,8 @@ module.exports = {
     className: ['form-group'],
     options: [
       'vac',
-      'ssc'
+      'ssc',
+      'ukvcas'
     ]
   },
 
@@ -279,6 +280,15 @@ module.exports = {
   },
 
   "ssc-city": {
+    mixin: 'input-text',
+    validate: 'required',
+    legend: {
+      className: 'visuallyhidden'
+    },
+    className: ['form-group'],
+  },
+
+  "ukvcas-city": {
     mixin: 'input-text',
     validate: 'required',
     legend: {

@@ -12,11 +12,25 @@
     "header": "If there were technical issues with the website",
     "p1": ""
   },
-  "applications-guidance": {
+  "application-technical-inside-uk": {
+    "header": "If there were technical issues with the website",
+    "p1": ""
+  },
+  "application-technical-outside-uk": {
+    "header": "If there were technical issues with the website",
+    "p1": ""
+  },
+  "application-guidance-where": {
+    "header": "Where did you make your application?"
+  },
+  "application-guidance-inside-uk": {
+    "header": "The immigration rules or guidance were unclear"
+  },
+  "application-guidance-outside-uk": {
     "header": "The immigration rules or guidance were unclear"
   },
   "lack-availability": {
-    "header": "Where did you apply?"
+    "header": "Where did you make your application?"
   },
   "lack-availability-inside": {
     "header": "If there was a lack of availability of appointments inside UK"
@@ -25,7 +39,7 @@
     "header": "If there was a lack of availability of appointments outside UK"
   },
   "change-appointment": {
-    "header": "Where did you apply?"
+    "header": "Where did you make your application?"
   },
   "change-appointment-inside": {
     "header": "If you want to change your appointment"
@@ -37,7 +51,13 @@
     "header": "What is the issue with your immigration appointment?"
   },
   "appointment-technical": {
-    "header": "If you want to report a techincal issue with booking an appointment."
+    "header": "Where did you make your application?"
+  },
+  "appointment-technical-inside": {
+    "header": "If there were technical issues with the website"
+  },
+  "appointment-technical-outside": {
+    "header": "If there were technical issues with the website"
   },
   "questions-appointments": {
     "header": "If you have questions about your appointment."
@@ -49,10 +69,10 @@
     "header": "Where did you make your application?"
   },
   "upgrade-inside-uk": {
-    "header": "If you want to upgrade an application from inside the UK"
+    "header": "If your application has been delayed"
   },
   "upgrade-outside-uk": {
-    "header": "If you want to upgrade an application from outside the UK"
+    "header": "If your application has been delayed"
   },
   "application-ref-numbers": {
     "header": "Do you have the GWF, HO or IHS reference number(s)?"
@@ -125,6 +145,15 @@
   "ihs-refund": {
     "header": "If you were requesting a IHS refund"
   },
+  "refund-standard": {
+    "header": "If you want to request a standard service refund"
+  },
+  "refund-premium": {
+    "header": "If you want to request a priority service refund"
+  },
+  "refund-super-premium": {
+    "header": "If you want to request a super priority service refund"
+  },
   "refund-request": {
     "header": "Request your refund"
   },
@@ -149,6 +178,9 @@
   "ssc": {
     "header": "In which UK city is the premium service centre?"
   },
+  "ukvcas": {
+    "header": "In which UK city is the UK Visa and Citizenship Application Service point?"
+  },
   "on-phone": {
     "header": "What telephone number was called?"
   },
@@ -166,6 +198,9 @@
   },
   "other-complaint": {
     "header": "What is the issue with your immigration application?"
+  },
+  "when-applied": {
+    "header": "When did you submit your application?"
   },
   "complaint-details": {
     "header": "Complaint details"

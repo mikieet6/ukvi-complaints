@@ -90,7 +90,7 @@
 		"legend": " ",
     "options": {
 			"request-upgrade": {
-				"label": "Request upgrade to Premium service to fast track your Visa application"
+				"label": "Request upgrade to Piority service to fast track your Visa application"
 			},
 			"application-ref-numbers": {
 				"label": "Complain that your visa application took longer than it should to be processed"
@@ -229,16 +229,16 @@
 		"legend": " ",
     "options": {
 			"ish": {
-				"label": "ISH"
+				"label": "Immigration Health Surcharge (IHS)"
 			},
 			"standard": {
 				"label": "Standard service"
 			},
 			"premium": {
-				"label": "Premium"
+				"label": "Priority service"
 			},
 			"super-premium": {
-				"label": "Super premium"
+				"label": "Super priority service"
 			}
 		}
 	},
@@ -289,7 +289,10 @@
 				"label": "At a Visa Application Centre (VAC)"
 			},
 			"ssc": {
-				"label": "At a Service Support Centre"
+				"label": "At a Service Support Centre (previously called a Premium Service Centre?)"
+			},
+			"ukvcas": {
+				"label": "At a UK Visa and Citizenship Application Service (UKVCAS) service point"
 			}
 		}
 	},
@@ -303,6 +306,10 @@
 	},
 
 	"ssc-city": {
+		"label": "City"
+	},
+
+	"ukvcas-city": {
 		"label": "City"
 	},
 
@@ -332,6 +339,11 @@
 				"label": "No"
 			}
 		}
+	},
+
+	"when-applied": {
+		"label": " ",
+		"hint": "If you can't remember the exact date, just povide the month."
 	},
 
 	"complaint-details":{
