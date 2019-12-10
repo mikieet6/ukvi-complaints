@@ -60,7 +60,13 @@
     "header": "If there were technical issues with the website"
   },
   "questions-appointments": {
-    "header": "If you have questions about your appointment."
+    "header": "If you have questions about your appointment"
+  },
+  "questions-appointments-inside": {
+    "header": "If you have questions about your appointment"
+  },
+  "questions-appointments-outside": {
+    "header": "If you have questions about your appointment"
   },
   "application-delay": {
     "header": "If there is a delay with your visa application please select one of the options below"
@@ -75,7 +81,7 @@
     "header": "If your application has been delayed"
   },
   "application-ref-numbers": {
-    "header": "Do you have the GWF, HO or IHS reference number(s)?"
+    "header": "Do you have the GWF, HO, IHS or UAN reference number(s)?"
   },
   "reference-numbers": {
     "header": "Which reference numbers do you have? Select all that apply"
@@ -98,10 +104,10 @@
     "header": "How did you request the return of your documents?"
   },
   "report-lost-docs-service": {
-    "header": "I've you've requested the return of your documents"
+    "header": "If you've requested the return of your documents"
   },
   "request-docs-service": {
-    "header": "If you've not yet requested the return of your documents"
+    "header": "If you've not yet requested the return of your documents via the online service"
   },
   "havent-requested": {
     "header": "Use this service to request the return of your documents"
@@ -112,11 +118,17 @@
   "decision-outcome": {
     "header": "What was the outcome of the decision?"
   },
-  "positive-outcome": {
-    "header": "If you received a positive outcome"
+  "positive-outcome-where": {
+    "header": "Where did you make your application?"
+  },
+  "positive-outcome-inside": {
+    "header": "If you received a positive decision"
+  },
+  "positive-outcome-outside": {
+    "header": "If you received a positive decision"
   },
   "negative-outcome": {
-    "header": "If you received a negative outcome"
+    "header": "If you received a negative decision"
   },
   "immigration-status-change": {
     "header": "What is the issue with your immigration status change?"
@@ -202,20 +214,41 @@
   "when-applied": {
     "header": "When did you submit your application?"
   },
+  "complaint-reference-number":{
+    "header": "Enter the reference number of your complaint"
+  },
+  "complaint-reason-previous":{
+    "header": "Select the reason for your existing complaint"
+  },
   "complaint-details": {
     "header": "Complaint details"
   },
   "acting-as-agent": {
     "header": "Are you completing this form on behalf of the applicant?"
   },
+  "agent-name": {
+    "header": "About you"
+  },
   "agent-contact-details": {
     "header": "How should we contact you about the complaint?"
   },
-  "agent-representative-details": {
-    "header": "What are the applicants details?"
+  "agent-representative-name": {
+    "header": "The applicants full name"
   },
-  "applicant-details": {
-    "header": "What are your details?"
+  "agent-representative-dob": {
+    "header": "The applicants date of birth"
+  },
+  "agent-representative-nationality": {
+    "header": "The applicants nationality"
+  },
+  "applicant-name": {
+    "header": "Your name"
+  },
+  "applicant-dob": {
+    "header": "Your date of birth"
+  },
+  "applicant-nationality": {
+    "header": "Your nationality"
   },
   "applicant-contact-details": {
     "header": "How should we contact you about your complaint?"

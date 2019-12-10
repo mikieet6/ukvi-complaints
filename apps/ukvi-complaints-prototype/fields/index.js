@@ -335,6 +335,23 @@ module.exports = {
     ]
   },
 
+  "complaint-reason-previous": {
+    mixin: 'radio-group',
+    options: [
+      'immigration-application',
+      'immigration-appointment',
+      'application-delay',
+      'return-of-documents',
+      'immigration-decision',
+      'biometric-residence-permit',
+      'refund',
+      'staff-behaviour',
+      'other-complaint'
+    ],
+    validate: 'required'
+  },
+
+
   "other-complaint": {
   	mixin: 'radio-group',
   	validate: 'required',
@@ -366,7 +383,19 @@ module.exports = {
       value: 'ihs',
       toggle: 'ihs-reference',
       child: 'input-text'
+    }, {
+      value: 'uan',
+      toggle: 'uan-reference',
+      child: 'input-text'
     }]
+  },
+  'when-applied': {
+   mixin: 'input-text',
+    validate: 'required',
+    legend: {
+      className: 'visuallyhidden'
+    },
+    className: ['']
   },
   'gwf-reference': {
     dependent: {
@@ -389,6 +418,17 @@ module.exports = {
     },
     validate: 'required'
   },
+  'uan-reference': {
+    dependent: {
+      field: 'reference-numbers',
+      value: 'uan'
+    },
+    validate: 'required'
+  },
+
+  'complaint-reference-number': {
+    mixin: 'input-text'
+  },
 
   'complaint-details': {
     mixin: 'textarea',
@@ -409,8 +449,18 @@ module.exports = {
     },
     className: ['form-group'],
     options: [
-      'yes',
+      'yes', 
       'no'
+    ]
+  },
+
+  "who-representing": {
+    mixin: "radio-group",
+    options: [
+      "legal-rep",
+      "relative",
+      "sponsor",
+      "support-org"
     ]
   },
 
@@ -434,7 +484,6 @@ module.exports = {
 
   "agent-phone": {
   	mixin: 'input-text',
-  	validate: 'required',
   	legend: {
       className: 'visuallyhidden'
     },
@@ -450,6 +499,24 @@ module.exports = {
     className: ['']
   },
 
+  'dob': {},
+  'dob-day': {
+    mixin:'input-text-compound',
+    validate: ['required', 'numeric'],
+    includeInEmail: false,
+    includeInSummary: false
+  },
+  'dob-month': {
+    validate: ['required', 'numeric'],
+    includeInEmail: false,
+    includeInSummary: false
+  },
+  'dob-year': {
+    validate: ['required', 'numeric'],
+    includeInEmail: false,
+    includeInSummary: false
+  },
+
   "applicant-email": {
   	mixin: 'input-text',
   	validate: 'required',
@@ -459,9 +526,14 @@ module.exports = {
     className: ['']
   },
 
+  "agent-representative-nationality":{
+    mixin: 'select',
+    options: require('hof-util-countries')(),
+    validate: 'required'
+  },
+
   "applicant-phone": {
   	mixin: 'input-text',
-  	validate: 'required',
   	legend: {
       className: 'visuallyhidden'
     },

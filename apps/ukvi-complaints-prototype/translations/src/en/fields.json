@@ -120,7 +120,10 @@
 				"label": "HO number"
 			},
 			"ihs": {
-				"label": "IHS number"
+				"label": "Immigration Healthcare Surcharge (IHS) number"
+			},
+			"uan": {
+				"label": "Unique Application Number (UAN)"
 			}
 		}
 	},
@@ -133,6 +136,9 @@
 	},
 	"ihs-reference":{
 		"label": "Enter your IHS number"
+	},
+	"uan-reference":{
+		"label": "Enter your UAN number"
 	},
 
 	"return-of-documents": {
@@ -330,7 +336,7 @@
 	},
 
 	"existing-complaint": {
-		"legend": " ",
+		"hint": "A senior member of staff will carry out an independent review of your complaint. They will provide you with further details within 20 working days of the date when you ask for a review. If you’re still not satisfied at this stage, you may be able to raise the matter with the Parliamentary and Health Service Ombudsman who may be able to help you.",
     "options": {
 			"yes": {
 				"label": "Yes"
@@ -341,16 +347,61 @@
 		}
 	},
 
+	"complaint-reason-previous": {
+  	"legend": " ",
+    "options": {
+			"immigration-application": {
+				"label": "Immigration application",
+				"value": "Immigration application"
+			},
+			"immigration-appointment": {
+				"label": "Immigration appointment"
+			},
+			"application-delay": {
+				"label": "Application delay"
+			},
+			"return-of-documents": {
+				"label": "Return of documents"
+			},
+			"immigration-decision": {
+				"label": "Immigration decision"
+			},
+			"immigration-status-change": {
+				"label": "Immigration status change"
+			},
+			"biometric-residence-permit": {
+				"label": "Biometric residence permit"
+			},
+			"refund": {
+				"label": "Refund"
+			},
+			"staff-behaviour": {
+				"label": "Staff behaviour"
+			},
+			"existing-complaint": {
+				"label": "An existing complaint"
+			},
+			"other-complaint": {
+				"label": "Something else"
+		  }
+		}
+	},
+
+	"complaint-reference-number": {
+		"label": " ",
+		"hint": "For example, 123456"
+	},
+	
 	"when-applied": {
 		"label": " ",
 		"hint": "If you can't remember the exact date, just povide the month."
 	},
 
 	"complaint-details":{
-    "hint": "Be brief but include all important details",
-    "label": "Provide details of the complaint",
-    "summary": "Details of the complaint"
-  },
+	    "hint": "Be brief but include all important details",
+	    "label": "Provide details of the complaint",
+	    "summary": "Details of the complaint"
+	  },
 
 	"other-complaint": {
 		"legend": " ",
@@ -365,7 +416,7 @@
 	},
 
 	"acting-as-agent": {
-		"legend": " ",
+		"hint": "Friends, relatives, employers, lawyers and charity workers, for example, can make a complaint on behalf of the applicant. To make a complaint on behalf of someone else you must have their explicit consent, or have agreed consent from the Home Office, to handle their information. ",
     "options": {
 			"yes": {
 				"label": "Yes"
@@ -376,34 +427,69 @@
 		}
 	},
 
+	"who-representing": {
+		"label": "What type of support do you provide the applicant?",
+		"legend": " ",
+		"options": {
+			"legal-rep":{
+				"label": "Legal representative"
+			},
+			"relative":{
+				"label": "Relative or friend"
+			},
+			"sponsor":{
+				"label": "Sponsor"
+			},
+			"support-org":{
+				"label": "Support organisation"
+			}
+
+		}
+	},
+
 	"agent-name": {
 		"legend": "",
-    "label": "Full name" 
+    "label": "Your full name" 
 	},
 
 	"agent-email": {
 		"legend": "",
-    "label": "Email address" 
+    "label": "Your email address" 
 	},
 
 	"agent-phone": {
 		"legend": "",
-    "label": "Phone number" 
+    "label": "Your phone number (Optional)" 
 	},
 
-	"representative-name": {
+	"agent-representative-name": {
 		"legend": "",
-    "label": "Full name" 
+    "label": "The applicants full name" 
 	},
 
-	"representative-dob": {
-		"legend": "",
-    "label": "Date of birth" 
-	},
+	"dob": {
+	    "legend": {
+	      "applicant": {
+	        "true": "What's your date of birth?"
+	      },
+	      "default": "What's the applicant's date of birth?"
+	    },
+	    "hint": "For example, 31 3 1980",
+	    "summary": "Date of birth"
+	  },
+	  "dob-day": {
+	    "label": "Day"
+	  },
+	  "dob-month": {
+	    "label": "Month"
+	  },
+	  "dob-year": {
+	    "label": "Year"
+	  },
 
-	"representative-nationality": {
+	"agent-representative-nationality": {
 		"legend": "",
-    "label": "Nationality" 
+    "label": "The applicants nationality" 
 	},
 
 	"applicant-name": {
@@ -428,7 +514,7 @@
 
 	"applicant-phone": {
 		"legend": "",
-    "label": "Phone number" 
+    "label": "Phone number (optional)" 
 	}
 }
 

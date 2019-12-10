@@ -1,4 +1,4 @@
-##Apply for an administrative review
+##Check if you can apply for an administrative review
 
 Check your decision letter. It will tell you whether you can apply for an administrative review.
 

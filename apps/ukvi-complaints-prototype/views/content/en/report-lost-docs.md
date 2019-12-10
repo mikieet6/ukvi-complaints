@@ -1,4 +1,4 @@
-##You should report that your documents have been lost
+##You should report that you have not yet received your documents.
 
 Use this service to report that you haven't received your requested documents back.
 

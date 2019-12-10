@@ -1,5 +1,7 @@
 'use strict';
 
+const conditionalContent = require('./behaviours/conditional-content')
+
 module.exports = {
   name: 'ukvi-complaints-prototype',
   baseUrl: '/',
@@ -35,7 +37,7 @@ module.exports = {
           value: 'return-of-documents'
         }
       }, {
-        target: '/immigration-decision',
+        target: '/decision-outcome',
         condition: {
           field: 'reason',
           value: 'immigration-decision'
@@ -255,6 +257,25 @@ module.exports = {
       
     },
     '/questions-appointments': {
+       fields: ['where-applied-from'],
+      forks: [{
+        target: '/questions-appointments-inside',
+        condition: {
+          field: 'where-applied-from',
+          value: 'inside-uk'
+        }
+      }, {
+        target: '/questions-appointments-outside',
+        condition: {
+          field: 'where-applied-from',
+          value: 'outside-uk'
+        }
+      }]
+    },
+    '/questions-appointments-outside': {
+      
+    },
+    '/questions-appointments-inside': {
       
     },
     '/application-delay': {
@@ -400,7 +421,7 @@ module.exports = {
     '/decision-outcome': {
       fields: ['decision-outcome'],
       forks: [{
-        target: '/positive-outcome',
+        target: '/positive-outcome-where',
         condition: {
           field: 'decision-outcome',
           value: 'positive'
@@ -415,7 +436,28 @@ module.exports = {
       next: '/complaint-details'
     },
 
-    '/positive-outcome': {
+    '/positive-outcome-where': {
+      fields: ['where-applied-from'],
+      forks: [{
+        target: '/positive-outcome-inside',
+        condition: {
+          field: 'where-applied-from',
+          value: 'inside-uk'
+        }
+      }, {
+        target: '/positive-outcome-outside',
+        condition: {
+          field: 'where-applied-from',
+          value: 'outside-uk'
+        }
+      }],
+      next:'/complaint-details'
+    },
+
+    '/positive-outcome-inside': {
+      next: '/complaint-details'
+    },
+    '/positive-outcome-outside': {
       next: '/complaint-details'
     },
 
@@ -644,7 +686,7 @@ module.exports = {
     '/existing-complaint': {
       fields: ['existing-complaint'],
       forks: [{
-        target: '/complint-reference-number',
+        target: '/complaint-reference-number',
         condition: {
           field: 'existing-complaint',
           value: 'yes'
@@ -658,6 +700,14 @@ module.exports = {
       }],
       next: '/complaint-details'
     },
+    '/complaint-reference-number': {
+      fields: ['complaint-reference-number'],
+      next: '/complaint-details'
+    },
+    '/complaint-reason-previous': {
+      fields: ['complaint-reason-previous'],
+      next: '/complaint-details'
+    },
     '/other-complaint': {
       fields: ['other-complaint'],
       next: '/complaint-details'
@@ -667,6 +717,7 @@ module.exports = {
       next: '/application-ref-numbers'
     },
     '/complaint-details': {
+      behaviours: [conditionalContent],
       fields: ['complaint-details'],
       next: '/acting-as-agent'
     },
@@ -674,29 +725,67 @@ module.exports = {
       fields: ['acting-as-agent'],
       next: '/complaint-details',
       forks: [{
-        target: '/agent-contact-details',
+        target: '/who-representing',
         condition: {
           field: 'acting-as-agent',
           value: 'yes'
         }
       }, {
-        target: '/applicant-details',
+        target: '/applicant-name',
         condition: {
           field: 'acting-as-agent',
           value: 'no'
         }
       }]
     },
+
+    '/who-representing': {
+      fields: ['who-representing'],
+      next: '/agent-name'
+    },
+    '/agent-name': {
+      fields: ['agent-name'],
+      next: '/agent-contact-details'
+    },
     '/agent-contact-details': {
-      fields: ['agent-name','agent-email','agent-phone'],
-      next: '/agent-representative-details'
+      fields: ['agent-email','agent-phone'],
+      next: '/agent-representative-name'
     },
-    '/agent-representative-details': {
-      fields: ['representative-name','representative-dob','representative-nationality'],
-      next: '/complaint-details'
+    '/agent-representative-name': {
+      fields: ['agent-representative-name'],
+      next: '/agent-representative-dob'
     },
-    '/applicant-details': {
-      fields: ['applicant-name','applicant-dob','applicant-nationality'],
+    '/agent-representative-dob': {
+      dateKey: 'dob',
+      fields: [
+        'dob',
+        'dob-day',
+        'dob-month',
+        'dob-year'
+      ],
+      next: '/agent-representative-nationality'
+    },
+    '/agent-representative-nationality': {
+      fields: ['agent-representative-nationality'],
+      next: '/confirm'
+    },
+    '/applicant-name': {
+      fields: ['applicant-name'],
+      next: '/applicant-dob'
+    },
+    '/applicant-dob': {
+      dateKey: 'dob',
+      fields: [
+        'dob',
+        'dob-day',
+        'dob-month',
+        'dob-year'
+      ],
+      next: '/applicant-nationality'
+    },
+    '/applicant-nationality': {
+      dateKey: 'dob',
+      fields: ['applicant-nationality'],
       next: '/applicant-contact-details'
     },
     '/applicant-contact-details': {
