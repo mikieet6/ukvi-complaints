@@ -1,5 +1,6 @@
 {
   "reason": {
+  	"label": "The reason for the complaint",
   	"legend": " ",
     "options": {
 			"immigration-application": {
@@ -352,7 +353,7 @@
     "options": {
 			"immigration-application": {
 				"label": "Immigration application",
-				"value": "Immigration application"
+				"valuex": "Immigration application"
 			},
 			"immigration-appointment": {
 				"label": "Immigration appointment"
@@ -416,6 +417,7 @@
 	},
 
 	"acting-as-agent": {
+		"label": "Are you completing this form on behalf of the applicant?",
 		"hint": "Friends, relatives, employers, lawyers and charity workers, for example, can make a complaint on behalf of the applicant. To make a complaint on behalf of someone else you must have their explicit consent, or have agreed consent from the Home Office, to handle their information. ",
     "options": {
 			"yes": {

@@ -434,11 +434,12 @@ module.exports = {
     mixin: 'textarea',
     attributes: [{
       attribute: 'rows',
-      value: 5
+      value: 7
     }],
     validate: 'required',
     'ignore-defaults': true,
-    formatter: ['trim', 'hyphens']
+    formatter: ['trim', 'hyphens'],
+    className: ['form-control-3-4'],
   },
 
   "acting-as-agent": {
@@ -524,6 +525,13 @@ module.exports = {
       className: 'visuallyhidden'
     },
     className: ['']
+  },
+
+  "applicant-nationality":{
+    mixin: 'select',
+    options: require('hof-util-countries')(),
+    validate: 'required',
+    className: ['typeahead']
   },
 
   "agent-representative-nationality":{

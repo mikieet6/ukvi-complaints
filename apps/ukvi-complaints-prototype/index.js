@@ -717,7 +717,7 @@ module.exports = {
       next: '/application-ref-numbers'
     },
     '/complaint-details': {
-      behaviours: [conditionalContent],
+      behaviours: [ conditionalContent ],
       fields: ['complaint-details'],
       next: '/acting-as-agent'
     },
@@ -794,7 +794,22 @@ module.exports = {
     },
     '/confirm': {
       behaviours: ['complete', require('hof-behaviour-summary-page')],
-      next: '/complete'
+      next: '/complete',
+      sections: {
+        'complaint-details': [
+          'reason',
+          'complaint-details'
+        ],
+        'applicant-details': [
+          'applicant-name',
+          'applicant-nationality'
+        ],
+        'applicant-dob': [
+          'dob-day',
+          'dob-month',
+          'dob-year',
+        ]
+      }
     },
     '/complete': {
       template: 'confirmation'

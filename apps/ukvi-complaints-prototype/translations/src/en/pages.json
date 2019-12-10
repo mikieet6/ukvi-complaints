@@ -256,8 +256,11 @@
   "confirm": {
     "header": "Check the details you have provided"
   },
-  "complete": {
-    "header": "Your complaint has been submitted"
+  "conmplaint-details": {
+    "header": "Complaint details"
+  },
+  "applicant-details": {
+    "header": "Applicant details"
   }
 }
 

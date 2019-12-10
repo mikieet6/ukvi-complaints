@@ -1,18 +1,18 @@
 {{<partials-page}}
   {{$page-content}}
+	   
   	{{#isBehaviourIssue}}
-	  	<p>If you're complaining about the quality of information provided, tell us where the information is - and include a link if it's on a website.</p>
-
-		<p>If you're complaining about staff behaviour, tell us the names if known.</p>
+  		If you are complaining about staff behaviour, do not tell us the names on this form. We will collect these details at a later date if required. 
   	{{/isBehaviourIssue}}
   	{{#isRefundIssue}}
-  		<p>Refund</p>
+  		<p>Please do not provide your payment details in this form. We will collect this details at a later date if required. </p>
   	{{/isRefundIssue}}
-
-	{{#fields}}
+  	{{#isApplicationIssue}}
+  		<p>Tell us what the unclear information is and include links if it is on a website.</p>
+  	{{/isApplicationIssue}}
+	 {{#fields}}
       {{#renderField}}{{/renderField}}
     {{/fields}}
-
     {{#input-submit}}continue{{/input-submit}}
   {{/page-content}}
 {{/partials-page}}
