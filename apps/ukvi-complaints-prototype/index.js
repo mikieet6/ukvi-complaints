@@ -774,13 +774,7 @@ module.exports = {
       next: '/applicant-dob'
     },
     '/applicant-dob': {
-      dateKey: 'dob',
-      fields: [
-        'dob',
-        'dob-day',
-        'dob-month',
-        'dob-year'
-      ],
+      fields: ['applicant-dob'],
       next: '/applicant-nationality'
     },
     '/applicant-nationality': {
@@ -802,12 +796,8 @@ module.exports = {
         ],
         'applicant-details': [
           'applicant-name',
-          'applicant-nationality'
-        ],
-        'applicant-dob': [
-          'dob-day',
-          'dob-month',
-          'dob-year',
+          'applicant-nationality',
+          'applicant-dob'
         ]
       }
     },

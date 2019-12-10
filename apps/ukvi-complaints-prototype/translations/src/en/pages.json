@@ -149,7 +149,7 @@
     "header": "If the details on your card are incorrect"
   },
   "refund-type": {
-    "header": "What service is your refund for?"
+    "header": "Which type of refund do you want to request?"
   },
   "refund": {
     "header": "Have you already requested a refund?"

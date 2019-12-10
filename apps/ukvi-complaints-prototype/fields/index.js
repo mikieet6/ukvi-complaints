@@ -1,5 +1,7 @@
 'use strict';
 
+const dateComponent = require('hof-component-date');
+
 module.exports = {
   reason: {
   	mixin: 'radio-group',
@@ -434,7 +436,7 @@ module.exports = {
     mixin: 'textarea',
     attributes: [{
       attribute: 'rows',
-      value: 7
+      value: 12
     }],
     validate: 'required',
     'ignore-defaults': true,
@@ -499,6 +501,10 @@ module.exports = {
     },
     className: ['']
   },
+
+  'applicant-dob': dateComponent('applicant-dob', {
+    labelClassName: 'visuallyhidden',
+  }),
 
   'dob': {},
   'dob-day': {
