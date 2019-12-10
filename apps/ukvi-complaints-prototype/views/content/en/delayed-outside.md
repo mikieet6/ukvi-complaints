@@ -1,19 +1,12 @@
 ##Check the UK visas processing times
-If you're not sure when your application has been processed you can check with our processing times tool.
-[Check the UK visas processing times](https://www.gov.uk/visa-processing-times)
-
 You can check the UKVI Service standards to [see when you can expect your decision by](https://www.gov.uk/government/organisations/uk-visas-and-immigration/about-our-services)
 
 ###If you've applied from the EU or Africa
 
-You might be able to get help from your visa provider TLS
-
-[Check your applications status with TLS](#)
+You can log in to your account on GOV.UK to track the status of your application. To do this, please click on the link provided to you in the visa payment confirmation email.
 
 ###If you've applied from the rest of the world
 
-You can check with your visa provider VFS
-
-[Check your applications status with VFS](#)
+You can log in to your account on GOV.UK to track the status of your application.
 
 
