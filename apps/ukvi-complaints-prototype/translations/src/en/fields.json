@@ -49,7 +49,7 @@
 				"label": "The immigration rules or guidance were unclear"
 			},
 			"complain": {
-				"label": "I want to compalin about the immigration application service"
+				"label": "I want to Complain about the immigration application service"
 			}
 		}
 	},
@@ -395,7 +395,7 @@
 	
 	"when-applied": {
 		"label": " ",
-		"hint": "If you can't remember the exact date, just povide the month."
+		"hint": "If you can't remember the exact date, just provide the month."
 	},
 
 	"complaint-details":{

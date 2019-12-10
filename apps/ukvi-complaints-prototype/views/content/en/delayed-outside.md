@@ -2,6 +2,7 @@
 If you're not sure when your application has been processed you can check with our processing times tool.
 [Check the UK visas processing times](https://www.gov.uk/visa-processing-times)
 
+You can check the UKVI Service standards to [see when you can expect your decision by](https://www.gov.uk/government/organisations/uk-visas-and-immigration/about-our-services)
 
 ###If you've applied from the EU or Africa
 

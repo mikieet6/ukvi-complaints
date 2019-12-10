@@ -4,5 +4,5 @@ If there were technical issues with your and you would like them to be resolved 
 
 
 ##Make a complaint about UK Visas and Immigration 
-If you want to submit a complaint about the technical issues you've experienced you can submit a complaint. This will take up to 20 days to get a response.
+This will take up to 20 days to get a response.
 [Submit a compliant about UK Visas and immigration](https://www.gov.uk/contact-ukvi-inside-outside-uk)
