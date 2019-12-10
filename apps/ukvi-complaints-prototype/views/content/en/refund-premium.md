@@ -1,10 +1,17 @@
-You can contact your visa provider about getting a refund.
+##If you applied from inside the UK
+You can phone or email to get some assistance with your issue. 
 
-###If you've applied from the EU or Africa
+Emails can take up to 2 days to get a response.
 
-You can [request a refund from TLS](#), or [view TLS's refund policy](#)
+[Contact UK Visas and immigration](https://www.gov.uk/contact-ukvi-inside-outside-uk)
 
-###If you've applied from the rest of the world
 
-You can [request a refund from VFS](https://www.vfsglobal.co.uk/au/en/request-a-refund), or [view VFS's refund policy](https://www.vfsglobal.co.uk/au/en/terms-and-conditions#4)
+##If you applied from EU and Africa
+Contact TLS provider https://pos.tlscontact.com/msq_en/refund
+
+##If you applied from elsewhere in the world: 
+[Request a refund from VFS Global provider](https://www.vfsglobal.co.uk/au/en/request-a-refund)
+
+[Refund policy for premium service](https://www.vfsglobal.co.uk/au/en/terms-and-conditions#4)
+
 

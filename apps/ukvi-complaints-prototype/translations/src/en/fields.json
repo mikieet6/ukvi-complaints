@@ -235,17 +235,20 @@
 	"refund-type": {
 		"legend": " ",
     "options": {
-			"ish": {
+			"ihs": {
 				"label": "Immigration Health Surcharge (IHS)"
 			},
 			"standard": {
 				"label": "Standard service"
 			},
-			"premium": {
+			"priority": {
 				"label": "Priority service"
 			},
-			"super-premium": {
+			"super-priority": {
 				"label": "Super priority service"
+			},
+			"premium": {
+				"label": "Priority service"
 			}
 		}
 	},

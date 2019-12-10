@@ -530,10 +530,10 @@ module.exports = {
     '/refund-type': {
       fields: ['refund-type'],
       forks: [{
-        target: '/ihs-refund',
+        target: '/refund-ihs',
         condition: {
           field: 'refund-type',
-          value: 'ish'
+          value: 'ihs'
         }
       }, {
         target: '/refund-standard',
@@ -542,30 +542,39 @@ module.exports = {
           value: 'standard'
         }
       }, {
+        target: '/refund-priority',
+        condition: {
+          field: 'refund-type',
+          value: 'priority'
+        }
+      }, {
+        target: '/refund-super-priority',
+        condition: {
+          field: 'refund-type',
+          value: 'super-priority'
+        }
+      }, {
         target: '/refund-premium',
         condition: {
           field: 'refund-type',
           value: 'premium'
         }
-      }, {
-        target: '/refund-super-premium',
-        condition: {
-          field: 'refund-type',
-          value: 'super-premium'
-        }
       }],
       next: '/refund'
     },
-    '/ihs-refund': {
+    '/refund-ihs': {
 
     },
     '/refund-standard': {
 
     },
-    '/refund-premium': {
+    '/refund-priority': {
 
     },
-    '/refund-super-premium': {
+    '/refund-super-priority': {
+
+    },
+    '/refund-premium': {
 
     },
     '/refund': {

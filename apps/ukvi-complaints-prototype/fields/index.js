@@ -205,10 +205,11 @@ module.exports = {
     },
     className: ['form-group'],
     options: [
-      'ish',
+      'ihs',
       'standard',
-      'premium',
-      'super-premium'
+      'priority',
+      'super-priority',
+      'premium'
     ]
   },
 
