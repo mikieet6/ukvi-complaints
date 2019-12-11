@@ -179,7 +179,7 @@
     "header": "If your request was less than three months ago"
   },
   "refund-more-than": {
-    "header": "If your request was less than three months ago"
+    "header": "If your request was more than three months ago"
   },
   "staff-behaviour": {
     "header": "Where did the incident take place?"
