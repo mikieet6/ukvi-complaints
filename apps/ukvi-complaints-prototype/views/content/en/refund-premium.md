@@ -7,7 +7,7 @@ Emails can take up to 2 days to get a response.
 
 
 ##If you applied from EU and Africa
-Contact TLS provider https://pos.tlscontact.com/msq_en/refund
+[Contact TLS provider](https://pos.tlscontact.com/msq_en/refund)
 
 ##If you applied from elsewhere in the world: 
 [Request a refund from VFS Global provider](https://www.vfsglobal.co.uk/au/en/request-a-refund)
