@@ -8,10 +8,8 @@ module.exports = {
   	options: [
   		'immigration-application',
   		'immigration-appointment',
-  		'application-delay',
-  		'return-of-documents',
+  		'delays',
   		'immigration-decision',
-  		// 'immigration-status-change',
   		'biometric-residence-permit',
   		'refund',
   		'staff-behaviour',
@@ -64,7 +62,7 @@ module.exports = {
     ]
   },
 
-  "application-delay": {
+  "delay-type": {
   	mixin: 'radio-group',
   	validate: 'required',
   	legend: {
@@ -72,8 +70,34 @@ module.exports = {
     },
     className: ['form-group'],
     options: [
+      'application-delay',
+      'return-of-documents'
+    ]
+  },
+
+  "application-delay": {
+    mixin: 'radio-group',
+    validate: 'required',
+    legend: {
+      className: 'visuallyhidden'
+    },
+    className: ['form-group'],
+    options: [
       'request-upgrade',
       'application-ref-numbers'
+    ]
+  },
+  
+  "delays": {
+    mixin: 'radio-group',
+    validate: 'required',
+    legend: {
+      className: 'visuallyhidden'
+    },
+    className: ['form-group'],
+    options: [
+      'delay-decision',
+      'delay-docs'
     ]
   },
 
@@ -222,7 +246,8 @@ module.exports = {
     className: ['form-group'],
     options: [
       'yes',
-      'no'
+      'no',
+      'not-yet  '
     ]
   },
   "refund-when": {
@@ -369,7 +394,7 @@ module.exports = {
     ]
   },
   'reference-numbers': {
-    mixin: 'checkbox-group',
+    mixin: 'radio-group',
     legend: {
       className: 'visuallyhidden'
     },
@@ -390,6 +415,8 @@ module.exports = {
       value: 'uan',
       toggle: 'uan-reference',
       child: 'input-text'
+    }, {
+      value: 'none',
     }]
   },
   'when-applied': {
@@ -544,7 +571,8 @@ module.exports = {
   "agent-representative-nationality":{
     mixin: 'select',
     options: require('hof-util-countries')(),
-    validate: 'required'
+    validate: 'required',
+    className: ['typeahead', 'js-hidden']
   },
 
   "applicant-phone": {

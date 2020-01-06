@@ -1,6 +1,6 @@
-##To get clarification about your entitlements
+##Check what your visa entitles you to
 
-If you want clarification on your Visa entitlements you can contact UKVI on phone or email.
+You can check what your visa entitles you to by contacting UKVI on phone or email.
 
 Emails can take up to 2 days to get a response.
 

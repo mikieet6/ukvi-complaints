@@ -3,40 +3,40 @@
     "header": "Complain about the UK Visas and Immigration service"
   },
   "reason": {
-    "header": "What is the main reason for your complaint?"
+    "header": "What is the complaint about?"
   },
   "immigration-application": {
-    "header": "What is the issue with your immigration application?"
+    "header": "What was the problem with the application process?"
   },
   "application-technical": {
     "header": "Where did you make your application?",
     "p1": ""
   },
   "application-technical-inside-uk": {
-    "header": "If there were technical issues with the website",
+    "header": "If there were technical issues with the website or payments",
     "p1": ""
   },
   "application-technical-outside-uk": {
-    "header": "If there were technical issues with the website",
+    "header": "If there were technical issues with the website or payments",
     "p1": ""
   },
   "application-guidance-where": {
     "header": "Where did you make your application?"
   },
   "application-guidance-inside-uk": {
-    "header": "The immigration rules or guidance were unclear"
+    "header": "If the guidance or rules were unclear or misleading"
   },
   "application-guidance-outside-uk": {
-    "header": "The immigration rules or guidance were unclear"
+    "header": "If the guidance or rules were unclear or misleading"
   },
   "lack-availability": {
     "header": "Where did you make your application?"
   },
   "lack-availability-inside": {
-    "header": "If there was a lack of availability of appointments inside UK"
+    "header": "If there weren’t enough available appointments in the UK"
   },
   "lack-availability-outside": {
-    "header": "If there was a lack of availability of appointments outside UK"
+    "header": "If there weren’t enough available appointments outside of the UK"
   },
   "change-appointment": {
     "header": "Where did you make your application?"
@@ -48,7 +48,7 @@
     "header": "If you want to change your appointment"
   },
   "immigration-appointment": {
-    "header": "What is the issue with your immigration appointment?"
+    "header": "What problem did you have making an appointment?"
   },
   "appointment-technical": {
     "header": "Where did you make your application?"
@@ -68,6 +68,9 @@
   "questions-appointments-outside": {
     "header": "If you have questions about your appointment"
   },
+  "delays": {
+    "header": "What are you waiting for?"
+  },
   "application-delay": {
     "header": "If there is a delay with your visa application please select one of the options below"
   },
@@ -75,16 +78,16 @@
     "header": "Where did you make your application?"
   },
   "upgrade-inside-uk": {
-    "header": "If your application has been delayed"
+    "header": "If you’re waiting for a decision on an application"
   },
   "upgrade-outside-uk": {
-    "header": "If your application has been delayed"
+    "header": "If you’re waiting for a decision on an application"
   },
   "application-ref-numbers": {
     "header": "Do you have the GWF, HO, IHS or UAN reference number(s)?"
   },
   "reference-numbers": {
-    "header": "Which reference numbers do you have? Select all that apply"
+    "header": "Which, if any, of the following reference numbers do you have?"
   },
   "reference-number-help": {
     "header": "Help with reference numbers",
@@ -104,10 +107,10 @@
     "header": "How did you request the return of your documents?"
   },
   "report-lost-docs-service": {
-    "header": "If you've requested the return of your documents"
+    "header": "If you're waiting for documents to be returned"
   },
   "request-docs-service": {
-    "header": "If you've not yet requested the return of your documents via the online service"
+    "header": "If you've not used the online service to ask for documents to be returned"
   },
   "havent-requested": {
     "header": "Use this service to request the return of your documents"
@@ -116,19 +119,19 @@
     "header": "Have you received your immigration decision?"
   },
   "decision-outcome": {
-    "header": "What was the outcome of the decision?"
+    "header": "Was the decision positive or negative?"
   },
   "positive-outcome-where": {
-    "header": "Where did you make your application?"
+    "header": "Where did you make the application?"
   },
   "positive-outcome-inside": {
-    "header": "If you received a positive decision"
+    "header": "If you have questions about a positive decision"
   },
   "positive-outcome-outside": {
-    "header": "If you received a positive decision"
+    "header": "If you have questions about a positive decision"
   },
   "negative-outcome": {
-    "header": "If you received a negative decision"
+    "header": "If you have questions about a negative decision"
   },
   "immigration-status-change": {
     "header": "What is the issue with your immigration status change?"
@@ -137,25 +140,22 @@
     "header": "If you have questions about your status change"
   },
   "biometric-residence-permit": {
-    "header": "What is the issue with your Biometric Residence Permit (BRP)?"
+    "header": "What’s the problem with the  Biometric Residence Permit (BRP)?"
   },
   "card-not-arrived": {
-    "header": "If your BRP card hasn't arrived"
-  },
-  "letter-not-arrived": {
-    "header": "If your letter hasn't arrived"
+    "header": "If a BRP card hasn't arrived"
   },
   "card-incorrect": {
-    "header": "If the details on your card are incorrect"
+    "header": "If a BRP card is incorrect"
+  },
+  "refund": {
+    "header": "Have you requested a refund?"
   },
   "refund-type": {
     "header": "Which type of refund do you want to request?"
   },
-  "refund": {
-    "header": "Have you already requested a refund?"
-  },
   "refund-ihs": {
-    "header": "If you were requesting a IHS refund"
+    "header": "If you’re waiting to be refunded for the immigration health surcharge"
   },
   "refund-standard": {
     "header": "If you want to request a standard service refund"
@@ -167,7 +167,10 @@
     "header": "If you want to request a super priority service refund"
   },
   "refund-premium": {
-    "header": "If you want to request a premium service refund"
+    "header": "If you want to request an added value service refund"
+  },
+  "refund-eu-settlement": {
+    "header": "If you’re waiting to be refunded for the EU Settlement Scheme fee"
   },
   "refund-request": {
     "header": "Request your refund"
@@ -176,13 +179,13 @@
     "header": "When did you request your refund?"
   },
   "refund-less-than": {
-    "header": "If your request was less than three months ago"
+    "header": "If your requested a refund less than three months ago"
   },
   "refund-more-than": {
-    "header": "If your request was more than three months ago"
+    "header": "If your requested a refund more than three months ago"
   },
   "staff-behaviour": {
-    "header": "Where did the incident take place?"
+    "header": "Where did the poor behaviour take place?"
   },
   "face-to-face": {
     "header": "Where did the incident take place?"
@@ -191,10 +194,10 @@
     "header": "Where is the visa application centre (VAC)?"
   },
   "ssc": {
-    "header": "In which UK city is the premium service centre?"
+    "header": "Where in the UK is the premium service centre?"
   },
   "ukvcas": {
-    "header": "In which UK city is the UK Visa and Citizenship Application Service point?"
+    "header": "Where in the UK is the service point?"
   },
   "on-phone": {
     "header": "What telephone number was called?"
@@ -224,40 +227,40 @@
     "header": "Select the reason for your existing complaint"
   },
   "complaint-details": {
-    "header": "Complaint details"
+    "header": "What are the details of your complaint?"
   },
   "acting-as-agent": {
-    "header": "Are you completing this form on behalf of the applicant?"
+    "header": "Are you making this complaint on behalf of someone else?"
   },
   "agent-name": {
-    "header": "About you"
+    "header": "What’s your name?"
   },
   "agent-contact-details": {
-    "header": "How should we contact you about the complaint?"
+    "header": "What are your contact details?"
   },
   "agent-representative-name": {
-    "header": "The applicants full name"
+    "header": "What is the applicant’s name?"
   },
   "agent-representative-dob": {
-    "header": "The applicants date of birth"
+    "header": "What is the applicant’s date of birth?"
   },
   "agent-representative-nationality": {
-    "header": "The applicants nationality"
+    "header": "What is the applicant’s nationality?"
   },
   "applicant-name": {
-    "header": "Your name"
+    "header": "What's your name"
   },
   "applicant-dob": {
-    "header": "Your date of birth"
+    "header": "What is your date of birth"
   },
   "applicant-nationality": {
-    "header": "Your nationality"
+    "header": "What is your nationality"
   },
   "applicant-contact-details": {
-    "header": "How should we contact you about your complaint?"
+    "header": "What are your contact details?"
   },
   "confirm": {
-    "header": "Check the details you have provided"
+    "header": "Check your answers"
   },
   "conmplaint-details": {
     "header": "Complaint details"

@@ -25,16 +25,10 @@ module.exports = {
           value: 'immigration-appointment'
         }
       }, {
-        target: '/request-upgrade',
+        target: '/delays',
         condition: {
           field: 'reason',
-          value: 'application-delay'
-        }
-      }, {
-        target: '/return-of-documents',
-        condition: {
-          field: 'reason',
-          value: 'return-of-documents'
+          value: 'delays'
         }
       }, {
         target: '/decision-outcome',
@@ -43,12 +37,6 @@ module.exports = {
           value: 'immigration-decision'
         }
       }, {
-      //   target: '/immigration-status-change',
-      //   condition: {
-      //     field: 'reason',
-      //     value: 'immigration-status-change'
-      //   }
-      // }, {
         target: '/biometric-residence-permit',
         condition: {
           field: 'reason',
@@ -277,6 +265,22 @@ module.exports = {
     },
     '/questions-appointments-inside': {
       
+    },
+    '/delays': {
+      fields: ['delay-type'],
+      forks: [{
+        target: '/request-upgrade',
+        condition: {
+          field: 'delay-type',
+          value: 'application-delay'
+        }
+      }, {
+        target: '/return-of-documents',
+        condition: {
+          field: 'delay-type',
+          value: 'return-of-documents'
+        }
+      }]
     },
     '/application-delay': {
       fields: ['application-delay'],
@@ -590,6 +594,12 @@ module.exports = {
         condition: {
           field: 'refund',
           value: 'no'
+        }
+      }, {
+        target: '/refund-type',
+        condition: {
+          field: 'refund',
+          value: 'not-yet'
         }
       }],
       next: '/complaint-details'

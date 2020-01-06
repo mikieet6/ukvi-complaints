@@ -4,31 +4,28 @@
   	"legend": " ",
     "options": {
 			"immigration-application": {
-				"label": "Immigration application"
+				"label": "Completing or submitting a visa application"
 			},
 			"immigration-appointment": {
-				"label": "Immigration appointment"
+				"label": "Booking or changing an appointment"
 			},
-			"application-delay": {
-				"label": "Application delay"
-			},
-			"return-of-documents": {
-				"label": "Return of documents"
+			"delays": {
+				"label": "Waiting for a decision or documents"
 			},
 			"immigration-decision": {
-				"label": "Immigration decision"
+				"label": "Questions about our decision"
 			},
 			"immigration-status-change": {
 				"label": "Immigration status change"
 			},
 			"biometric-residence-permit": {
-				"label": "Biometric residence permit"
+				"label": "Problems with a biometric residence permit"
 			},
 			"refund": {
-				"label": "Refund"
+				"label": "Getting a refund"
 			},
 			"staff-behaviour": {
-				"label": "Staff behaviour"
+				"label": "Poor information or staff behaviour"
 			},
 			"existing-complaint": {
 				"label": "An existing complaint"
@@ -43,13 +40,13 @@
   	"legend": " ",
     "options": {
 			"technical-issues": {
-				"label": "There were technical issues with the website"
+				"label": "Technical issues with the website or payments"
 			},
 			"guidance": {
-				"label": "The immigration rules or guidance were unclear"
+				"label": "Unclear or misleading immigration rules or guidance"
 			},
 			"complain": {
-				"label": "I want to Complain about the immigration application service"
+				"label": "Something else"
 			}
 		}
 	},
@@ -58,10 +55,10 @@
   	"legend": " ",
     "options": {
 			"inside-uk": {
-				"label": "From inside the UK"
+				"label": "Inside the UK"
 			},
 			"outside-uk": {
-				"label": "From outside the UK"
+				"label": "Outside the UK"
 			}
 		}
 	},
@@ -70,19 +67,31 @@
   	"legend": " ",
     "options": {
 			"lack-availability": {
-				"label": "Lack of availability of appointment"
+				"label": "Not enough available appointments"
 			},
 			"change-appointment": {
-				"label": "You want to change your appointment"
-			},
-			"questions-appointments": {
-				"label": "You have a question about appointments."
+				"label": "I need to change an appointment"
 			},
 			"technical-appointments": {
-				"label": "You want to report a techincal issue with booking an appointment."
+				"label": "I want to report a technical issue with booking an appointment"
+			},
+			"questions-appointments": {
+				"label": "I have a question about an appointment"
 			},
 			"complain-appointments": {
-				"label": "Complain about making an appointment"
+				"label": "Something else"
+			}
+		}
+	},
+
+	"delay-type": {
+		"legend": " ",
+    "options": {
+			"application-delay": {
+				"label": "A decision on an application"
+			},
+			"return-of-documents": {
+				"label": "The return of some documents"
 			}
 		}
 	},
@@ -125,11 +134,15 @@
 			},
 			"uan": {
 				"label": "Unique Application Number (UAN)"
+			},
+			"none": {
+				"label": "I don’t have any of these "
 			}
 		}
 	},
 
 	"gwf-reference":{
+		"hint": "Enter your GWF number",
 		"label": "Enter your GWF number"
 	},
 	"ho-reference":{
@@ -194,10 +207,10 @@
 		"legend": " ",
     "options": {
 			"positive": {
-				"label": "Positive decision"
+				"label": "Positive"
 			},
 			"negative": {
-				"label": "Negative decision"
+				"label": "Negative"
 			}
 		}
 	},
@@ -218,16 +231,13 @@
 		"legend": " ",
     "options": {
 			"card-not-arrived": {
-				"label": "Your BRP card has not arrived"
-			},
-			"letter-not-arrived": {
-				"label": "your BRP letter has not arrived"
+				"label": " The BRP card has not arrived"
 			},
 			"card-incorrect": {
-				"label": "Your BRP card is incorrect"
+				"label": "The BRP card is incorrect"
 			},
 			"complain-brp": {
-				"label": "You want to complain about the BRP service"
+				"label": "Something else"
 			}
 		}
 	},
@@ -235,20 +245,17 @@
 	"refund-type": {
 		"legend": " ",
     "options": {
-			"ihs": {
-				"label": "Immigration Health Surcharge (IHS)"
-			},
 			"standard": {
-				"label": "Standard service"
+				"label": "Standard service fee"
 			},
 			"priority": {
-				"label": "Priority service"
+				"label": "Priority service fee"
 			},
 			"super-priority": {
-				"label": "Super priority service"
+				"label": "Super priority service fee"
 			},
 			"premium": {
-				"label": "Premium service"
+				"label": "Added valuex service fee"
 			}
 		}
 	},
@@ -260,7 +267,10 @@
 				"label": "Yes"
 			},
 			"no": {
-				"label": "No"
+				"label": "Not yet"
+			},
+			"not-yet": {
+				"label": "No, because I’ve been told the refund will be made automatically"
 			}
 		}
 	},
@@ -296,13 +306,13 @@
 		"legend": " ",
     "options": {
 			"vac": {
-				"label": "At a Visa Application Centre (VAC)"
+				"label": "At a visa application centre (VAC)"
 			},
 			"ssc": {
 				"label": "At a Service Support Centre (previously called a Premium Service Centre?)"
 			},
 			"ukvcas": {
-				"label": "At a UK Visa and Citizenship Application Service (UKVCAS) service point"
+				"label": "At a UK Visa and Citizenship Application Service service point"
 			}
 		}
 	},
@@ -402,8 +412,8 @@
 	},
 
 	"complaint-details":{
-	    "hint": "Be brief but include all important details",
-	    "label": "Provide details of the complaint",
+	    "hint": "Include any important details that can help our investigation.",
+	    "label": "Summarise your complaint",
 	    "summary": "Details of the complaint"
 	  },
 
@@ -421,7 +431,7 @@
 
 	"acting-as-agent": {
 		"label": "Are you completing this form on behalf of the applicant?",
-		"hint": "Friends, relatives, employers, lawyers and charity workers, for example, can make a complaint on behalf of the applicant. To make a complaint on behalf of someone else you must have their explicit consent, or have agreed consent from the Home Office, to handle their information. ",
+		"hint": " Anyone can complain on behalf of an applicant but you must have their consent. In some cases you can get consent from the Home Office if that’s not possible. ",
     "options": {
 			"yes": {
 				"label": "Yes"
@@ -433,20 +443,20 @@
 	},
 
 	"who-representing": {
-		"label": "What type of support do you provide the applicant?",
+		"label": "What’s your relation to the applicant?",
 		"legend": " ",
 		"options": {
 			"legal-rep":{
-				"label": "Legal representative"
+				"label": "I’m their legal representative"
 			},
 			"relative":{
-				"label": "Relative or friend"
+				"label": "I’m a relative or friend"
 			},
 			"sponsor":{
-				"label": "Sponsor"
+				"label": "I’m their sponsor"
 			},
 			"support-org":{
-				"label": "Support organisation"
+				"label": "I work for a charity or similar organisation that’s helping them"
 			}
 
 		}
@@ -454,22 +464,24 @@
 
 	"agent-name": {
 		"legend": "",
-    "label": "Your full name" 
+    "label": "Full name" 
 	},
 
 	"agent-email": {
 		"legend": "",
-    "label": "Your email address" 
+    "label": "Email address" ,
+		"hint": "We’ll use this to send our response"
 	},
 
 	"agent-phone": {
 		"legend": "",
-    "label": "Your phone number (Optional)" 
+    "label": "Your Phone number (optional)" ,
+		"hint": "We’ll only use this if we have questions about your complaint"
 	},
 
 	"agent-representative-name": {
 		"legend": "",
-    "label": "The applicants full name" 
+    "label": "Applicant’s full name" 
 	},
 
 	"dob": {
@@ -494,7 +506,8 @@
 
 	"agent-representative-nationality": {
 		"legend": "",
-    "label": "The applicants nationality" 
+    "label": "Applicant’s nationality",
+    "hint": "We only use this to confirm the applicant’s identity" 
 	},
 
 	"applicant-name": {

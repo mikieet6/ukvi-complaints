@@ -1,6 +1,6 @@
-##Contact UK Visas and Immigration 
+##Get help from UK Visas and Immigration 
 
-You can phone or email to get some assistance with your issue. 
+You can phone or email to get some help.
 
 Emails can take up to 2 days to get a response.
 

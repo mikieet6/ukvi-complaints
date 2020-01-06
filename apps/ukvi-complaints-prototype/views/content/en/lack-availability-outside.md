@@ -1,8 +1,8 @@
-If you have paid for standard fee and you cannot get an appointment within the time you need, you may cancel your appication and resubmit by selecting premium service. 
+If you have paid the standard fee and you cannot get an appointment in the time you need, you can cancel the application and choose a premium service instead. This will allow you to get an appointment more quickly.
 
-You can only get your fee refunded if your application hasn’t been processed yet.
+You can only get your fee refunded if  the application hasn’t been processed.
 
-[Contact UK Visas and immigration](https://www.gov.uk/contact-ukvi-inside-outside-uk) to find out how to cancel your application.
+[Contact UK Visas and immigration](https://www.gov.uk/contact-ukvi-inside-outside-uk) to cancel an application.
 
 Calls cost £1.37 per minute on top of your standard network charges.
 
