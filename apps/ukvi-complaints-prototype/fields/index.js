@@ -162,7 +162,8 @@ module.exports = {
     },
     className: ['form-group'],
     options: [
-      'yes',
+      'yes-docs-service',
+      'yes-other',
       'no'
     ]
   },
@@ -229,11 +230,25 @@ module.exports = {
     },
     className: ['form-group'],
     options: [
-      'ihs',
       'standard',
       'priority',
       'super-priority',
-      'premium'
+      'premium',
+      'ihs',
+      'eu-settlement'
+    ]
+  },
+
+  "refund-type-automatic": {
+    mixin: 'radio-group',
+    validate: 'required',
+    legend: {
+      className: 'visuallyhidden'
+    },
+    className: ['form-group'],
+    options: [
+      'ihs',
+      'eu-settlement'
     ]
   },
 
@@ -247,7 +262,7 @@ module.exports = {
     options: [
       'yes',
       'no',
-      'not-yet  '
+      'not-yet'
     ]
   },
   "refund-when": {
@@ -263,10 +278,22 @@ module.exports = {
     ]
   },
 
-  "staff-behaviour": {
+  "poor-info-or-behaviour": {
   	mixin: 'radio-group',
   	validate: 'required',
   	legend: {
+      className: 'visuallyhidden'
+    },
+    className: ['form-group'],
+    options: [
+      'poor-information',
+      'staff-behaviour'
+    ]
+  },
+  "staff-behaviour": {
+    mixin: 'radio-group',
+    validate: 'required',
+    legend: {
       className: 'visuallyhidden'
     },
     className: ['form-group'],

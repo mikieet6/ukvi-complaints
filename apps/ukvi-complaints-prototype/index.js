@@ -49,7 +49,7 @@ module.exports = {
           value: 'refund'
         }
       }, {
-        target: '/staff-behaviour',
+        target: '/poor-info-or-behaviour',
         condition: {
           field: 'reason',
           value: 'staff-behaviour'
@@ -324,25 +324,8 @@ module.exports = {
       
     },
     '/application-ref-numbers': {
-      fields: ['have-reference-numbers'],
-      forks: [{
-        target: '/reference-numbers',
-        condition: {
-          field: 'have-reference-numbers',
-          value: 'yes'
-        }
-      }, {
-        target: '/complaint-details',
-        condition: {
-          field: 'have-reference-numbers',
-          value: 'no'
-        }
-      }],
-      locals: {
-        section: 'complaint-details',
-        'details-summary-id': 'reference-number-help',
-        // 'details-summary': pagesTranslations['reference-numbers']
-      }
+      fields: ['reference-numbers'],
+      next: '/complaint-details'
     },
     '/reference-numbers': {
       fields: ['reference-numbers'],
@@ -351,13 +334,19 @@ module.exports = {
     '/return-of-documents': {
       fields: ['return-of-documents'],
       forks: [{
-        target: '/requested-documents',
+        target: '/report-lost-docs-service',
         condition: {
           field: 'return-of-documents',
-          value: 'yes'
+          value: 'yes-docs-service'
         }
       }, {
-        target: '/application-ref-numbers',
+        target: '/request-docs-service',
+        condition: {
+          field: 'return-of-documents',
+          value: 'yes-other'
+        }
+      }, {
+        target: '/request-docs-service',
         condition: {
           field: 'return-of-documents',
           value: 'no'
@@ -563,6 +552,12 @@ module.exports = {
           field: 'refund-type',
           value: 'premium'
         }
+      }, {
+        target: '/refund-eu-settlement',
+        condition: {
+          field: 'refund-type',
+          value: 'eu-settlement'
+        }
       }],
       next: '/refund'
     },
@@ -581,6 +576,9 @@ module.exports = {
     '/refund-premium': {
 
     },
+    '/refund-eu-settlement': {
+
+    },
     '/refund': {
       fields: ['refund'],
       forks: [{
@@ -596,10 +594,43 @@ module.exports = {
           value: 'no'
         }
       }, {
-        target: '/refund-type',
+        target: '/refund-type-automatic',
         condition: {
           field: 'refund',
           value: 'not-yet'
+        }
+      }],
+      next: '/complaint-details'
+    },
+    '/refund-when': {
+      fields: ['refund-when'],
+      forks: [{
+        target: '/refund-less-than',
+        condition: {
+          field: 'refund-when',
+          value: 'less-than'
+        }
+      }, {
+        target: '/refund-more-than',
+        condition: {
+          field: 'refund-when',
+          value: 'more-than'
+        }
+      }]
+    },
+    '/refund-type-automatic': {
+      fields: ['refund-type-automatic'],
+      forks: [{
+        target: '/refund-ihs',
+        condition: {
+          field: 'refund-type-automatic',
+          value: 'ihs'
+        }
+      }, {
+        target: '/refund-eu-settlement',
+        condition: {
+          field: 'refund',
+          value: 'eu-settlement'
         }
       }],
       next: '/complaint-details'
@@ -628,6 +659,22 @@ module.exports = {
     },
     '/refund-request': {
 
+    },
+    '/poor-info-or-behaviour': {
+      fields: ['poor-info-or-behaviour'],
+      forks: [{
+        target: '/application-ref-numbers',
+        condition: {
+          field: 'poor-info-or-behaviour',
+          value: 'poor-information'
+        }
+      }, {
+        target: '/staff-behaviour',
+        condition: {
+          field: 'poor-info-or-behaviour',
+          value: 'staff-behaviour'
+        }
+      }]
     },
     '/staff-behaviour': {
       fields: ['staff-behaviour'],

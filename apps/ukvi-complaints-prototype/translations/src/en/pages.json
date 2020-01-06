@@ -54,10 +54,10 @@
     "header": "Where did you make your application?"
   },
   "appointment-technical-inside": {
-    "header": "If there were technical issues with the website"
+    "header": "If there were technical issues with booking an appointment"
   },
   "appointment-technical-outside": {
-    "header": "If there were technical issues with the website"
+    "header": "If there were technical issues with booking an appointment"
   },
   "questions-appointments": {
     "header": "If you have questions about your appointment"
@@ -84,9 +84,6 @@
     "header": "If you’re waiting for a decision on an application"
   },
   "application-ref-numbers": {
-    "header": "Do you have the GWF, HO, IHS or UAN reference number(s)?"
-  },
-  "reference-numbers": {
     "header": "Which, if any, of the following reference numbers do you have?"
   },
   "reference-number-help": {
@@ -98,7 +95,7 @@
     ]
   },
   "return-of-documents": {
-    "header": "What is the issue with the return of your documents?"
+    "header": "Have you asked for the documents back?"
   },
   "requested-documents": {
     "header": "Have you requested the return of your documents?"
@@ -154,8 +151,11 @@
   "refund-type": {
     "header": "Which type of refund do you want to request?"
   },
+  "refund-type-automatic": {
+    "header": "What are you waiting to be refunded?"
+  },
   "refund-ihs": {
-    "header": "If you’re waiting to be refunded for the immigration health surcharge"
+    "header": "If you’re waiting to be refunded for the immigration health surcharge (IHS)"
   },
   "refund-standard": {
     "header": "If you want to request a standard service refund"
@@ -183,6 +183,9 @@
   },
   "refund-more-than": {
     "header": "If your requested a refund more than three months ago"
+  },
+  "poor-info-or-behaviour": {
+    "header": "What was the problem?"
   },
   "staff-behaviour": {
     "header": "Where did the poor behaviour take place?"

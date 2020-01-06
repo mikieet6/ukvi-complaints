@@ -1,0 +1,42 @@
+{{<partials-page}}
+{{$page-content}}
+<fieldset id="dob-group" class="{{#errors.dob}}validation-error{{/errors.dob}}">
+  <!-- {{#errors.dob}}
+        <span id="dob-error" class="error-message">
+          {{errors.dob.message}}
+        </span>
+  {{/errors.dob}} -->
+  You don’t have to provide a reference, but it will help us look into your complaint more quickly if you do.
+  <br>
+  <br>
+  <div class="form-group">
+    {{#radio-group}}reference-numbers{{/radio-group}}
+  </div>
+</fieldset>
+{{#input-submit}}continue{{/input-submit}}
+<br>
+<br>
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Help with reference numbers
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+	    
+	<h3 class="govuk-heading-s">Global Web Form (GWF) number</h3>
+	You will have been given a GWF number if you applied for a visa outside of the UK.
+
+	<h3 class="govuk-heading-s">Home Office reference number</h3>
+	You will have been given a Home Office reference number if you applied for a visa within the UK. This could be an application or appeal number, an Application Registration Card (ARC) number or a case ID number.
+
+	<h3 class="govuk-heading-s">International health surcharge (IHS) number</h3>
+	You will have been given an IHS number if you paid for the Immigration Health Surcharge. 
+
+	<h3 class="govuk-heading-s">Unique application number (UAN)</h3>
+	You will have been given a UAN if ???
+
+  </div>
+</details>
+{{/page-content}}
+{{/partials-page}}

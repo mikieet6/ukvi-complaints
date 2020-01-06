@@ -121,13 +121,14 @@
 	},
 	
 	"reference-numbers": {
-		"legend": " ",
+		"hint": "Select one ",
+		"legend": "You don’t have to provide a reference, but it will help us look into your complaint more quickly if you do.",
     "options": {
 			"gwf": {
-				"label": "GWF number"
+				"label": "Global Web Form (GWF) reference number"
 			},
 			"ho": {
-				"label": "HO number"
+				"label": "Home Office reference number"
 			},
 			"ihs": {
 				"label": "Immigration Healthcare Surcharge (IHS) number"
@@ -141,28 +142,67 @@
 		}
 	},
 
+
+
+
+
+	"dob": {
+	    "legend": {
+	      "applicant": {
+	        "true": "What's your date of birth?"
+	      },
+	      "default": "What's the applicant's date of birth?"
+	    },
+	    "hint": "For example, 31 3 1980",
+	    "summary": "Date of birth"
+	  },
+	  "dob-day": {
+	    "label": "Day"
+	  },
+	  "dob-month": {
+	    "label": "Month"
+	  },
+	  "dob-year": {
+	    "label": "Year"
+	  },
+
+
+
+
+
+	"gwf": {
+		"label": "GWF number",
+		"hint": "Enter your GWF number"
+	},
+
 	"gwf-reference":{
-		"hint": "Enter your GWF number",
-		"label": "Enter your GWF number"
+		"label": "Enter your GWF number",
+		"hint": "This starts with GWF followed by 8 numbers. For example, GWF012345678."
 	},
 	"ho-reference":{
-		"label": "Enter your HO number"
+		"label": "Enter your HO number",
+		"hint": "This is 8 numbers. For example, 012345678"
 	},
 	"ihs-reference":{
-		"label": "Enter your IHS number"
+		"label": "Enter your IHS number",
+		"hint": "This starts with IHS followed by 9 numbers. For example, IHS123456789."
 	},
 	"uan-reference":{
-		"label": "Enter your UAN number"
+		"label": "Enter your UAN number",
+		"hint": "This is 16 numbers. For example, 1234567891234567"
 	},
 
 	"return-of-documents": {
 		"legend": " ",
     "options": {
-			"yes": {
-				"label": "I've not received my documents"
+			"yes-docs-service": {
+				"label": "Yes, using the return of documents service"
+			},
+			"yes-other": {
+				"label": "Yes, by phone, email or another way"
 			},
 			"no": {
-				"label": "Something else"
+				"label": "No"
 			}
 		}
 	},
@@ -256,6 +296,24 @@
 			},
 			"premium": {
 				"label": "Added valuex service fee"
+			},
+			"ihs": {
+				"label": "Immigration health surchage (IHS) fee"
+			},
+			"eu-settlement": {
+				"label": "EU Settlement Scheme fee"
+			}
+		}
+	},
+
+	"refund-type-automatic": {
+		"legend": " ",
+    "options": {
+			"ihs": {
+				"label": "Immigration health surchage (IHS) fee"
+			},
+			"eu-settlement": {
+				"label": "EU Settlement Scheme fee"
 			}
 		}
 	},
@@ -283,6 +341,18 @@
 			},
 			"more-than": {
 				"label": "More than 3 months ago"
+			}
+		}
+	},
+
+	"poor-info-or-behaviour": {
+		"legend": " ",
+    "options": {
+			"poor-information": {
+				"label": "Unclear or misleading information"
+			},
+			"staff-behaviour": {
+				"label": "Poor staff behaviour"
 			}
 		}
 	},
