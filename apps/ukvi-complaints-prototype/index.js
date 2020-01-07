@@ -325,7 +325,7 @@ module.exports = {
     },
     '/application-ref-numbers': {
       fields: ['reference-numbers'],
-      next: '/complaint-details'
+      next: '/acting-as-agent'
     },
     '/reference-numbers': {
       fields: ['reference-numbers'],
@@ -782,11 +782,6 @@ module.exports = {
       fields: ['when-applied'],
       next: '/application-ref-numbers'
     },
-    '/complaint-details': {
-      behaviours: [ conditionalContent ],
-      fields: ['complaint-details'],
-      next: '/acting-as-agent'
-    },
     '/acting-as-agent': {
       fields: ['acting-as-agent'],
       next: '/complaint-details',
@@ -833,7 +828,7 @@ module.exports = {
     },
     '/agent-representative-nationality': {
       fields: ['agent-representative-nationality'],
-      next: '/confirm'
+      next: '/complaint-details'
     },
     '/applicant-name': {
       fields: ['applicant-name'],
@@ -850,6 +845,11 @@ module.exports = {
     },
     '/applicant-contact-details': {
       fields: ['applicant-email','applicant-phone'],
+      next: '/complaint-details'
+    },
+     '/complaint-details': {
+      behaviours: [ conditionalContent ],
+      fields: ['complaint-details'],
       next: '/confirm'
     },
     '/confirm': {
