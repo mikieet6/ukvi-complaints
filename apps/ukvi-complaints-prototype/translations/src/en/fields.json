@@ -4,25 +4,25 @@
   	"legend": " ",
     "options": {
 			"immigration-application": {
-				"label": "Completing or submitting a visa application"
+				"label": "Submitting an application"
 			},
 			"immigration-appointment": {
-				"label": "Booking or changing an appointment"
+				"label": "Making an appointment"
 			},
 			"delays": {
 				"label": "Waiting for a decision or documents"
 			},
 			"immigration-decision": {
-				"label": "The outcome of an application"
+				"label": "A negative or positive decision"
 			},
 			"immigration-status-change": {
 				"label": "Immigration status change"
 			},
 			"biometric-residence-permit": {
-				"label": "Problems with a biometric residence permit"
+				"label": "Biometric residence permits"
 			},
 			"refund": {
-				"label": "Getting a refund"
+				"label": "Refunds"
 			},
 			"staff-behaviour": {
 				"label": "Poor information or staff behaviour"
@@ -76,7 +76,7 @@
   	"legend": " ",
     "options": {
 			"lack-availability": {
-				"label": "Not enough available appointments"
+				"label": "I can't get an appointment"
 			},
 			"change-appointment": {
 				"label": "I need to change an appointment"
@@ -337,7 +337,7 @@
 				"label": "Super priority service fee"
 			},
 			"premium": {
-				"label": "Added valuex service fee"
+				"label": "Added value service fee"
 			},
 			"ihs": {
 				"label": "Immigration health surchage (IHS) fee"
@@ -475,11 +475,12 @@
 	},
 
 	"called-time": {
-		"label": "What was the time of the call?"
+		"label": " ",
+		"hint": "For example, 10:30am or morning"
 	},
 
 	"called-from": {
-		"label": "What number was the call made from?"
+		"label": " "
 	},
 
 	"existing-complaint": {
@@ -615,8 +616,8 @@
 
 	"agent-phone": {
 		"legend": "",
-    "label": "Your Phone number (optional)" ,
-		"hint": "We’ll only use this if we have questions about your complaint"
+    "label": "Your phone number (optional)" ,
+		"hint": "We’ll use this if we have questions about your complaint"
 	},
 
 	"agent-representative-name": {

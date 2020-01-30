@@ -1,5 +1,5 @@
 ##Check the UK visas processing times
-You can check the UKVI Service standards to [see when you can expect your decision by](https://www.gov.uk/government/organisations/uk-visas-and-immigration/about-our-services)
+You can check the UKVI Service standards to [see when you can expect your decision by](https://www.gov.uk/guidance/visa-decision-waiting-times-applications-outside-the-uk).
 
 ###If you've applied from the EU or Africa
 

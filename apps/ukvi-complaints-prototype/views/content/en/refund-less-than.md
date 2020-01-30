@@ -1,3 +1,3 @@
 ##Please wait to receive your refund
 
-Refunds take at least 3 months to process, please wait to receive your refund.
+Refunds take up to 3 months to process. Please wait to receive your refund.

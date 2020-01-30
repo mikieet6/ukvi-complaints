@@ -197,7 +197,7 @@
     "header": "Where is the visa application centre (VAC)?"
   },
   "ssc": {
-    "header": "Where in the UK is the premium service centre?"
+    "header": "Where in the UK is the Service Support Centre?"
   },
   "ukvcas": {
     "header": "Where in the UK is the service point?"
@@ -272,7 +272,7 @@
           "header": "Your details"
         },
         "agent-details": {
-          "header": "Agent details"
+          "header": "Your details"
         }
       }
 
