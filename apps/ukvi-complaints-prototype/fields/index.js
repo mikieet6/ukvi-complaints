@@ -13,7 +13,6 @@ module.exports = {
   		'biometric-residence-permit',
   		'refund',
   		'staff-behaviour',
-  		'existing-complaint',
   		'other-complaint'
   	],
     validate: 'required'
@@ -216,7 +215,6 @@ module.exports = {
     className: ['form-group'],
     options: [
       'card-not-arrived',
-      'letter-not-arrived',
       'card-incorrect',
       'complain-brp'
     ]
