@@ -1,0 +1,12 @@
+{{<partials-page}}
+  {{$page-content}}
+    
+  	<p>You can <a href="existing-complaint">follow up on an existing complaint</a> to skip this page.</p>
+
+    {{#fields}}
+      {{#renderField}}{{/renderField}}
+    {{/fields}}
+	{{#input-submit}}continue{{/input-submit}}
+
+  {{/page-content}}
+{{/partials-page}}
