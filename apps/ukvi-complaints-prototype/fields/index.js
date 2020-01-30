@@ -13,6 +13,7 @@ module.exports = {
   		'biometric-residence-permit',
   		'refund',
   		'staff-behaviour',
+      'existing-complaint',
   		'other-complaint'
   	],
     validate: 'required'

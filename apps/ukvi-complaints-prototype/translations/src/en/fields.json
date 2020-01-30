@@ -483,7 +483,6 @@
 	},
 
 	"existing-complaint": {
-		"hint": "A senior member of staff will carry out an independent review of your complaint. They will provide you with further details within 20 working days of the date when you ask for a review. If you’re still not satisfied at this stage, you may be able to raise the matter with the Parliamentary and Health Service Ombudsman who may be able to help you.",
     "options": {
 			"yes": {
 				"label": "Yes"
