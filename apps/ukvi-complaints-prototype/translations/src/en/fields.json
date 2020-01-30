@@ -33,7 +33,10 @@
 			"other-complaint": {
 				"label": "Something else"
 		  }
-		}
+		},
+    "validation": {
+      "required": "Please select an option"
+    }
 	},
 
 	"immigration-application": {
@@ -48,7 +51,10 @@
 			"complain": {
 				"label": "Something else"
 			}
-		}
+		},
+    "validation": {
+      "required": "Please select an option"
+    }
 	},
 
 	"where-applied-from": {
@@ -60,7 +66,10 @@
 			"outside-uk": {
 				"label": "Outside the UK"
 			}
-		}
+		},
+    "validation": {
+      "required": "Please select an option"
+    }
 	},
 
 	"immigration-appointment": {
@@ -81,7 +90,10 @@
 			"complain-appointments": {
 				"label": "Something else"
 			}
-		}
+		},
+    "validation": {
+      "required": "Please select an option"
+    }
 	},
 
 	"delay-type": {
@@ -93,7 +105,10 @@
 			"return-of-documents": {
 				"label": "The return of some documents"
 			}
-		}
+		},
+    "validation": {
+      "required": "Please select an option"
+    }
 	},
 
 	"application-delay": {
@@ -105,7 +120,10 @@
 			"application-ref-numbers": {
 				"label": "Complain that your visa application took longer than it should to be processed"
 			}
-		}
+		},
+    "validation": {
+      "required": "Please select an option"
+    }
 	},
 
 	"have-reference-numbers": {
@@ -117,7 +135,10 @@
 			"no": {
 				"label": "No"
 			}
-		}
+		},
+    "validation": {
+      "required": "Please select an option"
+    }
 	},
 	
 	"reference-numbers": {
@@ -139,7 +160,10 @@
 			"none": {
 				"label": "I don’t have any of these "
 			}
-		}
+		},
+    "validation": {
+      "required": "Please select an option"
+    }
 	},
 
 
@@ -204,7 +228,10 @@
 			"no": {
 				"label": "No"
 			}
-		}
+		},
+    "validation": {
+      "required": "Please select an option"
+    }
 	},
 
 	"requested-documents": {
@@ -216,7 +243,10 @@
 			"no": {
 				"label": "No"
 			}
-		}
+		},
+    "validation": {
+      "required": "Please select an option"
+    }
 	},
 
 	"have-requested": {
@@ -240,7 +270,10 @@
 			"no": {
 				"label": "No"
 			}
-		}
+		},
+    "validation": {
+      "required": "Please select an option"
+    }
 	},
 
 	"decision-outcome": {
@@ -252,7 +285,10 @@
 			"negative": {
 				"label": "Negative"
 			}
-		}
+		},
+    "validation": {
+      "required": "Please select an option"
+    }
 	},
 
 	"immigration-status-change": {
@@ -264,7 +300,10 @@
 			"complain-status-change": {
 				"label": "You want to complain about your immigration status change"
 			}
-		}
+		},
+    "validation": {
+      "required": "Please select an option"
+    }
 	},
 
 	"biometric-residence-permit": {
@@ -279,7 +318,10 @@
 			"complain-brp": {
 				"label": "Something else"
 			}
-		}
+		},
+    "validation": {
+      "required": "Please select an option"
+    }
 	},
 
 	"refund-type": {
@@ -303,7 +345,10 @@
 			"eu-settlement": {
 				"label": "EU Settlement Scheme fee"
 			}
-		}
+		},
+    "validation": {
+      "required": "Please select an option"
+    }
 	},
 
 	"refund-type-automatic": {
@@ -315,7 +360,10 @@
 			"eu-settlement": {
 				"label": "EU Settlement Scheme fee"
 			}
-		}
+		},
+    "validation": {
+      "required": "Please select an option"
+    }
 	},
 
 	"refund": {
@@ -330,7 +378,10 @@
 			"not-yet": {
 				"label": "No, because I’ve been told the refund will be made automatically"
 			}
-		}
+		},
+    "validation": {
+      "required": "Please select an option"
+    }
 	},
 
 	"refund-when": {
@@ -342,7 +393,10 @@
 			"more-than": {
 				"label": "More than 3 months ago"
 			}
-		}
+		},
+    "validation": {
+      "required": "Please select an option"
+    }
 	},
 
 	"poor-info-or-behaviour": {
@@ -354,7 +408,10 @@
 			"staff-behaviour": {
 				"label": "Poor staff behaviour"
 			}
-		}
+		},
+    "validation": {
+      "required": "Please select an option"
+    }
 	},
 
 	"staff-behaviour": {
@@ -369,7 +426,10 @@
 			"in-letter": {
 				"label": "In a letter or email"
 			}
-		}
+		},
+    "validation": {
+      "required": "Please select an option"
+    }
 	},
 
 	"which-centre": {
@@ -384,7 +444,10 @@
 			"ukvcas": {
 				"label": "At a UK Visa and Citizenship Application Service service point"
 			}
-		}
+		},
+    "validation": {
+      "required": "Please select an option"
+    }
 	},
 
 	"vac-country": {
@@ -435,32 +498,28 @@
   	"legend": " ",
     "options": {
 			"immigration-application": {
-				"label": "Immigration application",
-				"valuex": "Immigration application"
+				"label": "Completing or submitting a visa application"
 			},
 			"immigration-appointment": {
-				"label": "Immigration appointment"
+				"label": "Booking or changing an appointment"
 			},
-			"application-delay": {
-				"label": "Application delay"
-			},
-			"return-of-documents": {
-				"label": "Return of documents"
+			"delays": {
+				"label": "Waiting for a decision or documents"
 			},
 			"immigration-decision": {
-				"label": "Immigration decision"
+				"label": "The outcome of an application"
 			},
 			"immigration-status-change": {
 				"label": "Immigration status change"
 			},
 			"biometric-residence-permit": {
-				"label": "Biometric residence permit"
+				"label": "Problems with a biometric residence permit"
 			},
 			"refund": {
-				"label": "Refund"
+				"label": "Getting a refund"
 			},
 			"staff-behaviour": {
-				"label": "Staff behaviour"
+				"label": "Poor information or staff behaviour"
 			},
 			"existing-complaint": {
 				"label": "An existing complaint"
@@ -485,7 +544,7 @@
 	    "hint": "Include any important details that can help our investigation.",
 	    "label": "Summarise your complaint",
 	    "summary": "Details of the complaint"
-	  },
+	 },
 
 	"other-complaint": {
 		"legend": " ",
@@ -509,7 +568,10 @@
 			"no": {
 				"label": "No"
 			}
-		}
+		},
+    "validation": {
+      "required": "Please select an option"
+    }
 	},
 
 	"who-representing": {
@@ -529,18 +591,27 @@
 				"label": "I work for a charity or similar organisation that’s helping them"
 			}
 
-		}
+		},
+    "validation": {
+      "required": "Please select an option"
+    }
 	},
 
 	"agent-name": {
 		"legend": "",
-    "label": "Full name" 
+    "label": "Full name" ,
+    "validation": {
+      "required": "Please enter your name"
+    }
 	},
 
 	"agent-email": {
 		"legend": "",
     "label": "Email address" ,
-		"hint": "We’ll use this to send our response"
+		"hint": "We’ll use this to send our response",
+    "validation": {
+      "required": "Please enter an email address"
+    }
 	},
 
 	"agent-phone": {
@@ -551,7 +622,11 @@
 
 	"agent-representative-name": {
 		"legend": "",
-    "label": "Applicant’s full name" 
+    "label": "Applicant’s full name"
+    ,
+    "validation": {
+      "required": "Please enter a name"
+    } 
 	},
 
 	"dob": {
@@ -582,22 +657,35 @@
 
 	"applicant-name": {
 		"legend": "",
-    "label": "Full name" 
+    "label": "Full name",
+    "validation": {
+      "required": "Please enter your name"
+    }
 	},
 
 	"applicant-dob": {
 		"legend": "",
-    "label": "Date of birth" 
+    "label": "Date of birth",
+    "validation": {
+      "required": "Please enter your date of birth"
+    }  
 	},
 
 	"applicant-nationality": {
 		"legend": "",
-    "label": "Nationality" 
+    "label": "Nationality",
+    "validation": {
+      "required": "Please select your nationality"
+    } 
 	},
 
 	"applicant-email": {
 		"legend": "",
-    "label": "Email address" 
+    "label": "Email address",
+    "validation": {
+      "required": "Please enter an email address",
+      "email": "Please enter a valid email address containing an '@' symbol"
+    }
 	},
 
 	"applicant-phone": {

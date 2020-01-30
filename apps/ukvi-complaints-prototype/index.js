@@ -772,7 +772,7 @@ module.exports = {
     },
     '/complaint-reason-previous': {
       fields: ['complaint-reason-previous'],
-      next: '/complaint-details'
+      next: '/acting-as-agent'
     },
     '/other-complaint': {
       fields: ['other-complaint'],
@@ -857,13 +857,32 @@ module.exports = {
       next: '/complete',
       sections: {
         'complaint-details': [
-          'reason',
+          {
+            field: 'reason',
+            step: '/reason'
+          },
           'complaint-details'
         ],
-        'applicant-details': [
+        'agent-details': [
+          'agent-name',
+          'agent-representative-dob'
+          
+        ],
+        'your-details': [
           'applicant-name',
           'applicant-nationality',
           'applicant-dob'
+        ],
+        'applicant-details': [
+          'agent-representative-name',
+          'agent-representative-nationality',
+          'agent-representative-dob'
+        ],
+        'contact-details': [
+          'applicant-email',
+          'applicant-phone',
+          'agent-email',
+          'agent-phone',
         ]
       }
     },

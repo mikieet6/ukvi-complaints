@@ -393,9 +393,9 @@ module.exports = {
     options: [
       'immigration-application',
       'immigration-appointment',
-      'application-delay',
-      'return-of-documents',
+      'delays',
       'immigration-decision',
+      'immigration-status-change',
       'biometric-residence-permit',
       'refund',
       'staff-behaviour',

@@ -263,7 +263,19 @@
     "header": "What are your contact details?"
   },
   "confirm": {
-    "header": "Check your answers"
+    "header": "Check your answers",
+      "sections": {
+        "contact-details": {
+          "header": "Contact details"
+        },
+        "your-details": {
+          "header": "Your details"
+        },
+        "agent-details": {
+          "header": "Agent details"
+        }
+      }
+
   },
   "conmplaint-details": {
     "header": "Complaint details"
