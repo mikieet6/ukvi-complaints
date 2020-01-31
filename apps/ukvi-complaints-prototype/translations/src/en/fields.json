@@ -46,7 +46,7 @@
 				"label": "Technical issues with the website or payments"
 			},
 			"guidance": {
-				"label": "Unclear or misleading immigration rules or guidance"
+				"label": "Guidance was unclear or misleading"
 			},
 			"complain": {
 				"label": "Something else"
@@ -76,13 +76,13 @@
   	"legend": " ",
     "options": {
 			"lack-availability": {
-				"label": "I can't get an appointment"
+				"label": "Difficulty getting an appointment"
 			},
 			"change-appointment": {
 				"label": "I need to change an appointment"
 			},
 			"technical-appointments": {
-				"label": "I want to report a technical issue with booking an appointment"
+				"label": "Technical issue with booking an appointment"
 			},
 			"questions-appointments": {
 				"label": "I have a question about an appointment"
@@ -376,7 +376,7 @@
 				"label": "Not yet"
 			},
 			"not-yet": {
-				"label": "No, because I’ve been told the refund will be made automatically"
+				"label": "No, I was told the refund would be automatic"
 			}
 		},
     "validation": {
@@ -541,7 +541,7 @@
 	},
 
 	"complaint-details":{
-	    "hint": "Include any important details that can help our investigation.",
+	    "hint": "Your complaint.",
 	    "label": "Summarise your complaint",
 	    "summary": "Details of the complaint"
 	 },
@@ -617,7 +617,7 @@
 	"agent-phone": {
 		"legend": "",
     "label": "Your phone number (optional)" ,
-		"hint": "We’ll use this if we have questions about your complaint"
+		"hint": "We may call if we need more information "
 	},
 
 	"agent-representative-name": {
@@ -652,7 +652,7 @@
 	"agent-representative-nationality": {
 		"legend": "",
     "label": "Applicant’s nationality",
-    "hint": "We only use this to confirm the applicant’s identity" 
+    "hint": "We’ll  use this to confirm the applicant’s identity" 
 	},
 
 	"applicant-name": {

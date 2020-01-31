@@ -24,19 +24,19 @@
     "header": "Where did you make your application?"
   },
   "application-guidance-inside-uk": {
-    "header": "If the guidance or rules were unclear or misleading"
+    "header": "If the guidance was unclear or misleading"
   },
   "application-guidance-outside-uk": {
-    "header": "If the guidance or rules were unclear or misleading"
+    "header": "If the guidance was unclear or misleading"
   },
   "lack-availability": {
     "header": "Where did you make your application?"
   },
   "lack-availability-inside": {
-    "header": "If there weren’t enough available appointments in the UK"
+    "header": "If you had difficulty getting an appointment in the UK"
   },
   "lack-availability-outside": {
-    "header": "If there weren’t enough available appointments outside of the UK"
+    "header": "If you had difficulty getting an  appointment outside of the UK"
   },
   "change-appointment": {
     "header": "Where did you make your application?"
