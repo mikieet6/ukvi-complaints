@@ -589,14 +589,14 @@ module.exports = {
 
   "applicant-nationality":{
     mixin: 'select',
-    options: require('hof-util-countries')(),
+    options: [{label: '', value: ''}].concat(require('hof-util-countries')()),
     validate: 'required',
     className: ['typeahead']
   },
 
   "agent-representative-nationality":{
     mixin: 'select',
-    options: require('hof-util-countries')(),
+    options: [{label: '', value: ''}].concat(require('hof-util-countries')()),
     validate: 'required',
     className: ['typeahead', 'js-hidden']
   },
