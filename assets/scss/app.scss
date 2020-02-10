@@ -1,4 +1,5 @@
 @import "$$theme";
+@import "govuk-frontend";
 
 .phase-banner {
   @include phase-banner(beta);
