@@ -611,7 +611,7 @@ module.exports = {
           value: 'less-than'
         }
       }, {
-        target: '/refund-more-than',
+        target: '/application-ref-numbers',
         condition: {
           field: 'refund-when',
           value: 'more-than'
@@ -644,7 +644,7 @@ module.exports = {
           value: 'less-than'
         }
       }, {
-        target: '/refund-more-than',
+        target: '/application-ref-numbers',
         condition: {
           field: 'refund-when',
           value: 'more-than'

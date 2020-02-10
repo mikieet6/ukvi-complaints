@@ -1,5 +1,5 @@
 ##If you applied from inside the UK
-You can phone or email to get some assistance with your issue. 
+You can phone or email to get some help.
 
 Emails can take up to 2 days to get a response.
 
@@ -7,10 +7,10 @@ Emails can take up to 2 days to get a response.
 
 
 ##If you applied from EU and Africa
-[Contact TLS provider](https://pos.tlscontact.com/msq_en/refund)
+[Request a refund from TLScontact](https://pos.tlscontact.com/msq_en/refund)
 
 ##If you applied from elsewhere in the world: 
-[Request a refund from VFS Global provider](https://www.vfsglobal.co.uk/au/en/request-a-refund)
+[Request a refund from VFS Global](https://www.vfsglobal.co.uk/au/en/request-a-refund)
 
 [Refund policy for premium service](https://www.vfsglobal.co.uk/au/en/terms-and-conditions#4)
 

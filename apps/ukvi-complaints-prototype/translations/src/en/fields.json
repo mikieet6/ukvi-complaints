@@ -340,7 +340,7 @@
 				"label": "Added value service fee"
 			},
 			"ihs": {
-				"label": "Immigration health surchage (IHS) fee"
+				"label": "Immigration Health Surcharge (IHS) fee"
 			},
 			"eu-settlement": {
 				"label": "EU Settlement Scheme fee"
@@ -355,7 +355,7 @@
 		"legend": " ",
     "options": {
 			"ihs": {
-				"label": "Immigration health surchage (IHS) fee"
+				"label": "Immigration Health Surcharge (IHS) fee"
 			},
 			"eu-settlement": {
 				"label": "EU Settlement Scheme fee"

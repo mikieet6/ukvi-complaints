@@ -1,6 +1,6 @@
 ##Get help from UK Visas and Immigration
 
-You can phone or email to get some help
+You can phone or email to get some help.
 
 Calls cost £1.37 per minute on top of your standard network charges.
 

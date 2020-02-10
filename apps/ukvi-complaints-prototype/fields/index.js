@@ -189,8 +189,8 @@ module.exports = {
     },
     className: ['form-group'],
     options: [
-      'positive',
-      'negative'
+      'negative',
+      'positive'
     ]
   },
 

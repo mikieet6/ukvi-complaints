@@ -116,7 +116,7 @@
     "header": "Have you received your immigration decision?"
   },
   "decision-outcome": {
-    "header": "Was the decision positive or negative?"
+    "header": "Was the decision negative or positive?"
   },
   "positive-outcome-where": {
     "header": "Where did you make the application?"
@@ -176,13 +176,13 @@
     "header": "Request your refund"
   },
   "refund-when": {
-    "header": "When did you request your refund?"
+    "header": "When did you request a refund?"
   },
   "refund-less-than": {
-    "header": "If your requested a refund less than three months ago"
+    "header": "If you requested a refund less than three months ago"
   },
   "refund-more-than": {
-    "header": "If your requested a refund more than three months ago"
+    "header": "If you requested a refund more than three months ago"
   },
   "poor-info-or-behaviour": {
     "header": "What was the problem?"
@@ -230,7 +230,7 @@
     "header": "Select the reason for your existing complaint"
   },
   "complaint-details": {
-    "header": "What are the details of your complaint?"
+    "header": "Complaint details"
   },
   "acting-as-agent": {
     "header": "Are you making this complaint on behalf of someone else?"
