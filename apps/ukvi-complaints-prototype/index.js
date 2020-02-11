@@ -2,6 +2,8 @@
 
 const conditionalContent = require('./behaviours/conditional-content');
 
+const translation = require('./translations/en/default.json').fields;
+
 module.exports = {
   name: 'ukvi-complaints-prototype',
   baseUrl: '/',
@@ -852,7 +854,9 @@ module.exports = {
         'complaint-details': [
           {
             field: 'reason',
-            step: '/reason'
+            parse: (value) => {
+              return translation.reason.options[value].label;
+            }
           },
           'complaint-details'
         ],
