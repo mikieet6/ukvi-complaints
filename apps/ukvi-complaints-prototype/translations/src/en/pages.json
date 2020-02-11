@@ -36,7 +36,7 @@
     "header": "If you had difficulty getting an appointment in the UK"
   },
   "lack-availability-outside": {
-    "header": "If you had difficulty getting an  appointment outside of the UK"
+    "header": "If you had difficulty getting an  appointmenft outside of the UK"
   },
   "change-appointment": {
     "header": "Where did you make your application?"
@@ -215,7 +215,7 @@
     "header": "What number was the call made from?"
   },
   "existing-complaint": {
-    "header": "Do you have the reference number of your existing complaint?"
+    "header": "Do you have a reference number for the complaint?"
   },
   "other-complaint": {
     "header": "What is the issue with your immigration application?"
@@ -224,13 +224,13 @@
     "header": "When did you submit your application?"
   },
   "complaint-reference-number":{
-    "header": "Enter the reference number of your complaint"
+    "header": "What's your complaint reference?"
   },
   "complaint-reason-previous":{
     "header": "Select the reason for your existing complaint"
   },
   "complaint-details": {
-    "header": "Complaint details"
+    "header": "What are the details of your complaint?"
   },
   "acting-as-agent": {
     "header": "Are you making this complaint on behalf of someone else?"
