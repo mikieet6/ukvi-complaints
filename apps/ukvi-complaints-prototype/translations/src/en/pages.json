@@ -251,13 +251,13 @@
     "header": "What is the applicant’s nationality?"
   },
   "applicant-name": {
-    "header": "What's your name"
+    "header": "What's your name?"
   },
   "applicant-dob": {
-    "header": "What is your date of birth"
+    "header": "What is your date of birth?"
   },
   "applicant-nationality": {
-    "header": "What is your nationality"
+    "header": "What is your nationality?"
   },
   "applicant-contact-details": {
     "header": "What are your contact details?"

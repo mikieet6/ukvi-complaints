@@ -1,8 +1,8 @@
 {
-  "reason": {
-  	"label": "The reason for the complaint",
-  	"legend": " ",
-    "options": {
+	"reason": {
+		"label": "The reason for the complaint",
+		"legend": " ",
+		"options": {
 			"immigration-application": {
 				"label": "Submitting an application"
 			},
@@ -32,16 +32,15 @@
 			},
 			"other-complaint": {
 				"label": "Something else"
-		  }
+			}
 		},
-    "validation": {
-      "required": "Please select an option"
-    }
+		"validation": {
+			"required": "Please select an option"
+		}
 	},
-
 	"immigration-application": {
-  	"legend": " ",
-    "options": {
+		"legend": " ",
+		"options": {
 			"technical-issues": {
 				"label": "Technical issues with the website or payments"
 			},
@@ -52,14 +51,13 @@
 				"label": "Something else"
 			}
 		},
-    "validation": {
-      "required": "Please select an option"
-    }
+		"validation": {
+			"required": "Please select an option"
+		}
 	},
-
 	"where-applied-from": {
-  	"legend": " ",
-    "options": {
+		"legend": " ",
+		"options": {
 			"inside-uk": {
 				"label": "Inside the UK"
 			},
@@ -67,14 +65,13 @@
 				"label": "Outside the UK"
 			}
 		},
-    "validation": {
-      "required": "Please select an option"
-    }
+		"validation": {
+			"required": "Please select an option"
+		}
 	},
-
 	"immigration-appointment": {
-  	"legend": " ",
-    "options": {
+		"legend": " ",
+		"options": {
 			"lack-availability": {
 				"label": "Difficulty getting an appointment"
 			},
@@ -91,14 +88,13 @@
 				"label": "Something else"
 			}
 		},
-    "validation": {
-      "required": "Please select an option"
-    }
+		"validation": {
+			"required": "Please select an option"
+		}
 	},
-
 	"delay-type": {
 		"legend": " ",
-    "options": {
+		"options": {
 			"application-delay": {
 				"label": "A decision on an application"
 			},
@@ -106,14 +102,13 @@
 				"label": "The return of some documents"
 			}
 		},
-    "validation": {
-      "required": "Please select an option"
-    }
+		"validation": {
+			"required": "Please select an option"
+		}
 	},
-
 	"application-delay": {
 		"legend": " ",
-    "options": {
+		"options": {
 			"request-upgrade": {
 				"label": "Request upgrade to Piority service to fast track your Visa application"
 			},
@@ -121,14 +116,13 @@
 				"label": "Complain that your visa application took longer than it should to be processed"
 			}
 		},
-    "validation": {
-      "required": "Please select an option"
-    }
+		"validation": {
+			"required": "Please select an option"
+		}
 	},
-
 	"have-reference-numbers": {
 		"legend": " ",
-    "options": {
+		"options": {
 			"yes": {
 				"label": "Yes"
 			},
@@ -136,15 +130,14 @@
 				"label": "No"
 			}
 		},
-    "validation": {
-      "required": "Please select an option"
-    }
+		"validation": {
+			"required": "Please select an option"
+		}
 	},
-	
 	"reference-numbers": {
 		"hint": "Select one ",
 		"legend": "You don’t have to provide a reference, but it will help us look into your complaint more quickly if you do. ",
-    "options": {
+		"options": {
 			"gwf": {
 				"label": "Global Web Form (GWF) reference number"
 			},
@@ -161,64 +154,50 @@
 				"label": "I don’t have any of these "
 			}
 		},
-    "validation": {
-      "required": "Please select an option"
-    }
+		"validation": {
+			"required": "Please select an option"
+		}
 	},
-
-
-
-
-
-	"dob": {
-	    "legend": {
-	      "applicant": {
-	        "true": "What's your date of birth?"
-	      },
-	      "default": "What's the applicant's date of birth?"
-	    },
-	    "hint": "For example, 31 3 1980",
-	    "summary": "Date of birth"
-	  },
-	  "dob-day": {
-	    "label": "Day"
-	  },
-	  "dob-month": {
-	    "label": "Month"
-	  },
-	  "dob-year": {
-	    "label": "Year"
-	  },
-
-
-
-
-
+	"agent-representative-dob": {
+		"legend": {
+			"applicant": {
+				"true": "What's your date of birth?"
+			},
+			"default": "What's the applicant's date of birth?"
+		},
+		"hint": "For example, 31 3 1980",
+		"summary": "Date of birth",
+		"label": "Applicant’s date of birth",
+		"validation": {
+			"required": "You must enter a valid date",
+			"date": "You must enter a valid date",
+    		"before": "Date cannot be in the future",
+    		"after": "This date appears to be too far in the past"
+		}
+	},
 	"gwf": {
 		"label": "GWF number",
 		"hint": "Enter your GWF number"
 	},
-
-	"gwf-reference":{
+	"gwf-reference": {
 		"label": "Enter your GWF number",
 		"hint": "This starts with GWF followed by 8 numbers. For example, GWF012345678."
 	},
-	"ho-reference":{
+	"ho-reference": {
 		"label": "Enter your HO number",
 		"hint": "This is 8 numbers. For example, 012345678"
 	},
-	"ihs-reference":{
+	"ihs-reference": {
 		"label": "Enter your IHS number",
 		"hint": "This starts with IHS followed by 9 numbers. For example, IHS123456789."
 	},
-	"uan-reference":{
+	"uan-reference": {
 		"label": "Enter your UAN number",
 		"hint": "This is 16 numbers. For example, 1234567891234567"
 	},
-
 	"return-of-documents": {
 		"legend": " ",
-    "options": {
+		"options": {
 			"yes-docs-service": {
 				"label": "Yes, using the return of documents service"
 			},
@@ -229,14 +208,13 @@
 				"label": "No"
 			}
 		},
-    "validation": {
-      "required": "Please select an option"
-    }
+		"validation": {
+			"required": "Please select an option"
+		}
 	},
-
 	"requested-documents": {
 		"legend": " ",
-    "options": {
+		"options": {
 			"yes": {
 				"label": "Yes"
 			},
@@ -244,14 +222,13 @@
 				"label": "No"
 			}
 		},
-    "validation": {
-      "required": "Please select an option"
-    }
+		"validation": {
+			"required": "Please select an option"
+		}
 	},
-
 	"have-requested": {
 		"legend": " ",
-    "options": {
+		"options": {
 			"used-service": {
 				"label": "Used the return of documents online service"
 			},
@@ -260,10 +237,9 @@
 			}
 		}
 	},
-
 	"immigration-decision": {
 		"legend": " ",
-    "options": {
+		"options": {
 			"yes": {
 				"label": "Yes"
 			},
@@ -271,14 +247,13 @@
 				"label": "No"
 			}
 		},
-    "validation": {
-      "required": "Please select an option"
-    }
+		"validation": {
+			"required": "Please select an option"
+		}
 	},
-
 	"decision-outcome": {
 		"legend": " ",
-    "options": {
+		"options": {
 			"positive": {
 				"label": "Positive"
 			},
@@ -286,14 +261,13 @@
 				"label": "Negative"
 			}
 		},
-    "validation": {
-      "required": "Please select an option"
-    }
+		"validation": {
+			"required": "Please select an option"
+		}
 	},
-
 	"immigration-status-change": {
 		"legend": " ",
-    "options": {
+		"options": {
 			"questions-status-change": {
 				"label": "You have questions about your immigration status change"
 			},
@@ -301,14 +275,13 @@
 				"label": "You want to complain about your immigration status change"
 			}
 		},
-    "validation": {
-      "required": "Please select an option"
-    }
+		"validation": {
+			"required": "Please select an option"
+		}
 	},
-
 	"biometric-residence-permit": {
 		"legend": " ",
-    "options": {
+		"options": {
 			"card-not-arrived": {
 				"label": " The BRP card has not arrived"
 			},
@@ -319,14 +292,13 @@
 				"label": "Something else"
 			}
 		},
-    "validation": {
-      "required": "Please select an option"
-    }
+		"validation": {
+			"required": "Please select an option"
+		}
 	},
-
 	"refund-type": {
 		"legend": " ",
-    "options": {
+		"options": {
 			"standard": {
 				"label": "Standard service fee"
 			},
@@ -346,14 +318,13 @@
 				"label": "EU Settlement Scheme fee"
 			}
 		},
-    "validation": {
-      "required": "Please select an option"
-    }
+		"validation": {
+			"required": "Please select an option"
+		}
 	},
-
 	"refund-type-automatic": {
 		"legend": " ",
-    "options": {
+		"options": {
 			"ihs": {
 				"label": "Immigration Health Surcharge (IHS) fee"
 			},
@@ -361,14 +332,13 @@
 				"label": "EU Settlement Scheme fee"
 			}
 		},
-    "validation": {
-      "required": "Please select an option"
-    }
+		"validation": {
+			"required": "Please select an option"
+		}
 	},
-
 	"refund": {
 		"legend": " ",
-    "options": {
+		"options": {
 			"yes": {
 				"label": "Yes"
 			},
@@ -379,14 +349,13 @@
 				"label": "No, I was told the refund would be automatic"
 			}
 		},
-    "validation": {
-      "required": "Please select an option"
-    }
+		"validation": {
+			"required": "Please select an option"
+		}
 	},
-
 	"refund-when": {
 		"legend": " ",
-    "options": {
+		"options": {
 			"less-than": {
 				"label": "Less than 3 months ago"
 			},
@@ -394,14 +363,13 @@
 				"label": "More than 3 months ago"
 			}
 		},
-    "validation": {
-      "required": "Please select an option"
-    }
+		"validation": {
+			"required": "Please select an option"
+		}
 	},
-
 	"poor-info-or-behaviour": {
 		"legend": " ",
-    "options": {
+		"options": {
 			"poor-information": {
 				"label": "Unclear or misleading information"
 			},
@@ -409,14 +377,13 @@
 				"label": "Poor staff behaviour"
 			}
 		},
-    "validation": {
-      "required": "Please select an option"
-    }
+		"validation": {
+			"required": "Please select an option"
+		}
 	},
-
 	"staff-behaviour": {
 		"legend": " ",
-    "options": {
+		"options": {
 			"face-to-face": {
 				"label": "In person"
 			},
@@ -427,14 +394,13 @@
 				"label": "In a letter or email"
 			}
 		},
-    "validation": {
-      "required": "Please select an option"
-    }
+		"validation": {
+			"required": "Please select an option"
+		}
 	},
-
 	"which-centre": {
 		"legend": " ",
-    "options": {
+		"options": {
 			"vac": {
 				"label": "At a visa application centre (VAC)"
 			},
@@ -445,46 +411,37 @@
 				"label": "At a UK Visa and Citizenship Application Service service point"
 			}
 		},
-    "validation": {
-      "required": "Please select an option"
-    }
+		"validation": {
+			"required": "Please select an option"
+		}
 	},
-
 	"vac-country": {
 		"label": "Country"
 	},
-
 	"vac-city": {
 		"label": "City"
 	},
-
 	"ssc-city": {
 		"label": "City"
 	},
-
 	"ukvcas-city": {
 		"label": "City"
 	},
-
 	"called-number": {
 		"label": "What telephone number was called?"
 	},
-
 	"called-date": {
 		"label": "What was the approximate date of the call?"
 	},
-
 	"called-time": {
 		"label": " ",
 		"hint": "For example, 10:30am or morning"
 	},
-
 	"called-from": {
 		"label": " "
 	},
-
 	"existing-complaint": {
-    "options": {
+		"options": {
 			"yes": {
 				"label": "Yes"
 			},
@@ -493,10 +450,9 @@
 			}
 		}
 	},
-
 	"complaint-reason-previous": {
-  	"legend": " ",
-    "options": {
+		"legend": " ",
+		"options": {
 			"immigration-application": {
 				"label": "Completing or submitting a visa application"
 			},
@@ -526,42 +482,40 @@
 			},
 			"other-complaint": {
 				"label": "Something else"
-		  }
+			}
 		}
 	},
-
 	"complaint-reference-number": {
 		"label": " ",
 		"hint": "For example, 123456"
 	},
-	
 	"when-applied": {
 		"label": " ",
 		"hint": "If you can't remember the exact date, just provide the month."
 	},
-
-	"complaint-details":{
-	    "hint": "Your complaint.",
-	    "label": "Summarise your complaint",
-	    "summary": "Details of the complaint"
-	 },
-
+	"complaint-details": {
+		"hint": "Your complaint.",
+		"label": "Summarise your complaint",
+		"summary": "Details of the complaint",
+		"validation": {
+			"required": "You must enter details about your complaint"
+		}
+	},
 	"other-complaint": {
 		"legend": " ",
-    "options": {
-			"xxx": {
-				"label": "xxx"
+		"options": {
+			"xxy": {
+				"label": "xxy"
 			},
 			"xxx": {
 				"label": "xxx"
 			}
 		}
 	},
-
 	"acting-as-agent": {
 		"label": "Are you completing this form on behalf of the applicant?",
-		"hint": " Anyone can complain on behalf of an applicant but you must have their consent. In some cases you can get consent from the Home Office if that’s not possible. ",
-    "options": {
+		"hint": " Anyone can complain on behalf of an applicant but you must have their consent. In some cases you can get consent from the Home Office if that’s not possible.",
+		"options": {
 			"yes": {
 				"label": "Yes"
 			},
@@ -569,130 +523,102 @@
 				"label": "No"
 			}
 		},
-    "validation": {
-      "required": "Please select an option"
-    }
+		"validation": {
+			"required": "Please select an option"
+		}
 	},
-
 	"who-representing": {
 		"label": "What’s your relation to the applicant?",
 		"legend": " ",
 		"options": {
-			"legal-rep":{
+			"legal-rep": {
 				"label": "I’m their legal representative"
 			},
-			"relative":{
+			"relative": {
 				"label": "I’m a relative or friend"
 			},
-			"sponsor":{
+			"sponsor": {
 				"label": "I’m their sponsor"
 			},
-			"support-org":{
+			"support-org": {
 				"label": "I work for a charity or similar organisation that’s helping them"
 			}
-
 		},
-    "validation": {
-      "required": "Please select an option"
-    }
+		"validation": {
+			"required": "Please select an option"
+		}
 	},
-
 	"agent-name": {
 		"legend": "",
-    "label": "Full name" ,
-    "validation": {
-      "required": "Please enter your name"
-    }
+		"label": "Full name",
+		"validation": {
+			"required": "Please enter your name"
+		}
 	},
-
 	"agent-email": {
 		"legend": "",
-    "label": "Email address" ,
+		"label": "Email address",
 		"hint": "We’ll use this to send our response",
-    "validation": {
-      "required": "Please enter an email address"
-    }
+		"validation": {
+			"required": "Please enter an email address"
+		}
 	},
-
 	"agent-phone": {
 		"legend": "",
-    "label": "Your phone number (optional)" ,
+		"label": "Your phone number (optional)",
 		"hint": "We may call if we need more information "
 	},
-
 	"agent-representative-name": {
 		"legend": "",
-    "label": "Applicant’s full name"
-    ,
-    "validation": {
-      "required": "Please enter a name"
-    } 
+		"label": "Applicant’s full name",
+		"validation": {
+			"required": "Please enter a name"
+		}
 	},
-
-	"dob": {
-	    "legend": {
-	      "applicant": {
-	        "true": "What's your date of birth?"
-	      },
-	      "default": "What's the applicant's date of birth?"
-	    },
-	    "hint": "For example, 31 3 1980",
-	    "summary": "Date of birth"
-	  },
-	  "dob-day": {
-	    "label": "Day"
-	  },
-	  "dob-month": {
-	    "label": "Month"
-	  },
-	  "dob-year": {
-	    "label": "Year"
-	  },
-
 	"agent-representative-nationality": {
 		"legend": "",
-    "label": "Applicant’s nationality",
-    "hint": "We’ll  use this to confirm the applicant’s identity" 
+		"label": "Applicant’s nationality",
+		"hint": "We’ll  use this to confirm the applicant’s identity",
+		"validation": {
+			"required": "Please select your nationality",
+			"equal": "You must select a valid nationality from the list"
+		}
 	},
-
 	"applicant-name": {
 		"legend": "",
-    "label": "Full name",
-    "validation": {
-      "required": "Please enter your name"
-    }
+		"label": "Full name",
+		"validation": {
+			"required": "Please enter your name"
+		}
 	},
-
 	"applicant-dob": {
-		"legend": "",
-    "label": "Date of birth",
-    "validation": {
-      "required": "Please enter your date of birth"
-    }  
+		"label": "Date osf birth",
+		"hint": "For example, 31 3 1980",
+		"validation": {
+			"required": "You must enter a valid date",
+			"date": "You must enter a valid date",
+    		"before": "Date cannot be in the future",
+    		"after": "This date appears to be too far in the past"
+		}
 	},
-
 	"applicant-nationality": {
 		"legend": "",
-    "label": "Nationality",
-    "validation": {
-      "required": "Please select your nationality"
-    } 
+		"label": "Nationality",
+		"validation": {
+			"required": "Please select your nationality",
+			"equal": "You must select a valid nationality from the list"
+		}
 	},
-
 	"applicant-email": {
 		"legend": "",
-    "label": "Email address",
-    "validation": {
-      "required": "Please enter an email address",
-      "email": "Please enter a valid email address containing an '@' symbol"
-    }
+		"label": "Email address",
+		"validation": {
+			"required": "Please enter an email address",
+			"email": "Please enter a valid email address containing an '@' symbol"
+		}
 	},
-
 	"applicant-phone": {
 		"legend": "",
-    "label": "Phone number (optional)" 
+		"label": "Phone number (optional)"
 	}
 }
-
-
-

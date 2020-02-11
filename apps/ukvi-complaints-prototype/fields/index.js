@@ -4,25 +4,25 @@ const dateComponent = require('hof-component-date');
 
 module.exports = {
   reason: {
-  	mixin: 'radio-group',
-  	options: [
-  		'immigration-application',
-  		'immigration-appointment',
-  		'delays',
-  		'immigration-decision',
-  		'biometric-residence-permit',
-  		'refund',
-  		'staff-behaviour',
+    mixin: 'radio-group',
+    options: [
+      'immigration-application',
+      'immigration-appointment',
+      'delays',
+      'immigration-decision',
+      'biometric-residence-permit',
+      'refund',
+      'staff-behaviour',
       'existing-complaint',
-  		'other-complaint'
-  	],
+      'other-complaint'
+    ],
     validate: 'required'
   },
 
   'immigration-application': {
-  	mixin: 'radio-group',
-  	validate: 'required',
-  	legend: {
+    mixin: 'radio-group',
+    validate: 'required',
+    legend: {
       className: 'visuallyhidden'
     },
     className: ['form-group'],
@@ -34,9 +34,9 @@ module.exports = {
   },
 
   'immigration-appointment': {
-  	mixin: 'radio-group',
-  	validate: 'required',
-  	legend: {
+    mixin: 'radio-group',
+    validate: 'required',
+    legend: {
       className: 'visuallyhidden'
     },
     className: ['form-group'],
@@ -48,7 +48,6 @@ module.exports = {
       'complain-appointments'
     ]
   },
-  
   'where-applied-from': {
     mixin: 'radio-group',
     validate: 'required',
@@ -62,10 +61,10 @@ module.exports = {
     ]
   },
 
-  "delay-type": {
-  	mixin: 'radio-group',
-  	validate: 'required',
-  	legend: {
+  'delay-type': {
+    mixin: 'radio-group',
+    validate: 'required',
+    legend: {
       className: 'visuallyhidden'
     },
     className: ['form-group'],
@@ -75,7 +74,7 @@ module.exports = {
     ]
   },
 
-  "application-delay": {
+  'application-delay': {
     mixin: 'radio-group',
     validate: 'required',
     legend: {
@@ -87,8 +86,8 @@ module.exports = {
       'application-ref-numbers'
     ]
   },
-  
-  "delays": {
+
+  'delays': {
     mixin: 'radio-group',
     validate: 'required',
     legend: {
@@ -101,10 +100,10 @@ module.exports = {
     ]
   },
 
-  "have-reference-numbers": {
-  	mixin: 'radio-group',
-  	validate: 'required',
-  	legend: {
+  'have-reference-numbers': {
+    mixin: 'radio-group',
+    validate: 'required',
+    legend: {
       className: 'visuallyhidden'
     },
     className: ['form-group'],
@@ -114,7 +113,7 @@ module.exports = {
     ]
   },
 
-  // "reference-numbers": {
+  // 'reference-numbers': {
   // 	mixin: 'radio-group',
   // 	validate: 'required',
   // 	legend: {
@@ -128,10 +127,10 @@ module.exports = {
   //   ]
   // },
 
-  "requested-documents": {
-  	mixin: 'radio-group',
-  	validate: 'required',
-  	legend: {
+  'requested-documents': {
+    mixin: 'radio-group',
+    validate: 'required',
+    legend: {
       className: 'visuallyhidden'
     },
     className: ['form-group'],
@@ -140,8 +139,8 @@ module.exports = {
       'no'
     ]
   },
-  
-  "have-requested": {
+
+  'have-requested': {
     mixin: 'radio-group',
     validate: 'required',
     legend: {
@@ -154,10 +153,10 @@ module.exports = {
     ]
   },
 
-  "return-of-documents": {
-  	mixin: 'radio-group',
-  	validate: 'required',
-  	legend: {
+  'return-of-documents': {
+    mixin: 'radio-group',
+    validate: 'required',
+    legend: {
       className: 'visuallyhidden'
     },
     className: ['form-group'],
@@ -168,10 +167,10 @@ module.exports = {
     ]
   },
 
-  "immigration-decision": {
-  	mixin: 'radio-group',
-  	validate: 'required',
-  	legend: {
+  'immigration-decision': {
+    mixin: 'radio-group',
+    validate: 'required',
+    legend: {
       className: 'visuallyhidden'
     },
     className: ['form-group'],
@@ -180,8 +179,8 @@ module.exports = {
       'no'
     ]
   },
-  
-  "decision-outcome": {
+
+  'decision-outcome': {
     mixin: 'radio-group',
     validate: 'required',
     legend: {
@@ -194,10 +193,10 @@ module.exports = {
     ]
   },
 
-  "immigration-status-change": {
-  	mixin: 'radio-group',
-  	validate: 'required',
-  	legend: {
+  'immigration-status-change': {
+    mixin: 'radio-group',
+    validate: 'required',
+    legend: {
       className: 'visuallyhidden'
     },
     className: ['form-group'],
@@ -207,10 +206,10 @@ module.exports = {
     ]
   },
 
-  "biometric-residence-permit": {
-  	mixin: 'radio-group',
-  	validate: 'required',
-  	legend: {
+  'biometric-residence-permit': {
+    mixin: 'radio-group',
+    validate: 'required',
+    legend: {
       className: 'visuallyhidden'
     },
     className: ['form-group'],
@@ -221,10 +220,10 @@ module.exports = {
     ]
   },
 
-  "refund-type": {
-  	mixin: 'radio-group',
-  	validate: 'required',
-  	legend: {
+  'refund-type': {
+    mixin: 'radio-group',
+    validate: 'required',
+    legend: {
       className: 'visuallyhidden'
     },
     className: ['form-group'],
@@ -238,7 +237,7 @@ module.exports = {
     ]
   },
 
-  "refund-type-automatic": {
+  'refund-type-automatic': {
     mixin: 'radio-group',
     validate: 'required',
     legend: {
@@ -251,7 +250,7 @@ module.exports = {
     ]
   },
 
-  "refund": {
+  'refund': {
     mixin: 'radio-group',
     validate: 'required',
     legend: {
@@ -264,7 +263,7 @@ module.exports = {
       'not-yet'
     ]
   },
-  "refund-when": {
+  'refund-when': {
     mixin: 'radio-group',
     validate: 'required',
     legend: {
@@ -277,10 +276,10 @@ module.exports = {
     ]
   },
 
-  "poor-info-or-behaviour": {
-  	mixin: 'radio-group',
-  	validate: 'required',
-  	legend: {
+  'poor-info-or-behaviour': {
+    mixin: 'radio-group',
+    validate: 'required',
+    legend: {
       className: 'visuallyhidden'
     },
     className: ['form-group'],
@@ -289,7 +288,7 @@ module.exports = {
       'staff-behaviour'
     ]
   },
-  "staff-behaviour": {
+  'staff-behaviour': {
     mixin: 'radio-group',
     validate: 'required',
     legend: {
@@ -303,7 +302,7 @@ module.exports = {
     ]
   },
 
-  "which-centre": {
+  'which-centre': {
     mixin: 'radio-group',
     validate: 'required',
     legend: {
@@ -317,7 +316,7 @@ module.exports = {
     ]
   },
 
-  "vac-country": {
+  'vac-country': {
     mixin: 'input-text',
     validate: 'required',
     legend: {
@@ -325,7 +324,7 @@ module.exports = {
     },
   },
 
-  "vac-city": {
+  'vac-city': {
     mixin: 'input-text',
     validate: 'required',
     legend: {
@@ -333,7 +332,7 @@ module.exports = {
     },
   },
 
-  "ssc-city": {
+  'ssc-city': {
     mixin: 'input-text',
     validate: 'required',
     legend: {
@@ -342,7 +341,7 @@ module.exports = {
     className: ['form-group'],
   },
 
-  "ukvcas-city": {
+  'ukvcas-city': {
     mixin: 'input-text',
     validate: 'required',
     legend: {
@@ -351,7 +350,7 @@ module.exports = {
     className: ['form-group'],
   },
 
-  "called-date": {
+  'called-date': {
     mixin: 'input-text',
     validate: 'required',
     legend: {
@@ -359,7 +358,7 @@ module.exports = {
     },
     className: ['form-group'],
   },
-  "called-time": {
+  'called-time': {
     mixin: 'input-text',
     validate: 'required',
     legend: {
@@ -367,7 +366,7 @@ module.exports = {
     },
     className: ['form-group'],
   },
-  "called-from": {
+  'called-from': {
     mixin: 'input-text',
     validate: 'required',
     legend: {
@@ -376,10 +375,10 @@ module.exports = {
     className: ['form-group'],
   },
 
-  "existing-complaint": {
-  	mixin: 'radio-group',
-  	validate: 'required',
-  	legend: {
+  'existing-complaint': {
+    mixin: 'radio-group',
+    validate: 'required',
+    legend: {
       className: 'visuallyhidden'
     },
     className: ['form-group'],
@@ -389,7 +388,7 @@ module.exports = {
     ]
   },
 
-  "complaint-reason-previous": {
+  'complaint-reason-previous': {
     mixin: 'radio-group',
     options: [
       'immigration-application',
@@ -406,10 +405,10 @@ module.exports = {
   },
 
 
-  "other-complaint": {
-  	mixin: 'radio-group',
-  	validate: 'required',
-  	legend: {
+  'other-complaint': {
+    mixin: 'radio-group',
+    validate: 'required',
+    legend: {
       className: 'visuallyhidden'
     },
     className: ['form-group'],
@@ -446,7 +445,7 @@ module.exports = {
     }]
   },
   'when-applied': {
-   mixin: 'input-text',
+    mixin: 'input-text',
     validate: 'required',
     legend: {
       className: 'visuallyhidden'
@@ -498,112 +497,108 @@ module.exports = {
     className: ['form-control-3-4'],
   },
 
-  "acting-as-agent": {
-  	mixin: 'radio-group',
-  	validate: 'required',
-  	legend: {
+  'acting-as-agent': {
+    mixin: 'radio-group',
+    validate: 'required',
+    legend: {
       className: 'visuallyhidden'
     },
     className: ['form-group'],
     options: [
-      'yes', 
+      'yes',
       'no'
     ]
   },
 
-  "who-representing": {
-    mixin: "radio-group",
+  'who-representing': {
+    mixin: 'radio-group',
+    validate: 'required',
     options: [
-      "legal-rep",
-      "relative",
-      "sponsor",
-      "support-org"
+      'legal-rep',
+      'relative',
+      'sponsor',
+      'support-org'
     ]
   },
 
-  "agent-name": {
-  	mixin: 'input-text',
-  	validate: 'required',
-  	legend: {
+  'agent-name': {
+    mixin: 'input-text',
+    validate: 'required',
+    legend: {
       className: 'visuallyhidden'
     },
     className: ['']
   },
 
-  "agent-email": {
-  	mixin: 'input-text',
-  	validate: 'required',
-  	legend: {
+  'agent-email': {
+    mixin: 'input-text',
+    validate: 'required',
+    legend: {
       className: 'visuallyhidden'
     },
     className: ['']
   },
 
-  "agent-phone": {
-  	mixin: 'input-text',
-  	legend: {
+  'agent-phone': {
+    mixin: 'input-text',
+    legend: {
       className: 'visuallyhidden'
     },
     className: ['']
   },
 
-  "applicant-name": {
-  	mixin: 'input-text',
-  	validate: 'required',
-  	legend: {
+  'applicant-name': {
+    mixin: 'input-text',
+    validate: 'required',
+    legend: {
       className: 'visuallyhidden'
     },
     className: ['']
   },
 
   'applicant-dob': dateComponent('applicant-dob', {
-    labelClassName: 'visuallyhidden',
+    validate: ['required', 'date', 'before', { type: 'after', arguments: '1900-01-01' }],
   }),
 
-  'dob': {},
-  'dob-day': {
-    mixin:'input-text-compound',
-    validate: ['required', 'numeric'],
-    includeInEmail: false,
-    includeInSummary: false
-  },
-  'dob-month': {
-    validate: ['required', 'numeric'],
-    includeInEmail: false,
-    includeInSummary: false
-  },
-  'dob-year': {
-    validate: ['required', 'numeric'],
-    includeInEmail: false,
-    includeInSummary: false
-  },
+  'agent-representative-dob': dateComponent('agent-representative-dob', {
+    validate: ['required', 'date', 'before', { type: 'after', arguments: '1900-01-01' }],
+  }),
 
-  "applicant-email": {
-  	mixin: 'input-text',
-  	validate: 'required',
-  	legend: {
+  'applicant-email': {
+    mixin: 'input-text',
+    validate: 'required',
+    legend: {
       className: 'visuallyhidden'
     },
     className: ['']
   },
 
-  "applicant-nationality":{
+  'applicant-nationality': {
     mixin: 'select',
-    options: [{label: '', value: ''}].concat(require('hof-util-countries')()),
+    options: [{ label: ' ', value: '' }].concat(require('hof-util-countries')()),
     validate: 'required',
     className: ['typeahead']
   },
 
-  "agent-representative-nationality":{
+  'agent-representative-name': {
+    mixin: 'input-text',
+    validate: 'required',
+    legend: {
+      className: 'visuallyhidden'
+    },
+    className: ['']
+  },
+
+  'agent-representative-nationality': {
     mixin: 'select',
-    options: [{label: '', value: ''}].concat(require('hof-util-countries')()),
+    options: [{ label: ' ', value: '' }].concat(require('hof-util-countries')()),
     validate: 'required',
     className: ['typeahead', 'js-hidden']
   },
 
-  "applicant-phone": {
-  	mixin: 'input-text',
-  	legend: {
+  'applicant-phone': {
+    mixin: 'input-text',
+    legend: {
       className: 'visuallyhidden'
     },
     className: ['']

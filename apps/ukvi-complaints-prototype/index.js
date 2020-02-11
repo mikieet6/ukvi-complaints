@@ -1,6 +1,6 @@
 'use strict';
 
-const conditionalContent = require('./behaviours/conditional-content')
+const conditionalContent = require('./behaviours/conditional-content');
 
 module.exports = {
   name: 'ukvi-complaints-prototype',
@@ -11,7 +11,7 @@ module.exports = {
     },
     '/reason': {
       fields: ['reason'],
-      next: '/immigration-application', 
+      next: '/immigration-application',
       forks: [{
         target: '/immigration-application',
         condition: {
@@ -60,7 +60,7 @@ module.exports = {
           field: 'reason',
           value: 'existing-complaint'
         }
-       }, {
+      }, {
         target: '/application-ref-numbers',
         condition: {
           field: 'reason',
@@ -106,7 +106,7 @@ module.exports = {
           value: 'outside-uk'
         }
       }],
-      next:'/complaint-details'
+      next: '/complaint-details'
     },
 
     '/application-technical-inside-uk': {
@@ -116,7 +116,7 @@ module.exports = {
     '/application-technical-outside-uk': {
 
     },
-      
+
     '/application-guidance-where': {
       fields: ['where-applied-from'],
       forks: [{
@@ -190,13 +190,13 @@ module.exports = {
           value: 'outside-uk'
         }
       }],
-      next:'/complaint-details'
+      next: '/complaint-details'
     },
     '/lack-availability-inside': {
-     
+
     },
     '/lack-availability-outside': {
-     
+
     },
     '/change-appointment': {
       fields: ['where-applied-from'],
@@ -213,14 +213,14 @@ module.exports = {
           value: 'outside-uk'
         }
       }],
-      next:'/complaint-details'
+      next: '/complaint-details'
     },
 
     '/change-appointment-inside': {
-     
+
     },
     '/change-appointment-outside': {
-     
+
     },
     '/appointment-technical': {
       fields: ['where-applied-from'],
@@ -239,13 +239,13 @@ module.exports = {
       }],
     },
     '/appointment-technical-inside': {
-      
+
     },
     '/appointment-technical-outside': {
-      
+
     },
     '/questions-appointments': {
-       fields: ['where-applied-from'],
+      fields: ['where-applied-from'],
       forks: [{
         target: '/questions-appointments-inside',
         condition: {
@@ -261,10 +261,10 @@ module.exports = {
       }]
     },
     '/questions-appointments-outside': {
-      
+
     },
     '/questions-appointments-inside': {
-      
+
     },
     '/delays': {
       fields: ['delay-type'],
@@ -314,14 +314,14 @@ module.exports = {
           value: 'outside-uk'
         }
       }],
-      next:'/complaint-details'
+      next: '/complaint-details'
     },
 
     '/upgrade-inside-uk': {
-      
+
     },
     '/upgrade-outside-uk': {
-      
+
     },
     '/application-ref-numbers': {
       fields: ['reference-numbers'],
@@ -444,7 +444,7 @@ module.exports = {
           value: 'outside-uk'
         }
       }],
-      next:'/complaint-details'
+      next: '/complaint-details'
     },
 
     '/positive-outcome-inside': {
@@ -508,16 +508,16 @@ module.exports = {
         }
       }]
     },
-    '/card-not-arrived':{
+    '/card-not-arrived': {
       next: 'complaint-detials'
     },
-    '/letter-not-arrived':{
+    '/letter-not-arrived': {
       next: 'complaint-detials'
     },
-    '/card-incorrect':{
+    '/card-incorrect': {
       next: 'complaint-detials'
     },
-    '/complain-brp':{
+    '/complain-brp': {
       next: 'complaint-detials'
     },
     '/refund-type': {
@@ -809,7 +809,7 @@ module.exports = {
       next: '/agent-contact-details'
     },
     '/agent-contact-details': {
-      fields: ['agent-email','agent-phone'],
+      fields: ['agent-email', 'agent-phone'],
       next: '/agent-representative-name'
     },
     '/agent-representative-name': {
@@ -817,13 +817,7 @@ module.exports = {
       next: '/agent-representative-dob'
     },
     '/agent-representative-dob': {
-      dateKey: 'dob',
-      fields: [
-        'dob',
-        'dob-day',
-        'dob-month',
-        'dob-year'
-      ],
+      fields: ['agent-representative-dob'],
       next: '/agent-representative-nationality'
     },
     '/agent-representative-nationality': {
@@ -839,16 +833,15 @@ module.exports = {
       next: '/applicant-nationality'
     },
     '/applicant-nationality': {
-      dateKey: 'dob',
       fields: ['applicant-nationality'],
       next: '/applicant-contact-details'
     },
     '/applicant-contact-details': {
-      fields: ['applicant-email','applicant-phone'],
+      fields: ['applicant-email', 'applicant-phone'],
       next: '/complaint-details'
     },
-     '/complaint-details': {
-      behaviours: [ conditionalContent ],
+    '/complaint-details': {
+      behaviours: [conditionalContent],
       fields: ['complaint-details'],
       next: '/confirm'
     },
@@ -864,19 +857,17 @@ module.exports = {
           'complaint-details'
         ],
         'agent-details': [
-          'agent-name',
-          'agent-representative-dob'
-          
-        ],
-        'your-details': [
-          'applicant-name',
-          'applicant-nationality',
-          'applicant-dob'
+          'agent-name'
         ],
         'applicant-details': [
           'agent-representative-name',
           'agent-representative-nationality',
           'agent-representative-dob'
+        ],
+        'your-details': [
+          'applicant-name',
+          'applicant-nationality',
+          'applicant-dob'
         ],
         'contact-details': [
           'applicant-email',
