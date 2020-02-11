@@ -592,7 +592,7 @@
 		}
 	},
 	"applicant-dob": {
-		"label": "Date osf birth",
+		"label": "Date of birth",
 		"hint": "For example, 31 3 1980",
 		"validation": {
 			"required": "You must enter a valid date",
