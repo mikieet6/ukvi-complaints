@@ -4,6 +4,8 @@ const conditionalContent = require('./behaviours/conditional-content');
 
 const translation = require('./translations/en/default.json').fields;
 
+const moment = require('moment');
+
 module.exports = {
   name: 'ukvi-complaints-prototype',
   baseUrl: '/',
@@ -866,12 +868,22 @@ module.exports = {
         'applicant-details': [
           'agent-representative-name',
           'agent-representative-nationality',
-          'agent-representative-dob'
+          {
+            field: ' agent-representative-dob',
+            parse: (value) => {
+              return moment(value).format('D MMMM YYYY');
+            }
+          }
         ],
         'your-details': [
           'applicant-name',
           'applicant-nationality',
-          'applicant-dob'
+          {
+            field: 'applicant-dob',
+            parse: (value) => {
+              return moment(value).format('D MMMM YYYY');
+            }
+          }
         ],
         'contact-details': [
           'applicant-email',
