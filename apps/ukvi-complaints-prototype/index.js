@@ -865,7 +865,7 @@ module.exports = {
           'agent-representative-name',
           'agent-representative-nationality',
           {
-            field: ' agent-representative-dob',
+            field: 'agent-representative-dob',
             parse: (value) => {
               return moment(value).format('D MMMM YYYY');
             }
