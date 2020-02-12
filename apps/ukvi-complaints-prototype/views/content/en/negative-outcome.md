@@ -1,11 +1,17 @@
-##Check if you can appeal the decision
+##Check if you have the right to appeal
 
-Check your decision letter. It will tell you whether you can appeal the decision.
+Check your decision letter. It should tell you if you have the right to formally appeal the decision at a tribunal. 
 
 [Appeal the decision](https://www.gov.uk/immigration-asylum-tribunal)
 
-##Check if you have the right to appeal
+##Check if you can ask for an administrative review
 
-Check your decision letter. It will tell you if you have the right to appeal.
+If you don’t have a right to appeal the decision, you may be able to ask the Home Office for an administrative review. Check your decision letter. It will tell you if you can ask for a review. 
 
 [Apply for a review](https://www.gov.uk/ask-for-a-visa-administrative-review)
+
+##Check if you can ask for a reconsideration request
+
+If you don’t have a right to an appeal or a review, you may be able to ask for a reconsideration request if you’re applying from the UK.  
+
+[Ask for a reconsideration](https://www.gov.uk/visa-and-immigration-reconsideration-requests)
