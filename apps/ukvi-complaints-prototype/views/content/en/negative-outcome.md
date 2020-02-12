@@ -12,6 +12,6 @@ If you don’t have a right to appeal the decision, you may be able to ask the H
 
 ##Check if you can ask for a reconsideration request
 
-If you don’t have a right to an appeal or a review, you may be able to ask for a reconsideration request if you’re applying from the UK.  
+If you're applying from the UK and you don’t have the right to an appeal or a review, you may be able to ask for a reconsideration request.  
 
 [Ask for a reconsideration](https://www.gov.uk/visa-and-immigration-reconsideration-requests)

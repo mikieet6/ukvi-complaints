@@ -531,7 +531,7 @@ module.exports = {
 
   'agent-email': {
     mixin: 'input-text',
-    validate: 'required',
+    validate: ['required', 'email'],
     legend: {
       className: 'visuallyhidden'
     },
@@ -565,7 +565,7 @@ module.exports = {
 
   'applicant-email': {
     mixin: 'input-text',
-    validate: 'required',
+    validate: ['required', 'email'],
     legend: {
       className: 'visuallyhidden'
     },

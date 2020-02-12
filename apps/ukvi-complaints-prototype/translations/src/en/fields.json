@@ -399,10 +399,10 @@
 				"label": "Outside the UK, at a visa application centre"
 			},
 			"ssc": {
-				"label": "At a Service Support Centre"
+				"label": "In the UK, at a service support centre"
 			},
 			"ukvcas": {
-				"label": "At a UK Visa and Citizenship Application Service service point"
+				"label": "In the UK, at visa and citizenship application service point"
 			}
 		},
 		"validation": {
@@ -440,7 +440,7 @@
 	},
 	"called-from": {
 		"label": "Telephone number",
-		"hint": "For international numberss include the country code"
+		"hint": "For international numbers include the country code"
 	},
 	"existing-complaint": {
 		"options": {
@@ -563,7 +563,8 @@
 		"label": "Email address",
 		"hint": "We’ll use this to send our response",
 		"validation": {
-			"required": "Enter an email address"
+			"required": "Enter an email address",
+			"email": "Enter a valid email address"
 		}
 	},
 	"agent-phone": {
@@ -615,6 +616,7 @@
 	"applicant-email": {
 		"legend": "",
 		"label": "Email address",
+		"hint": "We’ll use this to send our response",
 		"validation": {
 			"required": "Enter an email address",
 			"email": "Your email address must contain the '@' symbol"
