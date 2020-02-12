@@ -317,11 +317,10 @@ module.exports = {
   },
 
   'vac-country': {
-    mixin: 'input-text',
+    mixin: 'select',
+    options: [{ label: ' ', value: '' }].concat(require('hof-util-countries')()),
     validate: 'required',
-    legend: {
-      className: 'visuallyhidden'
-    },
+    className: ['typeahead', 'js-hidden']
   },
 
   'vac-city': {
