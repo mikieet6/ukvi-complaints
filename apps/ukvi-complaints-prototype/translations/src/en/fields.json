@@ -35,7 +35,7 @@
 			}
 		},
 		"validation": {
-			"required": "Please select an option"
+			"required": "Select the reason for your complaint"
 		}
 	},
 	"immigration-application": {
@@ -52,7 +52,7 @@
 			}
 		},
 		"validation": {
-			"required": "Please select an option"
+			"required": "Select the problem you had with the application process"
 		}
 	},
 	"where-applied-from": {
@@ -66,7 +66,7 @@
 			}
 		},
 		"validation": {
-			"required": "Please select an option"
+			"required": "Select if your application was made inside or outside of the UK"
 		}
 	},
 	"immigration-appointment": {
@@ -89,7 +89,7 @@
 			}
 		},
 		"validation": {
-			"required": "Please select an option"
+			"required": "Select the problem you had with making an appointment"
 		}
 	},
 	"delay-type": {
@@ -103,7 +103,7 @@
 			}
 		},
 		"validation": {
-			"required": "Please select an option"
+			"required": "Select if you are waiting for a decision or the return of some documents"
 		}
 	},
 	"application-delay": {
@@ -155,7 +155,7 @@
 			}
 		},
 		"validation": {
-			"required": "Please select an option"
+			"required": "Select whether or not you have a reference number"
 		}
 	},
 	"gwf": {
@@ -183,10 +183,10 @@
 		"summary": "Date of birth",
 		"label": "Applicant’s date of birth",
 		"validation": {
-			"required": "You must enter a valid date",
-			"date": "You must enter a valid date",
-    		"before": "Date cannot be in the future",
-    		"after": "This date appears to be too far in the past"
+			"required": "Enter a valid date",
+			"date": "Enter a valid date",
+    		"before": "The applicant's date of birth cannot be in the future",
+    		"after": "The applicant's date of birth is too far in the past"
 		}
 	},
 	"return-of-documents": {
@@ -203,7 +203,7 @@
 			}
 		},
 		"validation": {
-			"required": "Please select an option"
+			"required": "Select if you have already asked for the documents back"
 		}
 	},
 	"requested-documents": {
@@ -256,7 +256,7 @@
 			}
 		},
 		"validation": {
-			"required": "Please select an option"
+			"required": "Select if the decision you received was negative or positive"
 		}
 	},
 	"immigration-status-change": {
@@ -287,7 +287,7 @@
 			}
 		},
 		"validation": {
-			"required": "Please select an option"
+			"required": "Select the problem with your BRP card"
 		}
 	},
 	"refund-type": {
@@ -313,7 +313,7 @@
 			}
 		},
 		"validation": {
-			"required": "Please select an option"
+			"required": "Select the fee you want to be refunded"
 		}
 	},
 	"refund-type-automatic": {
@@ -327,7 +327,7 @@
 			}
 		},
 		"validation": {
-			"required": "Please select an option"
+			"required": "Select the fee you are waiting to be refunded"
 		}
 	},
 	"refund": {
@@ -344,7 +344,7 @@
 			}
 		},
 		"validation": {
-			"required": "Please select an option"
+			"required": "Select if you have already requested a refund"
 		}
 	},
 	"refund-when": {
@@ -358,7 +358,7 @@
 			}
 		},
 		"validation": {
-			"required": "Please select an option"
+			"required": "Select the length of time you've been waiting for a refund"
 		}
 	},
 	"poor-info-or-behaviour": {
@@ -372,7 +372,7 @@
 			}
 		},
 		"validation": {
-			"required": "Please select an option"
+			"required": "Select if the problem was with poor staff behaviour or information"
 		}
 	},
 	"staff-behaviour": {
@@ -389,7 +389,7 @@
 			}
 		},
 		"validation": {
-			"required": "Please select an option"
+			"required": "Select where you experienced poor behaviour"
 		}
 	},
 	"which-centre": {
@@ -399,14 +399,14 @@
 				"label": "Outside the UK, at a visa application centre"
 			},
 			"ssc": {
-				"label": "At a Service Support Centre"
+				"label": "In the UK, at a service support centre"
 			},
 			"ukvcas": {
-				"label": "At a UK Visa and Citizenship Application Service service point"
+				"label": "In the UK, at visa and citizenship application service point"
 			}
 		},
 		"validation": {
-			"required": "Please select an option"
+			"required": "Select where the incident took place"
 		}
 	},
 	"vac-country": {
@@ -440,7 +440,7 @@
 	},
 	"called-from": {
 		"label": "Telephone number",
-		"hint": "For international numberss include the country code"
+		"hint": "For international numbers include the country code"
 	},
 	"existing-complaint": {
 		"options": {
@@ -452,7 +452,7 @@
 			}
 		},
 		"validation": {
-			"required": "Please select an option"
+			"required": "Select if you have a reference number for the existing complaint"
 		}
 	},
 	"complaint-reason-previous": {
@@ -501,7 +501,7 @@
 	"complaint-details": {
 		"label": "Summary of complaint",
 		"validation": {
-			"required": "You must enter details about your complaint"
+			"required": "Enter more details about why you're making a complaint"
 		}
 	},
 	"other-complaint": {
@@ -527,7 +527,7 @@
 			}
 		},
 		"validation": {
-			"required": "Please select an option"
+			"required": "Select if you are completing this form on behalf of an applicant"
 		}
 	},
 	"who-representing": {
@@ -548,14 +548,14 @@
 			}
 		},
 		"validation": {
-			"required": "Please select an option"
+			"required": "Select your relation to the applicant"
 		}
 	},
 	"agent-name": {
 		"legend": "",
 		"label": "Full name",
 		"validation": {
-			"required": "Please enter your name"
+			"required": "Enter your name"
 		}
 	},
 	"agent-email": {
@@ -563,7 +563,8 @@
 		"label": "Email address",
 		"hint": "We’ll use this to send our response",
 		"validation": {
-			"required": "Please enter an email address"
+			"required": "Enter an email address",
+			"email": "Enter a valid email address"
 		}
 	},
 	"agent-phone": {
@@ -575,7 +576,7 @@
 		"legend": "",
 		"label": "Applicant’s full name",
 		"validation": {
-			"required": "Please enter a name"
+			"required": "Enter the applicant's name"
 		}
 	},
 	"agent-representative-nationality": {
@@ -583,41 +584,42 @@
 		"label": "Applicant’s nationality",
 		"hint": "We’ll  use this to confirm the applicant’s identity",
 		"validation": {
-			"required": "Please select your nationality",
-			"equal": "You must select a valid nationality from the list"
+			"required": "Select the applicant's nationality",
+			"equal": "You must choose a nationality from the list"
 		}
 	},
 	"applicant-name": {
 		"legend": "",
 		"label": "Full name",
 		"validation": {
-			"required": "Please enter your name"
+			"required": "Enter your name"
 		}
 	},
 	"applicant-dob": {
 		"label": "Date of birth",
 		"hint": "For example, 31 3 1980",
 		"validation": {
-			"required": "You must enter a valid date",
-			"date": "You must enter a valid date",
-    		"before": "Date cannot be in the future",
-    		"after": "This date appears to be too far in the past"
+			"required": "Enter a date of birth",
+			"date": "Enter a valid date of birth",
+    		"before": "Your date of birth cannot be in the future",
+    		"after": "Your date of birth is too far in the past"
 		}
 	},
 	"applicant-nationality": {
 		"legend": "",
 		"label": "Nationality",
 		"validation": {
-			"required": "Please select your nationality",
-			"equal": "You must select a valid nationality from the list"
+			"required": "Select your nationality",
+			"equal": "You must choose a nationality from the list"
 		}
 	},
 	"applicant-email": {
 		"legend": "",
 		"label": "Email address",
+		"hint": "We’ll use this to send our response",
 		"validation": {
-			"required": "Please enter an email address",
-			"email": "Please enter a valid email address containing an '@' symbol"
+			"required": "Enter an email address",
+			"email": "Your email address must contain the '@' symbol"
 		}
 	},
 	"applicant-phone": {
