@@ -442,6 +442,9 @@
 			"no": {
 				"label": "No"
 			}
+		},
+		"validation": {
+			"required": "Please select an option"
 		}
 	},
 	"complaint-reason-previous": {
