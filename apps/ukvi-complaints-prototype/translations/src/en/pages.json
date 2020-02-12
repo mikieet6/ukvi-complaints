@@ -264,18 +264,25 @@
   },
   "confirm": {
     "header": "Check your answers",
-      "sections": {
-        "contact-details": {
-          "header": "Contact details"
-        },
-        "your-details": {
-          "header": "Your details"
-        },
-        "agent-details": {
-          "header": "Your details"
-        }
+    "sections": {
+      "complaint-details": {
+        "header": "Complaint details"
+      },
+      "contact-details": {
+        "header": "Contact details"
+      },
+      "your-details": {
+        "header": "Your details"
+      },
+      "agent-details": {
+        "header": "Your details"
       }
-
+    },
+    "fields": {
+      "agent-representative-dob": {
+        "label": "Applicant’s date of birth"
+      }
+    }
   },
   "conmplaint-details": {
     "header": "Complaint details"
