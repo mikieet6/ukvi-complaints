@@ -867,7 +867,11 @@ module.exports = {
           {
             field: 'agent-representative-dob',
             parse: (value) => {
-              return moment(value).format('D MMMM YYYY');
+              if (value) {
+                if (value) {
+                  return moment(value).format('D MMMM YYYY');
+                }
+              }
             }
           }
         ],
@@ -877,7 +881,9 @@ module.exports = {
           {
             field: 'applicant-dob',
             parse: (value) => {
-              return moment(value).format('D MMMM YYYY');
+              if (value) {
+                return moment(value).format('D MMMM YYYY');
+              }
             }
           }
         ],

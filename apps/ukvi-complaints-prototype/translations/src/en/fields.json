@@ -581,11 +581,11 @@
 	},
 	"agent-representative-nationality": {
 		"legend": "",
-		"label": "Applicant’s nationality",
-		"hint": "We’ll  use this to confirm the applicant’s identity",
+		"label": "Applicant’s country of nationality",
+		"hint": "We’ll use this to confirm the applicant’s identity",
 		"validation": {
-			"required": "Select the applicant's nationality",
-			"equal": "You must choose a nationality from the list"
+			"required": "Select the applicant's country of nationality",
+			"equal": "You must choose a country from the list"
 		}
 	},
 	"applicant-name": {
@@ -607,10 +607,10 @@
 	},
 	"applicant-nationality": {
 		"legend": "",
-		"label": "Nationality",
+		"label": "Country of nationality",
 		"validation": {
-			"required": "Select your nationality",
-			"equal": "You must choose a nationality from the list"
+			"required": "Select your country of nationality",
+			"equal": "You must choose a country from the list"
 		}
 	},
 	"applicant-email": {
@@ -619,7 +619,7 @@
 		"hint": "We’ll use this to send our response",
 		"validation": {
 			"required": "Enter an email address",
-			"email": "Your email address must contain the '@' symbol"
+			"email": "Enter a valid email address"
 		}
 	},
 	"applicant-phone": {
