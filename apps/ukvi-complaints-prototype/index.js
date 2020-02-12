@@ -742,11 +742,7 @@ module.exports = {
       next: '/called-date'
     },
     '/called-date': {
-      fields: ['called-date'],
-      next: '/called-time'
-    },
-    '/called-time': {
-      fields: ['called-time'],
+      fields: ['called-date', 'called-time'],
       next: '/called-from'
     },
     '/called-from': {
