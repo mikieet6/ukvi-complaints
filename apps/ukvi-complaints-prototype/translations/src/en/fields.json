@@ -19,7 +19,7 @@
 				"label": "Immigration status change"
 			},
 			"biometric-residence-permit": {
-				"label": "Biometric residence permits"
+				"label": "Biometric residence permits (BRPs)"
 			},
 			"refund": {
 				"label": "Refunds"
@@ -396,10 +396,10 @@
 		"legend": " ",
 		"options": {
 			"vac": {
-				"label": "At a visa application centre (VAC)"
+				"label": "Outside the UK, at a visa application centre"
 			},
 			"ssc": {
-				"label": "At a Service Support Centre (previously called a Premium Service Centre?)"
+				"label": "At a Service Support Centre"
 			},
 			"ukvcas": {
 				"label": "At a UK Visa and Citizenship Application Service service point"
@@ -422,17 +422,25 @@
 		"label": "City"
 	},
 	"called-number": {
-		"label": "What telephone number was called?"
+		"label": "Telephone number"
 	},
 	"called-date": {
-		"label": "What was the approximate date of the call?"
+		"label": "Date of the call",
+		"hint": "For example, 30 April or early June",
+		"validation": {
+			"required": "Enter the date of the call"
+		}
 	},
 	"called-time": {
-		"label": " ",
-		"hint": "For example, 10:30am or morning"
+		"label": "Time of the call",
+		"hint": "For example, 10:30am or morning",
+		"validation": {
+			"required": "Enter the time of the call"
+		}
 	},
 	"called-from": {
-		"label": " "
+		"label": "Telephone number",
+		"hint": "For international numberss include the country code"
 	},
 	"existing-complaint": {
 		"options": {
@@ -451,25 +459,25 @@
 		"legend": " ",
 		"options": {
 			"immigration-application": {
-				"label": "Completing or submitting a visa application"
+				"label": "Submitting an application"
 			},
 			"immigration-appointment": {
-				"label": "Booking or changing an appointment"
+				"label": "Making an appointment"
 			},
 			"delays": {
 				"label": "Waiting for a decision or documents"
 			},
 			"immigration-decision": {
-				"label": "The outcome of an application"
+				"label": "A negative or positive decision"
 			},
 			"immigration-status-change": {
 				"label": "Immigration status change"
 			},
 			"biometric-residence-permit": {
-				"label": "Problems with a biometric residence permit"
+				"label": "Biometric residence permits (BRPs)"
 			},
 			"refund": {
-				"label": "Getting a refund"
+				"label": "Refunds"
 			},
 			"staff-behaviour": {
 				"label": "Poor information or staff behaviour"

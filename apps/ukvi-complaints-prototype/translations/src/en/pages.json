@@ -137,7 +137,7 @@
     "header": "If you have questions about your status change"
   },
   "biometric-residence-permit": {
-    "header": "What’s the problem with the  Biometric Residence Permit (BRP)?"
+    "header": "What’s the problem with the BRP?"
   },
   "card-not-arrived": {
     "header": "If a BRP card hasn't arrived"
@@ -188,16 +188,16 @@
     "header": "What was the problem?"
   },
   "staff-behaviour": {
-    "header": "Where did the poor behaviour take place?"
+    "header": "Where did you experience poor behaviour?"
   },
   "face-to-face": {
     "header": "Where did the incident take place?"
   },
   "vac": {
-    "header": "Where is the visa application centre (VAC)?"
+    "header": "Where is the visa application centre?"
   },
   "ssc": {
-    "header": "Where in the UK is the Service Support Centre?"
+    "header": "Where in the UK is the service support centre?"
   },
   "ukvcas": {
     "header": "Where in the UK is the service point?"
@@ -206,7 +206,7 @@
     "header": "What telephone number was called?"
   },
   "called-date": {
-    "header": "What was the approximate date of the call?"
+    "header": "When did you make the call?"
   },
   "called-time": {
     "header": "What was the time of the call?"
@@ -227,7 +227,7 @@
     "header": "What's your complaint reference?"
   },
   "complaint-reason-previous":{
-    "header": "Select the reason for your existing complaint"
+    "header": "What was your original complaint about?"
   },
   "complaint-details": {
     "header": "What are the details of your complaint?"
