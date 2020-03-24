@@ -1,10 +1,11 @@
 'use strict';
 
+const config = require('../../config');
 const conditionalContent = require('./behaviours/conditional-content');
-
 const translation = require('./translations/en/default.json').fields;
-
 const moment = require('moment');
+const customerEmailer = require('./behaviours/customer-email')(config.email);
+const caseworkerEmailer = require('./behaviours/caseworker-email')(config.email);
 
 module.exports = {
   name: 'ukvi-complaints-prototype',
@@ -92,8 +93,7 @@ module.exports = {
           field: 'immigration-application',
           value: 'complain'
         }
-      }],
-      next: '/complaint-details'
+      }]
     },
     '/application-technical': {
       fields: ['where-applied-from'],
@@ -109,8 +109,7 @@ module.exports = {
           field: 'where-applied-from',
           value: 'outside-uk'
         }
-      }],
-      next: '/complaint-details'
+      }]
     },
 
     '/application-technical-inside-uk': {
@@ -176,8 +175,7 @@ module.exports = {
           field: 'immigration-appointment',
           value: 'complain-appointments'
         }
-      }],
-      next: '/complaint-details'
+      }]
     },
     '/lack-availability': {
       fields: ['where-applied-from'],
@@ -193,8 +191,7 @@ module.exports = {
           field: 'where-applied-from',
           value: 'outside-uk'
         }
-      }],
-      next: '/complaint-details'
+      }]
     },
     '/lack-availability-inside': {
 
@@ -216,8 +213,7 @@ module.exports = {
           field: 'where-applied-from',
           value: 'outside-uk'
         }
-      }],
-      next: '/complaint-details'
+      }]
     },
 
     '/change-appointment-inside': {
@@ -240,7 +236,7 @@ module.exports = {
           field: 'where-applied-from',
           value: 'outside-uk'
         }
-      }],
+      }]
     },
     '/appointment-technical-inside': {
 
@@ -317,8 +313,7 @@ module.exports = {
           field: 'where-applied-from',
           value: 'outside-uk'
         }
-      }],
-      next: '/complaint-details'
+      }]
     },
 
     '/upgrade-inside-uk': {
@@ -355,8 +350,7 @@ module.exports = {
           field: 'return-of-documents',
           value: 'no'
         }
-      }],
-      next: '/complaint-details'
+      }]
     },
     '/requested-documents': {
       fields: ['requested-documents'],
@@ -388,8 +382,7 @@ module.exports = {
           field: 'have-requested',
           value: 'something-else'
         }
-      }],
-      next: '/complaint-details'
+      }]
     },
     '/request-docs-service': {
       next: '/complaint-details'
@@ -411,10 +404,8 @@ module.exports = {
           field: 'immigration-decision',
           value: 'no'
         }
-      }],
-      next: '/complaint-details'
+      }]
     },
-
     '/decision-outcome': {
       fields: ['decision-outcome'],
       forks: [{
@@ -429,8 +420,7 @@ module.exports = {
           field: 'decision-outcome',
           value: 'negative'
         }
-      }],
-      next: '/complaint-details'
+      }]
     },
 
     '/positive-outcome-where': {
@@ -447,8 +437,7 @@ module.exports = {
           field: 'where-applied-from',
           value: 'outside-uk'
         }
-      }],
-      next: '/complaint-details'
+      }]
     },
 
     '/positive-outcome-inside': {
@@ -461,7 +450,6 @@ module.exports = {
     '/negative-outcome': {
       next: '/complaint-details'
     },
-
     '/immigration-status-change': {
       fields: ['immigration-status-change'],
       forks: [{
@@ -476,12 +464,10 @@ module.exports = {
           field: 'immigration-status-change',
           value: 'complain-status-change'
         }
-      }],
-      next: '/complaint-details'
+      }]
     },
 
     '/questions-status-change': {
-
       next: '/complaint-details'
     },
     '/biometric-residence-permit': {
@@ -527,7 +513,7 @@ module.exports = {
     '/refund-type': {
       fields: ['refund-type'],
       forks: [{
-        target: '/refund-ihs',
+        target: '/refund-ihs-where-from',
         condition: {
           field: 'refund-type',
           value: 'ihs'
@@ -539,13 +525,13 @@ module.exports = {
           value: 'standard'
         }
       }, {
-        target: '/refund-priority',
+        target: '/refund-priority-where-from',
         condition: {
           field: 'refund-type',
           value: 'priority'
         }
       }, {
-        target: '/refund-super-priority',
+        target: '/refund-super-priority-where-from',
         condition: {
           field: 'refund-type',
           value: 'super-priority'
@@ -562,27 +548,75 @@ module.exports = {
           field: 'refund-type',
           value: 'eu-settlement'
         }
-      }],
-      next: '/refund'
+      }]
+    },
+    '/refund-ihs-where-from': {
+      fields: ['where-applied-from'],
+      forks: [{
+        target: '/refund-ihs',
+        condition: {
+          field: 'where-applied-from',
+          value: 'inside-uk'
+        }
+      }, {
+        target: '/refund-ihs-outside',
+        condition: {
+          field: 'where-applied-from',
+          value: 'outside-uk'
+        }
+      }]
     },
     '/refund-ihs': {
+
+    },
+    '/refund-ihs-outside': {
 
     },
     '/refund-standard': {
 
     },
+    '/refund-priority-where-from': {
+      fields: ['where-applied-from'],
+      forks: [{
+        target: '/refund-priority',
+        condition: {
+          field: 'where-applied-from',
+          value: 'inside-uk'
+        }
+      }, {
+        target: '/refund-priority-outside',
+        condition: {
+          field: 'where-applied-from',
+          value: 'outside-uk'
+        }
+      }]
+    },
     '/refund-priority': {
 
     },
-    '/refund-super-priority': {
+    '/refund-priority-outside': {
 
     },
-    '/refund-premium': {
-
+    '/refund-super-priority-where-from': {
+      fields: ['where-applied-from'],
+      forks: [{
+        target: '/refund-super-priority',
+        condition: {
+          field: 'where-applied-from',
+          value: 'inside-uk'
+        }
+      }, {
+        target: '/refund-super-priority-outside',
+        condition: {
+          field: 'where-applied-from',
+          value: 'outside-uk'
+        }
+      }]
     },
-    '/refund-eu-settlement': {
-
-    },
+    '/refund-super-priority': {},
+    '/refund-super-priority-outside': {},
+    '/refund-premium': {},
+    '/refund-eu-settlement': {},
     '/refund': {
       fields: ['refund'],
       forks: [{
@@ -603,8 +637,7 @@ module.exports = {
           field: 'refund',
           value: 'not-yet'
         }
-      }],
-      next: '/complaint-details'
+      }]
     },
     '/refund-when': {
       fields: ['refund-when'],
@@ -625,7 +658,7 @@ module.exports = {
     '/refund-type-automatic': {
       fields: ['refund-type-automatic'],
       forks: [{
-        target: '/refund-ihs',
+        target: '/refund-ihs-where-from',
         condition: {
           field: 'refund-type-automatic',
           value: 'ihs'
@@ -636,8 +669,7 @@ module.exports = {
           field: 'refund',
           value: 'eu-settlement'
         }
-      }],
-      next: '/complaint-details'
+      }]
     },
     '/refund-when': {
       fields: ['refund-when'],
@@ -648,7 +680,7 @@ module.exports = {
           value: 'less-than'
         }
       }, {
-        target: '/application-ref-numbers',
+        target: '/refund-more-than',
         condition: {
           field: 'refund-when',
           value: 'more-than'
@@ -700,8 +732,7 @@ module.exports = {
           field: 'staff-behaviour',
           value: 'in-letter'
         }
-      }],
-      next: '/complaint-details'
+      }]
     },
     '/face-to-face': {
       fields: ['which-centre'],
@@ -763,8 +794,7 @@ module.exports = {
           field: 'existing-complaint',
           value: 'no'
         }
-      }],
-      next: '/complaint-details'
+      }]
     },
     '/complaint-reference-number': {
       fields: ['complaint-reference-number'],
@@ -784,7 +814,6 @@ module.exports = {
     },
     '/acting-as-agent': {
       fields: ['acting-as-agent'],
-      next: '/complaint-details',
       forks: [{
         target: '/who-representing',
         condition: {
@@ -846,7 +875,7 @@ module.exports = {
       next: '/confirm'
     },
     '/confirm': {
-      behaviours: ['complete', require('hof-behaviour-summary-page')],
+      behaviours: [caseworkerEmailer, customerEmailer, 'complete', require('hof-behaviour-summary-page')],
       next: '/complete',
       sections: {
         'complaint-details': [
@@ -859,7 +888,15 @@ module.exports = {
           'complaint-details'
         ],
         'agent-details': [
-          'agent-name'
+          'agent-name',
+          {
+            field: 'who-representing',
+            parse: (value) => {
+              if (value) {
+                return translation['who-representing'].options[value].label;
+              }
+            }
+          }
         ],
         'applicant-details': [
           'agent-representative-name',

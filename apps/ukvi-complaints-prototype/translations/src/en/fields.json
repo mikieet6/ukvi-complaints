@@ -45,7 +45,7 @@
 				"label": "Technical issues with the website or payments"
 			},
 			"guidance": {
-				"label": "Guidance was unclear or misleading"
+				"label": "Unclear or misleading guidance"
 			},
 			"complain": {
 				"label": "Something else"
@@ -59,10 +59,10 @@
 		"legend": " ",
 		"options": {
 			"inside-uk": {
-				"label": "Inside the UK"
+				"label": "In the UK"
 			},
 			"outside-uk": {
-				"label": "Outside the UK"
+				"label": "Outside of the UK"
 			}
 		},
 		"validation": {
@@ -76,13 +76,10 @@
 				"label": "Difficulty getting an appointment"
 			},
 			"change-appointment": {
-				"label": "I need to change an appointment"
+				"label": "Difficulty changing an appointment"
 			},
 			"technical-appointments": {
-				"label": "Technical issue with booking an appointment"
-			},
-			"questions-appointments": {
-				"label": "I have a question about an appointment"
+				"label": "Technical issues with booking an appointment"
 			},
 			"complain-appointments": {
 				"label": "Something else"
@@ -136,7 +133,7 @@
 	},
 	"reference-numbers": {
 		"hint": "Select one ",
-		"legend": "You don’t have to provide a reference, but it may help us look into your complaint more quickly if you do.",
+		"legend": "A reference number will help us look into your complaint more quickly.",
 		"options": {
 			"gwf": {
 				"label": "GWF number"
@@ -175,7 +172,7 @@
 		"hint": "For example, IHS123456789"
 	},
 	"uan-reference": {
-		"label": "Enter unique application number",
+		"label": "Enter Unique Application Number",
 		"hint": "For example, 1234-5678-9123-4567"
 	},
 	"agent-representative-dob": {
@@ -193,7 +190,7 @@
 		"legend": " ",
 		"options": {
 			"yes-docs-service": {
-				"label": "Yes, using the return of documents service"
+				"label": "Yes, using the online form"
 			},
 			"yes-other": {
 				"label": "Yes, by phone, email or another way"
@@ -277,10 +274,10 @@
 		"legend": " ",
 		"options": {
 			"card-not-arrived": {
-				"label": " The BRP card has not arrived"
+				"label": "It has not arrived"
 			},
 			"card-incorrect": {
-				"label": "The BRP card is incorrect"
+				"label": "It is incorrect"
 			},
 			"complain-brp": {
 				"label": "Something else"
@@ -351,10 +348,10 @@
 		"legend": " ",
 		"options": {
 			"less-than": {
-				"label": "Less than 3 months ago"
+				"label": "Less than 6 weeks ago"
 			},
 			"more-than": {
-				"label": "More than 3 months ago"
+				"label": "More than 6 weeks ago"
 			}
 		},
 		"validation": {
@@ -402,7 +399,7 @@
 				"label": "In the UK, at a service support centre"
 			},
 			"ukvcas": {
-				"label": "In the UK, at visa and citizenship application service point"
+				"label": "In the UK, at a visa and citizenship application service point"
 			}
 		},
 		"validation": {
@@ -422,7 +419,8 @@
 		"label": "City"
 	},
 	"called-number": {
-		"label": "Telephone number"
+		"label": "Telephone number",
+		"hint": "For international numbers include the country code"
 	},
 	"called-date": {
 		"label": "Date of the call",
@@ -491,17 +489,16 @@
 		}
 	},
 	"complaint-reference-number": {
-		"label": " ",
-		"hint": "For example, 123456"
+		"label": " "
 	},
 	"when-applied": {
 		"label": " ",
 		"hint": "If you can't remember the exact date, just provide the month."
 	},
 	"complaint-details": {
-		"label": "Summary of complaint",
+		"label": "Complaint details",
 		"validation": {
-			"required": "Enter more details about why you're making a complaint"
+			"required": "Enter more details about why you are making a complaint"
 		}
 	},
 	"other-complaint": {
@@ -517,7 +514,6 @@
 	},
 	"acting-as-agent": {
 		"label": "Are you completing this form on behalf of the applicant?",
-		"hint": " Anyone can complain on behalf of an applicant but you must have their consent. In some cases you can get consent from the Home Office if that’s not possible.",
 		"options": {
 			"yes": {
 				"label": "Yes"
@@ -531,20 +527,20 @@
 		}
 	},
 	"who-representing": {
-		"label": "What’s your relation to the applicant?",
+		"label": "What is your relation to the applicant?",
 		"legend": " ",
 		"options": {
 			"legal-rep": {
-				"label": "I’m their legal representative"
+				"label": "I am a legal representative"
 			},
 			"relative": {
-				"label": "I’m a relative or friend"
+				"label": "I am a relative or friend"
 			},
 			"sponsor": {
-				"label": "I’m their sponsor"
+				"label": "I am a sponsor"
 			},
 			"support-org": {
-				"label": "I work for a charity or similar organisation that’s helping them"
+				"label": "I work for a charity or organisation that is helping them"
 			}
 		},
 		"validation": {
@@ -561,7 +557,7 @@
 	"agent-email": {
 		"legend": "",
 		"label": "Email address",
-		"hint": "We’ll use this to send our response",
+		"hint": "We will use this to send our response",
 		"validation": {
 			"required": "Enter an email address",
 			"email": "Enter a valid email address"
@@ -582,7 +578,7 @@
 	"agent-representative-nationality": {
 		"legend": "",
 		"label": "Applicant’s country of nationality",
-		"hint": "We’ll use this to confirm the applicant’s identity",
+		"hint": "We will use this to confirm the applicant’s identity",
 		"validation": {
 			"required": "Select the applicant's country of nationality",
 			"equal": "You must choose a country from the list"
@@ -616,7 +612,7 @@
 	"applicant-email": {
 		"legend": "",
 		"label": "Email address",
-		"hint": "We’ll use this to send our response",
+		"hint": "We will use this to send our response",
 		"validation": {
 			"required": "Enter an email address",
 			"email": "Enter a valid email address"

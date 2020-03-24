@@ -1,3 +1,7 @@
-##Please wait to receive your refund
+Please:
+ <ul class="list list-bullet">
+  <li>check your bank account</li>
+  <li>if you have more than one bank account, make sure you have checked the right one</li>
+</ul>
 
-Refunds take at least 3 months to process, please wait to recieve your refund.
+If you have not received your refund, continue making your complaint.

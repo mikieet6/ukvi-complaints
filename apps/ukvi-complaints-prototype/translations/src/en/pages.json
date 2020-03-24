@@ -33,10 +33,10 @@
     "header": "Where did you make your application?"
   },
   "lack-availability-inside": {
-    "header": "If you had difficulty getting an appointment in the UK"
+    "header": "If it was hard to get an appointment in the UK"
   },
   "lack-availability-outside": {
-    "header": "If you had difficulty getting an  appointmenft outside of the UK"
+    "header": "If you cannot get an appointment outside of the UK"
   },
   "change-appointment": {
     "header": "Where did you make your application?"
@@ -78,10 +78,10 @@
     "header": "Where did you make your application?"
   },
   "upgrade-inside-uk": {
-    "header": "If you’re waiting for a decision on an application"
+    "header": "If you are waiting for a decision on an application"
   },
   "upgrade-outside-uk": {
-    "header": "If you’re waiting for a decision on an application"
+    "header": "If you are waiting for a decision on an application"
   },
   "application-ref-numbers": {
     "header": "Which, if any, of the following reference numbers do you have?"
@@ -104,10 +104,10 @@
     "header": "How did you request the return of your documents?"
   },
   "report-lost-docs-service": {
-    "header": "If you're waiting for documents to be returned"
+    "header": "If you are waiting for documents to be returned"
   },
   "request-docs-service": {
-    "header": "If you've not used the online service to ask for documents to be returned"
+    "header": "If you have not used the online service to request your documents"
   },
   "havent-requested": {
     "header": "Use this service to request the return of your documents"
@@ -137,10 +137,10 @@
     "header": "If you have questions about your status change"
   },
   "biometric-residence-permit": {
-    "header": "What’s the problem with the BRP?"
+    "header": "What is the problem with the BRP?"
   },
   "card-not-arrived": {
-    "header": "If a BRP card hasn't arrived"
+    "header": "If a BRP card has not arrived"
   },
   "card-incorrect": {
     "header": "If a BRP card is incorrect"
@@ -154,16 +154,34 @@
   "refund-type-automatic": {
     "header": "What are you waiting to be refunded?"
   },
+  "refund-ihs-where-from": {
+    "header": "Where did you make your application?"
+  },
   "refund-ihs": {
+    "header": "If you’re waiting to be refunded for the immigration health surcharge (IHS)"
+  },
+  "refund-ihs-outside": {
     "header": "If you’re waiting to be refunded for the immigration health surcharge (IHS)"
   },
   "refund-standard": {
     "header": "If you want to request a standard service refund"
   },
+  "refund-priority-where-from": {
+    "header": "Where did you make your application?"
+  },
   "refund-priority": {
     "header": "If you want to request a priority service refund"
   },
+  "refund-priority-outside": {
+    "header": "If you want to request a priority service refund"
+  },
+  "refund-super-priority-where-from": {
+    "header": "Where did you make your application?"
+  },
   "refund-super-priority": {
+    "header": "If you want to request a super priority service refund"
+  },
+  "refund-super-priority-outside": {
     "header": "If you want to request a super priority service refund"
   },
   "refund-premium": {
@@ -179,10 +197,10 @@
     "header": "When did you request a refund?"
   },
   "refund-less-than": {
-    "header": "If you requested a refund less than three months ago"
+    "header": "If you requested a refund less than 6 weeks ago"
   },
   "refund-more-than": {
-    "header": "If you requested a refund more than three months ago"
+    "header": "If you requested a refund more than 6 weeks ago"
   },
   "poor-info-or-behaviour": {
     "header": "What was the problem?"
@@ -206,7 +224,7 @@
     "header": "What telephone number was called?"
   },
   "called-date": {
-    "header": "When did you make the call?"
+    "header": "When was the call made?"
   },
   "called-time": {
     "header": "What was the time of the call?"
@@ -224,7 +242,7 @@
     "header": "When did you submit your application?"
   },
   "complaint-reference-number":{
-    "header": "What's your complaint reference?"
+    "header": "What is the reference number for your complaint?"
   },
   "complaint-reason-previous":{
     "header": "What was your original complaint about?"
@@ -242,22 +260,22 @@
     "header": "What are your contact details?"
   },
   "agent-representative-name": {
-    "header": "What is the applicant’s name?"
+    "header": "What is the applicant’s full name?"
   },
   "agent-representative-dob": {
     "header": "What is the applicant’s date of birth?"
   },
   "agent-representative-nationality": {
-    "header": "What is the applicant’s nationality?"
+    "header": "What is the applicant’s country of nationality?"
   },
   "applicant-name": {
-    "header": "What's your name?"
+    "header": "What is your full name?"
   },
   "applicant-dob": {
     "header": "What is your date of birth?"
   },
   "applicant-nationality": {
-    "header": "What is your nationality?"
+    "header": "What is your country of nationality?"
   },
   "applicant-contact-details": {
     "header": "What are your contact details?"
@@ -289,6 +307,14 @@
   },
   "applicant-details": {
     "header": "Applicant details"
+  },
+  "email": {
+    "customer": {
+      "subject": "UKVI Complaints - Thank you for your submission"
+    },
+    "caseworker": {
+      "subject": "UKVI Complaints - We have received a new submission"
+    }
   }
 }
 

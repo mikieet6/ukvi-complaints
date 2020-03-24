@@ -1,9 +1,7 @@
 {{<partials-page}}
 {{$page-content}}
 <fieldset id="dob-group" class="{{#errors.dob}}validation-error{{/errors.dob}}">
-  You don’t have to provide a reference, but it may help us look into your complaint more quickly if you do. 
-  <br>
-  <br>
+  <p>You don’t have to provide a reference, but it may help us look into your complaint more quickly if you do.</p>
   <div class="form-group">
     {{#radio-group}}reference-numbers{{/radio-group}}
   </div>
@@ -18,7 +16,7 @@
     </span>
   </summary>
   <div class="govuk-details__text">
-	    
+
 	<h3 class="govuk-heading-s">GWF number</h3>
 	<p>You should have been given a GWF number if you applied for a visa outside of the UK.</p>
 
