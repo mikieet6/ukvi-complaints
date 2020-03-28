@@ -316,8 +316,32 @@
 				"label": "Unique Application Number"
 			},
 			"none": {
-				"label": "I don’t have any of these "
-			}
+				"label": "I don’t have any of these"
+      },
+      "poor-info-or-behaviour": {
+        "label": "What was the problem"
+      },
+      "staff-behaviour": {
+        "label": "Where did you experience poor behaviour"
+      },
+      "which-centre": {
+        "label": "Where did the incident take place"
+      },
+      "ssc-city": {
+        "label": "Where in the UK is the service support centre"
+      },
+      "vac-country" : {
+        "label": "Where is the visa application centre country"
+      },
+      "vac-city": {
+        "label": "Where is the visa application centre city"
+      },
+      "ukvcas-city": {
+        "label": "Where in the UK is the service point"
+      },
+      "complaint-reference-number": {
+        "label": "Reference number for your complaint"
+      }
     }
   },
   "conmplaint-details": {

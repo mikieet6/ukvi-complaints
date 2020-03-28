@@ -898,6 +898,35 @@ module.exports = {
             }
           },
           'complaint-details',
+          {
+            field: 'poor-info-or-behaviour',
+            parse: (value) => {
+              if (value) {
+                return translation['poor-info-or-behaviour'].options[value].label;
+              }
+            }
+          },
+          {
+            field: 'staff-behaviour',
+            parse: (value) => {
+              if (value) {
+                return translation['staff-behaviour'].options[value].label;
+              }
+            }
+          },
+          {
+            field: 'which-centre',
+            parse: (value) => {
+              if (value) {
+                return translation['which-centre'].options[value].label;
+              }
+            }
+          },
+          'ssc-city',
+          'vac-country',
+          'vac-city',
+          'ukvcas-city',
+          'complaint-reference-number',
           'gwf-reference',
           'ho-reference',
           'ihs-reference',
