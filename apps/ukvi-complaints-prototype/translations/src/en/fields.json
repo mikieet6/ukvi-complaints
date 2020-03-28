@@ -81,6 +81,9 @@
 			"technical-appointments": {
 				"label": "Technical issues with booking an appointment"
 			},
+			"questions-appointments": {
+				"label": "Questions about your appointment"
+			},
 			"complain-appointments": {
 				"label": "Something else"
 			}
@@ -155,33 +158,41 @@
 			"required": "Select whether or not you have a reference number"
 		}
 	},
-	"gwf": {
-		"label": "GWF number",
-		"hint": "Enter GWF number"
-	},
 	"gwf-reference": {
 		"label": "Enter GWF number",
-		"hint": "For example, GWF012345678."
+		"hint": "For example, GWF012345678.",
+		"validation": {
+			"required": "Enter the GWF number"
+		}
 	},
 	"ho-reference": {
 		"label": "Enter Home Office reference number",
-		"hint": "For example, 012345678"
+		"hint": "For example, 012345678",
+		"validation": {
+			"required": "Enter the Home Office reference number"
+		}
 	},
 	"ihs-reference": {
 		"label": "Enter IHS number",
-		"hint": "For example, IHS123456789"
+		"hint": "For example, IHS123456789",
+		"validation": {
+			"required": "Enter the IHS number"
+		}
 	},
 	"uan-reference": {
 		"label": "Enter Unique Application Number",
-		"hint": "For example, 1234-5678-9123-4567"
+		"hint": "For example, 1234-5678-9123-4567",
+		"validation": {
+			"required": "Enter the Unique Application Number"
+		}
 	},
 	"agent-representative-dob": {
 		"hint": "For example, 31 3 1980",
 		"summary": "Date of birth",
 		"label": "Applicant’s date of birth",
 		"validation": {
-			"required": "Enter a valid date",
-			"date": "Enter a valid date",
+			"required": "Enter the applicant's date of birth",
+			"date": "Enter the applicant's date of birth",
     		"before": "The applicant's date of birth cannot be in the future",
     		"after": "The applicant's date of birth is too far in the past"
 		}
@@ -572,13 +583,12 @@
 		"legend": "",
 		"label": "Applicant’s full name",
 		"validation": {
-			"required": "Enter the applicant's name"
+			"required": "Enter the applicant's full name"
 		}
 	},
 	"agent-representative-nationality": {
 		"legend": "",
 		"label": "Applicant’s country of nationality",
-		"hint": "We will use this to confirm the applicant’s identity",
 		"validation": {
 			"required": "Select the applicant's country of nationality",
 			"equal": "You must choose a country from the list"
@@ -605,7 +615,7 @@
 		"legend": "",
 		"label": "Country of nationality",
 		"validation": {
-			"required": "Select your country of nationality",
+			"required": "You must choose a country from the list",
 			"equal": "You must choose a country from the list"
 		}
 	},

@@ -443,20 +443,12 @@ module.exports = {
       value: 'none',
     }]
   },
-  'when-applied': {
-    mixin: 'input-text',
-    validate: 'required',
-    legend: {
-      className: 'visuallyhidden'
-    },
-    className: ['']
-  },
   'gwf-reference': {
+    validate: 'required',
     dependent: {
       field: 'reference-numbers',
       value: 'gwf'
-    },
-    validate: 'required'
+    }
   },
   'ho-reference': {
     dependent: {
@@ -478,6 +470,15 @@ module.exports = {
       value: 'uan'
     },
     validate: 'required'
+  },
+
+  'when-applied': {
+    mixin: 'input-text',
+    validate: 'required',
+    legend: {
+      className: 'visuallyhidden'
+    },
+    className: ['']
   },
 
   'complaint-reference-number': {

@@ -254,7 +254,7 @@
     "header": "Are you making this complaint on behalf of someone else?"
   },
   "agent-name": {
-    "header": "What’s your name?"
+    "header": "What is your name?"
   },
   "agent-contact-details": {
     "header": "What are your contact details?"
@@ -299,7 +299,25 @@
     "fields": {
       "agent-representative-dob": {
         "label": "Applicant’s date of birth"
-      }
+      },
+      "who-representing": {
+        "label": "Relation to applicant"
+      },
+      "gwf-reference": {
+				"label": "GWF number"
+			},
+			"ho-reference": {
+				"label": "Home Office reference number"
+			},
+			"ihs-reference": {
+				"label": "IHS reference number"
+			},
+			"uan-reference": {
+				"label": "Unique Application Number"
+			},
+			"none": {
+				"label": "I don’t have any of these "
+			}
     }
   },
   "conmplaint-details": {
