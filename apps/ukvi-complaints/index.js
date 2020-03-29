@@ -8,7 +8,7 @@ const customerEmailer = require('./behaviours/customer-email')(config.email);
 const caseworkerEmailer = require('./behaviours/caseworker-email')(config.email);
 
 module.exports = {
-  name: 'ukvi-complaints-prototype',
+  name: 'ukvi-complaints',
   baseUrl: '/',
   steps: {
     '/start': {

@@ -24,7 +24,7 @@
     "eslint": "^3.14.0",
     "eslint-config-homeoffice": "^2.1.0"
   },
-  "name": "ukvi-complaints-prototype",
+  "name": "ukvi-complaints",
   "version": "1.0.0",
   "main": "index.js",
   "keywords": [],
