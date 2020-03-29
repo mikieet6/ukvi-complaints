@@ -1,6 +1,7 @@
 'use strict';
 
 const dateComponent = require('hof-component-date');
+const moment = require('moment');
 
 module.exports = {
   reason: {
@@ -557,11 +558,11 @@ module.exports = {
   },
 
   'applicant-dob': dateComponent('applicant-dob', {
-    validate: ['required', 'date', 'before', { type: 'after', arguments: '1900-01-01' }],
+    validate: ['required', 'date', { type: 'before', arguments: moment().subtract(18, 'years').format('YYYY-MM-DD') }, { type: 'after', arguments: '1900-01-01' }],
   }),
 
   'agent-representative-dob': dateComponent('agent-representative-dob', {
-    validate: ['required', 'date', 'before', { type: 'after', arguments: '1900-01-01' }],
+    validate: ['required', 'date', { type: 'before', arguments: moment().subtract(18, 'years').format('YYYY-MM-DD') }, { type: 'after', arguments: '1900-01-01' }],
   }),
 
   'applicant-email': {

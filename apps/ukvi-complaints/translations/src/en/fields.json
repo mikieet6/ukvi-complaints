@@ -193,7 +193,7 @@
 		"validation": {
 			"required": "Enter the applicant's date of birth",
 			"date": "Enter the applicant's date of birth",
-    		"before": "The applicant's date of birth cannot be in the future",
+    		"before": "The applicant must be over 18 years old to make a complaint",
     		"after": "The applicant's date of birth is too far in the past"
 		}
 	},
@@ -607,7 +607,7 @@
 		"validation": {
 			"required": "Enter a date of birth",
 			"date": "Enter a valid date of birth",
-    		"before": "Your date of birth cannot be in the future",
+    		"before": "You must be over 18 years old to make a complaint",
     		"after": "Your date of birth is too far in the past"
 		}
 	},
