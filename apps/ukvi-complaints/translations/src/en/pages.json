@@ -297,6 +297,12 @@
       }
     },
     "fields": {
+      "complaint-details": {
+        "label": "Complaint details"
+      },
+      "reason": {
+        "label": "The reason for the complaint"
+      },
       "immigration-application": {
         "label": "Problem with the application process"
       },
