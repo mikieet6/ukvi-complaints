@@ -894,10 +894,59 @@ module.exports = {
           {
             field: 'reason',
             parse: (value) => {
-              return translation.reason.options[value].label;
+              if (value) {
+                return translation.reason.options[value].label;
+              }
             }
           },
-          'complaint-details',
+          {
+            field: 'immigration-application',
+            parse: (value) => {
+              if (value) {
+                return translation['immigration-application'].options[value].label;
+              }
+            }
+          },
+          {
+            field: 'immigration-appointment',
+            parse: (value) => {
+              if (value) {
+                return translation['immigration-appointment'].options[value].label;
+              }
+            }
+          },
+          {
+            field: 'delay-type',
+            parse: (value) => {
+              if (value) {
+                return translation['delay-type'].options[value].label;
+              }
+            }
+          },
+          {
+            field: 'return-of-documents',
+            parse: (value) => {
+              if (value) {
+                return translation['return-of-documents'].options[value].label;
+              }
+            }
+          },
+          {
+            field: 'decision-outcome',
+            parse: (value) => {
+              if (value) {
+                return translation['decision-outcome'].options[value].label;
+              }
+            }
+          },
+          {
+            field: 'biometric-residence-permit',
+            parse: (value) => {
+              if (value) {
+                return translation['biometric-residence-permit'].options[value].label;
+              }
+            }
+          },
           {
             field: 'poor-info-or-behaviour',
             parse: (value) => {
@@ -922,6 +971,54 @@ module.exports = {
               }
             }
           },
+          {
+            field: 'refund',
+            parse: (value) => {
+              if (value) {
+                return translation.refund.options[value].label;
+              }
+            }
+          },
+          {
+            field: 'refund-when',
+            parse: (value) => {
+              if (value) {
+                return translation['refund-when'].options[value].label;
+              }
+            }
+          },
+          {
+            field: 'refund-type',
+            parse: (value) => {
+              if (value) {
+                return translation['refund-type'].options[value].label;
+              }
+            }
+          },
+          {
+            field: 'where-applied-from',
+            parse: (value) => {
+              if (value) {
+                return translation['where-applied-from'].options[value].label;
+              }
+            }
+          },
+          {
+            field: 'existing-complaint',
+            parse: (value) => {
+              if (value) {
+                return translation['existing-complaint'].options[value].label;
+              }
+            }
+          },
+          {
+            field: 'complaint-reason-previous',
+            parse: (value) => {
+              if (value) {
+                return translation['complaint-reason-previous'].options[value].label;
+              }
+            }
+          },
           'ssc-city',
           'vac-country',
           'vac-city',
@@ -930,7 +1027,8 @@ module.exports = {
           'gwf-reference',
           'ho-reference',
           'ihs-reference',
-          'uan-reference'
+          'uan-reference',
+          'complaint-details'
         ],
         'agent-details': [
           'agent-name',
