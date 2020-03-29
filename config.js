@@ -10,9 +10,6 @@ module.exports = {
   redis: {
     password: process.env.REDIS_PASSWORD
   },
-  session: {
-    ttl: 3600
-  },
   email: {
     from: process.env.FROM_ADDRESS || '',
     transport: process.env.EMAIL_TRANSPORT || 'ses',

@@ -4,6 +4,7 @@
     "./apps/ukvi-complaints"
   ],
   "session": {
-    "name": "ukvi-complaints.hof.sid"
+    "name": "ukvi-complaints.hof.sid",
+    "ttl": 3600
   }
 }

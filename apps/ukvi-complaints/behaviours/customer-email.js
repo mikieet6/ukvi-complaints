@@ -97,7 +97,7 @@ module.exports = config => {
   }
   return Emailer(Object.assign({}, config, {
     transport: config.from ? config.transport : 'stub',
-    recipient: model => model['applicant-email'] || model['agent-email'],
+    recipient: model => model['applicant-email'] || model['agent-email'] || 'noop@localhost',
     subject: (model, translate) => translate('pages.email.customer.subject'),
     template: path.resolve(__dirname, '../emails/customer.html'),
     parse: (model, translate) => {

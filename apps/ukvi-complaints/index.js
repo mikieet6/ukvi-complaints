@@ -625,10 +625,18 @@ module.exports = {
         }
       }]
     },
-    '/refund-super-priority': {},
-    '/refund-super-priority-outside': {},
-    '/refund-premium': {},
-    '/refund-eu-settlement': {},
+    '/refund-super-priority': {
+
+    },
+    '/refund-super-priority-outside': {
+
+    },
+    '/refund-premium': {
+
+    },
+    '/refund-eu-settlement': {
+
+    },
     '/refund': {
       fields: ['refund'],
       forks: [{
@@ -678,7 +686,7 @@ module.exports = {
       }, {
         target: '/refund-eu-settlement',
         condition: {
-          field: 'refund',
+          field: 'refund-type-automatic',
           value: 'eu-settlement'
         }
       }]
