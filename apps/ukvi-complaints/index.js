@@ -332,16 +332,6 @@ module.exports = {
       ],
       next: '/acting-as-agent'
     },
-    '/reference-numbers': {
-      fields: [
-        'reference-numbers',
-        'gwf-reference',
-        'ho-reference',
-        'ihs-reference',
-        'uan-reference'
-      ],
-      next: '/complaint-details'
-    },
     '/return-of-documents': {
       fields: ['return-of-documents'],
       forks: [{
