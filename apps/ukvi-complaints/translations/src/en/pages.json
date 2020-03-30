@@ -257,7 +257,7 @@
     "header": "What is your name?"
   },
   "agent-contact-details": {
-    "header": "What are your contact details?"
+    "header": "Where should we send our response?"
   },
   "agent-representative-name": {
     "header": "What is the applicant’s full name?"
@@ -341,7 +341,19 @@
       },
       "gwf-reference": {
 				"label": "GWF number"
-			},
+      },
+      "called-number": {
+				"label": "Telephone number called"
+      },
+      "called-date": {
+				"label": "Date of the call"
+      },
+      "called-time": {
+				"label": "Time of the call"
+      },
+      "called-from": {
+				"label": "Telephone number the call was made from"
+      },
 			"ho-reference": {
 				"label": "Home Office reference number"
 			},
@@ -394,10 +406,10 @@
   },
   "email": {
     "customer": {
-      "subject": "UKVI Complaints - Thank you for your submission"
+      "subject": "Your complaint has been sent to UK Visas and Immigration"
     },
     "caseworker": {
-      "subject": "UKVI Complaints - We have received a new submission"
+      "subject": "A new UK Visas and Immigration compalint has been submitted"
     }
   }
 }

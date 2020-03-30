@@ -1027,6 +1027,10 @@ module.exports = {
               }
             }
           },
+          'called-number',
+          'called-date',
+          'called-time',
+          'called-from',
           'ssc-city',
           'vac-country',
           'vac-city',

@@ -551,7 +551,7 @@
 				"label": "I am a sponsor"
 			},
 			"support-org": {
-				"label": "I work for a charity or organisation that is helping them"
+				"label": "I provide expert support or technical assistance"
 			}
 		},
 		"validation": {
@@ -568,7 +568,6 @@
 	"agent-email": {
 		"legend": "",
 		"label": "Email address",
-		"hint": "We will use this to send our response",
 		"validation": {
 			"required": "Enter an email address",
 			"email": "Enter a valid email address"
@@ -576,7 +575,7 @@
 	},
 	"agent-phone": {
 		"legend": "",
-		"label": "Your phone number (optional)",
+		"label": "Phone number (optional)",
 		"hint": "We may call if we need more information "
 	},
 	"agent-representative-name": {

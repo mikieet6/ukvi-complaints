@@ -73,6 +73,22 @@ const getDataRows = (model, translate) => {
           label: translate('pages.confirm.fields.complaint-reason-previous.label'),
           value: translate(`fields.complaint-reason-previous.options[${model['complaint-reason-previous']}].label`)
         },
+        model['called-number'] && {
+          label: translate('pages.confirm.fields.called-number.label'),
+          value: model['called-number']
+        },
+        model['called-date'] && {
+          label: translate('pages.confirm.fields.called-date.label'),
+          value: model['called-date']
+        },
+        model['called-time'] && {
+          label: translate('pages.confirm.fields.called-time.label'),
+          value: model['called-time']
+        },
+        model['called-from'] && {
+          label: translate('pages.confirm.fields.called-from.label'),
+          value: model['called-from']
+        },
         model['ssc-city'] && {
           label: translate('pages.confirm.fields.ssc-city.label'),
           value: model['ssc-city']
