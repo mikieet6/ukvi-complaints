@@ -153,7 +153,7 @@ const getDataRows = (model, translate) => {
         },
         {
           label: 'Applicant’s country of nationality',
-          value: model['apagent-representative-nationality']
+          value: model['agent-representative-nationality']
         },
         {
           label: 'Applicant’s date of birth',
@@ -185,11 +185,16 @@ const getDataRows = (model, translate) => {
           label: 'Email address',
           value: model['applicant-email']
         },
-        {
+        model['applicant-phone'] && {
           label: 'Phone number (optional)',
           value: model['applicant-phone']
-        },
-        model['agent-email'] && {
+        }
+      ]
+    },
+    model['agent-email'] && {
+      title: 'Contact details',
+      table: [
+        {
           label: 'Agent Email address',
           value: model['agent-email']
         },

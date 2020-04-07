@@ -11,9 +11,6 @@ module.exports = {
   name: 'ukvi-complaints',
   baseUrl: '/',
   steps: {
-    '/start': {
-      next: '/reason'
-    },
     '/reason': {
       fields: ['reason'],
       next: '/immigration-application',
