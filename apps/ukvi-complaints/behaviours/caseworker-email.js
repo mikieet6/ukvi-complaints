@@ -105,6 +105,10 @@ const getDataRows = (model, translate) => {
           label: translate('pages.confirm.fields.ukvcas-city.label'),
           value: model['ukvcas-city']
         },
+        model['when-applied'] && {
+          label: translate('pages.confirm.fields.when-applied.label'),
+          value: model['when-applied']
+        },
         model['complaint-reference-number'] && {
           label: translate('pages.confirm.fields.complaint-reference-number.label'),
           value: model['complaint-reference-number']

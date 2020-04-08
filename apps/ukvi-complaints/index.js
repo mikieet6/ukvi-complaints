@@ -1022,6 +1022,7 @@ module.exports = {
           'vac-country',
           'vac-city',
           'ukvcas-city',
+          'when-applied',
           'complaint-reference-number',
           'gwf-reference',
           'ho-reference',

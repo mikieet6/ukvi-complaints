@@ -315,6 +315,9 @@
       "return-of-documents": {
         "label": "Have you asked for the documents back"
       },
+      "when-applied": {
+        "label": "When did you submit your application"
+      },
       "decision-outcome": {
         "label": "Was the decision negative or positive"
       },
